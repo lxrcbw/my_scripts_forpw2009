@@ -73,6 +73,7 @@ wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdreso
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_urge.js -O /jd/scripts/jd_adolf_urge.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_city.js -O /jd/scripts/jd_city.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 
 
 #添加需要添加的脚本 name
@@ -94,6 +95,7 @@ jd_jump
 jd_adolf_urge
 jd_z_carnivalcity
 jd_city
+jd_zoon
 "
 
 #添加需要添加脚本的 cron
@@ -117,6 +119,7 @@ jd_jump="1 0,11,21 * * * jd jd_jump"
 jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
 jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_city="0 0-23/1 * * * jd jd_city"
+jd_zoon="4 * * * * jd jd_zoon"
 
 
 
