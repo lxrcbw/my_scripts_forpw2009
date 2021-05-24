@@ -384,28 +384,6 @@ own脚本目录：$dir_own
 ## 更新jup任务的cron
 random_update_jup_cron
 
-## 重置仓库romote url
-if [[ $JD_DIR ]] && [[ $ENABLE_RESET_REPO_URL == true ]]; then
-    reset_romote_url $dir_shell $url_shell >/dev/null
-    reset_romote_url $dir_scripts $url_scripts >/dev/null
-fi
-
-## 更新shell
-[ -f $dir_panel/package.json ] && panel_depend_old=$(cat $dir_panel/package.json)
-git_pull_scripts $dir_shell
-if [[ $exit_status -eq 0 ]]; then
-    echo -e "\n更新$dir_shell成功...\n"
-    [ ! -d $dir_panel/node_modules ] && npm_install_1 $dir_panel
-    [ -f $dir_panel/package.json ] && panel_depend_new=$(cat $dir_panel/package.json)
-    [[ "$panel_depend_old" != "$panel_depend_new" ]] && npm_install_2 $dir_panel
-    make_dir $dir_config
-    cp -f $file_config_sample $dir_config/config.sample.sh
-    update_docker_entrypoint
-    detect_config_version
-else
-    echo -e "\n更新$dir_shell失败，请检查原因...\n"
-fi
-
 
 
 ## 更新own脚本
