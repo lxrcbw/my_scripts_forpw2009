@@ -41,7 +41,6 @@ my_scripts_list_add="
 lpss_diy
 jd_try
 jd_ck
-jd_zoon
 "
 
 #添加需要添加脚本的 cron
@@ -54,8 +53,7 @@ jd_zoon="5 * * * * jd jd_zoon"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_super_redrain_2
-jd_syj_2
+jd_zoon
 "
 
 #awk '{print $NF}' filename
