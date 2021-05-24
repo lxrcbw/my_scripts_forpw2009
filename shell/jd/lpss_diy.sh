@@ -31,10 +31,11 @@ echo "你好，你当前使用JD Docker ID： $my_docker_id"
 echo -e "你好，你当前Download Flag是：$my_download_flag \n"
 
 if [ $target_ver_id = $my_ver_id ];then
-echo -e "无需更新 notify 文件~\n"
+	echo -e "无需更新 notify 文件~\n"
 else
-echo -e "正在更新 notify 文件~\n"
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/notify.js -O /jd/notify.js
+	echo -e "正在更新 notify 文件~\n"
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/notify.js -O /jd/notify.js
+	echo -e "更新 notify 文件完成~\n"
 fi
 
 
@@ -43,14 +44,15 @@ if [ $my_download_flag = "trues" ];then
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify.js -O /jd/sendNotify.js 
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
+    wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
 	echo -e "更新 home.html & sendNotify.js 文件完成\n"
 else
 	echo -e "无需更新 home.html & sendNotify.js 文件\n"
 fi 
 
 # 下载需要添加的脚本 link 
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
-#wget -q --no-check-certificate  https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd_unsubscribe_2.js -O /jd/scripts/jd_unsubscribe_2.js
+
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_friend.js -O /jd/scripts/jd_friend.js
@@ -70,6 +72,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jump.js -O /jd/scripts/jd_jump.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_urge.js -O /jd/scripts/jd_adolf_urge.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_city.js -O /jd/scripts/jd_city.js
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -89,6 +93,7 @@ jd_adolf_mi
 jd_jump
 jd_adolf_urge
 jd_z_carnivalcity
+jd_city
 "
 
 #添加需要添加脚本的 cron
@@ -111,6 +116,7 @@ jd_adolf_mi="15 9 21-27 5 * jd jd_adolf_mi"
 jd_jump="1 0,11,21 * * * jd jd_jump"
 jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
 jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
+jd_city="0 0-23/1 * * * jd jd_city"
 
 
 
