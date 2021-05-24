@@ -406,33 +406,7 @@ else
     echo -e "\n更新$dir_shell失败，请检查原因...\n"
 fi
 
-## 更新scripts
-[ -f $dir_scripts/package.json ] && scripts_depend_old=$(cat $dir_scripts/package.json)
-if [ -d $dir_scripts/.git ]; then
-    git_pull_scripts $dir_scripts
-else
-    git_clone_scripts $url_scripts $dir_scripts
-fi
 
-if [[ $exit_status -eq 0 ]]; then
-    echo -e "\n更新$dir_scripts成功...\n"
-    [ ! -d $dir_scripts/node_modules ] && npm_install_1 $dir_scripts
-    [ -f $dir_scripts/package.json ] && scripts_depend_new=$(cat $dir_scripts/package.json)
-    [[ "$scripts_depend_old" != "$scripts_depend_new" ]] && npm_install_2 $dir_scripts
-    gen_list_task
-    diff_cron $list_task_jd_scripts $list_task_user $list_task_add $list_task_drop
-    if [ -s $list_task_drop ]; then
-        output_list_add_drop $list_task_drop "失效"
-        [[ ${AutoDelCron} == true ]] && del_cron $list_task_drop jtask
-    fi
-    if [ -s $list_task_add ]; then
-        output_list_add_drop $list_task_add "新"
-        add_cron_jd_scripts $list_task_add
-        add_cron_notify $exit_status $list_task_add "jd_scripts脚本"
-    fi
-else
-    echo -e "\n更新$dir_scripts失败，请检查原因...\n"
-fi
 
 ## 更新own脚本
 count_own_repo_sum
