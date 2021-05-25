@@ -4,9 +4,9 @@
 # 更新时间 ：  2021/5/24
 
 #以下脚本主要适用 jd docker v3 & v4  , jd_ql 暂时无法使用
-#下载后请放于  /jd/config/ 目录下
-#赋予脚本执行权限 chmod +x /jd/config/lpss_diy.sh
-#建议手动添加以下计划任务 */10 * * * * bash /jd/config/lpss_diy.sh >> /jd/log/lpss_diy.log 2>&1
+#下载后请放于  /jd/pro/ 目录下
+#赋予脚本执行权限 chmod +x /jd/pro/lpss_pro.sh
+#建议手动添加以下计划任务 */10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1
 
 
 #定义变量参数和相关路径
@@ -45,7 +45,7 @@ if [ $my_download_flag = "trues" ];then
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify.js -O /jd/sendNotify.js 
-	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/pro/lpss_del_log.sh  && chmod +x /jd/pro/lpss_del_log.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
 	echo -e "更新 home.html & sendNotify.js 文件完成\n"
 else
@@ -72,8 +72,8 @@ jd_zoon
 "
 
 #添加需要添加脚本的 cron
-lpss_pro="*/10 * * * * bash /jd/config/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
-lpss_del_log="23 23 * * * bash /jd/config/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
+lpss_pro="*/10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
+lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_zoon="4 * * * * jd jd_zoon"
 
@@ -183,9 +183,9 @@ echo -e "多用户推送脚本更新完成!!!\n"
 cp -rf  /jd/home.html /jd/panel/public
 echo -e "Home cookies 按钮修复完成!!!\n"
 
-#执行完毕后自动更新 lpss_diy.sh 
+#执行完毕后自动更新 lpss_pro.sh 
 echo -e "自动更新lpss_pro中~\n"
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/config/lpss_pro.sh && chmod +x /jd/config/lpss_pro.sh
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/pro/lpss_pro.sh && chmod +x /jd/pro/lpss_pro.sh
 echo -e "lpss_pro脚本自动更新完成,感谢使用---下次同步时间为10min后"
 
 
