@@ -51,6 +51,21 @@ else
 	echo -e "无需更新 home.html & sendNotify.js 文件\n"
 fi 
 
+
+#更新lxk scripts 脚本
+
+if [ ! -d "/jd/pro/" ];then
+  mkdir /jd/pro/
+  echo "pro 文件夹创建完成，准备更新 lxk scripts "
+  else
+  echo "pro 文件夹已经存在，准备更新 lxk scripts "
+fi
+
+#rm -rf /jd/pro/lpss_scripts/
+#git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
+#cp -rf /jd/pro/lpss_scripts/lxk/*.js /jd/scripts/
+
+
 # 下载需要添加的脚本 link 
 
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
@@ -75,6 +90,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_city.js -O /jd/scripts/jd_city.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_city_cash.js -O /jd/scripts/jd_z_city_cash.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_zoo.js -O /jd/scripts/jd_lxk_zoo.js
 
 
 #添加需要添加的脚本 name
@@ -98,6 +114,7 @@ jd_z_carnivalcity
 jd_city
 jd_zoon
 jd_z_city_cash
+jd_lxk_zoo
 "
 
 #添加需要添加脚本的 cron
@@ -123,6 +140,7 @@ jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_city="0 0-23/1 * * * jd jd_city"
 jd_zoon="4 * * * * jd jd_zoon"
 jd_z_city_cash="1 0-23/4 * 5,6 * jd jd_z_city_cash"
+jd_lxk_zoo="44 * * * * jd jd_lxk_zoo"
 
 
 
