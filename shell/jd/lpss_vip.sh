@@ -52,14 +52,6 @@ else
 fi 
 
 
-#更新lxk scripts 脚本
-
-
-rm -rf /jd/lpss_scripts/
-git clone https://github.com/forpw2009/lpss_scripts.git /jd/
-cp -rf /jd/lpss_scripts/lxk/*.js /jd/scripts/
-
-
 # 下载需要添加的脚本 link 
 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
@@ -80,6 +72,21 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 
+
+#更新lxk scripts
+
+if [ ! -d "/jd/pro/" ];then
+  mkdir /jd/pro/
+  echo "pro 文件夹创建完成，准备更新 lxk scripts "
+  else
+  echo "pro 文件夹已经存在，准备更新 lxk scripts "
+fi
+
+echo -e "准备更新lxk scripts \n"
+rm -rf /jd/pro/lpss_scripts/
+git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
+cp -rf /jd/pro/lpss_scripts/lxk/*.js /jd/scripts/
+echo -e "更新lxk scripts 完成 \n"
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
