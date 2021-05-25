@@ -75,18 +75,12 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/Qu
 
 #更新lxk scripts
 
-if [ ! -d "/jd/pro/" ];then
-  mkdir /jd/pro/
-  echo "pro 文件夹创建完成，准备更新 lxk scripts "
-  else
-  echo "pro 文件夹已经存在，准备更新 lxk scripts "
-fi
-
-echo -e "准备更新lxk scripts \n"
-rm -rf /jd/pro/lpss_scripts/
-git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
-cp -rf /jd/pro/lpss_scripts/lxk/*.js /jd/scripts/
-echo -e "更新lxk scripts 完成 \n"
+#echo -e "准备更新lxk scripts \n"
+#rm -rf /jd/pro/
+#mkdir /jd/pro/
+#git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
+#cp -rf /jd/pro/lxk/*.js /jd/scripts/
+#echo -e "更新lxk scripts 完成 \n"
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
