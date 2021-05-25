@@ -140,7 +140,7 @@ jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_zoon="4 * * * * jd jd_zoon"
 jd_lxk_zoo="44 * * * * jd jd_lxk_zoo"
-jd_jay_freshgoods="0 22 * * * jd jd_jay_freshgoods"
+jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 
 
 

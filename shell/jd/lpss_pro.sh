@@ -78,7 +78,7 @@ lpss_pro="*/10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
-jd_jay_freshgoods="0 22 * * * jd jd_jay_freshgoods"
+jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 
 
 

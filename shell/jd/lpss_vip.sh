@@ -126,7 +126,7 @@ jd_jump="1 0,11,21 * * * jd jd_jump"
 jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
 jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_zoon="4 * * * * jd jd_zoon"
-jd_jay_freshgoods="0 22 * * * jd jd_jay_freshgoods"
+jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 
 
 
