@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 脚本作者 ：  落魄书生
-# 更新时间 ：  2021/5/24
+# 更新时间 ：  2021/5/25
 
 #以下脚本主要适用 jd docker v3 & v4  , jd_ql 暂时无法使用
 #下载后请放于  /jd/pro/ 目录下
@@ -161,14 +161,13 @@ echo -e "关闭脚本：jd_cfd,jd_cash,jd_bean_home,jd_jdzz,jd_superMarket,jx_si
 
 
 
-
 #更新推送ck
 
 my_tg_token_str=`cat ${my_config_file} | grep "TG_BOT_TOKEN"`
 my_tg_id_str=`cat ${my_config_file} | grep "TG_ID"`
 my_dd_token_str=`cat ${my_config_file} | grep "DD_BOT_TOKEN"`
 my_dd_sc_str=`cat ${my_config_file} | grep "DD_BOT_SECRET"`
-
+my_push_key_str=`cat ${my_config_file} | grep "PUSH_KEY"`
 
 #TG
 sed -i "s/TG_BOT_TOKEN = '';/${my_tg_token_str}/g" ${my_sendNotify_file}
@@ -176,6 +175,8 @@ sed -i "s/TG_ID = '';/${my_tg_id_str}/g" ${my_sendNotify_file}
 #DD
 sed -i "s/DD_BOT_TOKEN = '';/${my_dd_token_str}/g" ${my_sendNotify_file}
 sed -i "s/DD_BOT_SECRET = '';/${my_dd_sc_str}/g" ${my_sendNotify_file}
+#Push_key
+sed -i "s/PUSH_KEY = '';/${my_push_key_str}/g" ${my_sendNotify_file}
 
 sed -i "s/JD-FLC/$my_docker_id/g" $my_notify
 echo -e "多用户推送脚本更新完成!!!\n"
