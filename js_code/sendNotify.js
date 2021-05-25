@@ -179,7 +179,7 @@ tg_arr_len = tg_arr.length;
 
 async function sendNotify(text, desp, params = {}) {
   //提供7种通知
-  desp += `\n\n 以上 JD-Dog1 推送 , 有问题私聊群 @NPC `;
+  desp += `\n\n 以上 JD-FLC 推送 , 有问题私聊群 @NPC `;
   await Promise.all([
     serverNotify(text, desp),//微信server酱
     pushPlusNotify(text, desp)//pushplus(推送加)
