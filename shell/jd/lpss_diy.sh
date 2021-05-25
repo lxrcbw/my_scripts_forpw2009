@@ -90,6 +90,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_zoo.js -O /jd/scripts/jd_lxk_zoo.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/sngxpro/QuanX/master/scripts/jay_freshgoods.js -O /jd/scripts/jd_jay_freshgoods.js
 
 
 #添加需要添加的脚本 name
@@ -113,6 +114,7 @@ jd_z_carnivalcity
 jd_zoon
 jd_lxk_zoo
 jd_lxk_city
+jd_jay_freshgoods
 "
 
 #添加需要添加脚本的 cron
@@ -138,6 +140,7 @@ jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_zoon="4 * * * * jd jd_zoon"
 jd_lxk_zoo="44 * * * * jd jd_lxk_zoo"
+jd_jay_freshgoods="0 22 * * * jd jd_jay_freshgoods"
 
 
 
