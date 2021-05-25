@@ -71,7 +71,6 @@ wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdreso
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_urge.js -O /jd/scripts/jd_adolf_urge.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_zoo.js -O /jd/scripts/jd_zoon.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/sngxpro/QuanX/master/scripts/jay_freshgoods.js -O /jd/scripts/jd_jay_freshgoods.js
 
 
 #更新lxk scripts
@@ -102,7 +101,6 @@ jd_jump
 jd_adolf_urge
 jd_z_carnivalcity
 jd_zoon
-jd_jay_freshgoods
 "
 
 #添加需要添加脚本的 cron
@@ -135,6 +133,7 @@ jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 my_scripts_list_del="
 jd_city
 jd_z_city_cash
+jd_jay_freshgoods
 "
 
 #awk '{print $NF}' filename
