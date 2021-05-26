@@ -133,6 +133,7 @@ my_scripts_list_del="
 jd_city
 jd_z_city_cash
 jd_jay_freshgoods
+jd_syj
 "
 
 #awk '{print $NF}' filename
