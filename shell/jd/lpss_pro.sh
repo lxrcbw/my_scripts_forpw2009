@@ -62,6 +62,7 @@ echo -e "更新lxk scripts 完成 \n"
 # 下载需要添加的脚本 link 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
 
 
 #添加需要添加的脚本 name
@@ -69,6 +70,7 @@ my_scripts_list_add="
 lpss_pro
 jd_clear_shop
 jd_lxk_city
+jd_zoo
 "
 
 #添加需要添加脚本的 cron
@@ -77,6 +79,7 @@ lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.l
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
+jd_zoo="1 * * * * jd jd_zoo"
 
 
 

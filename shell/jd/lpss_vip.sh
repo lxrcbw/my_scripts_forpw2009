@@ -70,7 +70,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jump.js -O /jd/scripts/jd_jump.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_urge.js -O /jd/scripts/jd_adolf_urge.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_zoo.js -O /jd/scripts/jd_zoon.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
 
 
