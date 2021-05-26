@@ -91,6 +91,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_sc
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_zoo.js -O /jd/scripts/jd_lxk_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 
 
 #添加需要添加的脚本 name
@@ -115,6 +116,7 @@ jd_zoon
 jd_lxk_zoo
 jd_lxk_city
 jd_adolf_superbox
+jd_adolf_newInteraction
 "
 
 #添加需要添加脚本的 cron
@@ -142,6 +144,7 @@ jd_zoon="4 * * * * jd jd_zoon"
 jd_lxk_zoo="44 * * * * jd jd_lxk_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
+jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
 
 
 
