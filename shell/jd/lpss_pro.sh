@@ -64,7 +64,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
-wget -q --no-check-certificate  https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
 
 
 #添加需要添加的脚本 name
