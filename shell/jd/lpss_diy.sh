@@ -119,7 +119,6 @@ jd_lxk_city
 jd_adolf_superbox
 jd_adolf_newInteraction
 jd_adolf_jxhb
-jd_adolf_star
 "
 
 #添加需要添加脚本的 cron
@@ -160,6 +159,7 @@ jd_city
 jd_z_city_cash
 jd_jay_freshgoods
 jd_zoon
+jd_adolf_star
 "
 
 #awk '{print $NF}' filename
