@@ -93,7 +93,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_star.js -O /jd/scripts/jd_adolf_star.js 
+wget -q --no-check-certificate  https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -119,6 +119,7 @@ jd_lxk_city
 jd_adolf_superbox
 jd_adolf_newInteraction
 jd_adolf_jxhb
+jd_xtg
 "
 
 #添加需要添加脚本的 cron
@@ -148,7 +149,7 @@ jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
 jd_adolf_jxhb="25 9 * 5,6 * jd jd_adolf_jxhb"
 jd_npc_zoo="34 * * * *  jd jd_npc_zoo"
-jd_adolf_star="45 9-18/3 * 5,6 * jd jd_adolf_star"
+jd_xtg="0 0 0 * * * jd jd_xtg"
 
 
 
