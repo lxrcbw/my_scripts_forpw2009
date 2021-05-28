@@ -66,6 +66,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_sc
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
 wget -q --no-check-certificate https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg_help.js -O /jd/scripts/jd_xtg_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_cctx.js -O /jd/scripts/jd_cctx.js
 
 
 #添加需要添加的脚本 name
@@ -76,6 +77,7 @@ jd_lxk_city
 jd_zoo
 jd_xtg
 jd_xtg_help
+jd_cctx
 "
 
 #添加需要添加脚本的 cron
@@ -88,6 +90,7 @@ jd_zoo="1 * * * * jd jd_zoo"
 jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
 jd_xtg="0 0 * * * jd jd_xtg"
 jd_xtg_help="0 0 * * * jd jd_xtg_help"
+jd_cctx="*/5 0 * * * jd jd_cctx"
 
 
 

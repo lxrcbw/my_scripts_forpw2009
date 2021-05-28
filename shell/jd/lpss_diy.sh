@@ -93,8 +93,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
-wget -q --no-check-certificate  https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js -O /jd/scripts/jd_xtg.js
 wget -q --no-check-certificate https://gitee.com/lxk0301/jd_scripts/raw/master/jd_xtg_help.js -O /jd/scripts/jd_xtg_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_cctx.js -O /jd/scripts/jd_cctx.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -121,6 +122,7 @@ jd_adolf_newInteraction
 jd_adolf_jxhb
 jd_xtg
 jd_xtg_help
+jd_cctx
 "
 
 #添加需要添加脚本的 cron
@@ -152,6 +154,7 @@ jd_adolf_jxhb="25 9 * 5,6 * jd jd_adolf_jxhb"
 jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
 jd_xtg="0 0 * * * jd jd_xtg"
 jd_xtg_help="0 0 * * * jd jd_xtg_help"
+jd_cctx="*/5 0 * * * jd jd_cctx"
 
 
 
