@@ -114,7 +114,6 @@ jd_jump
 jd_adolf_urge
 jd_z_carnivalcity
 jd_lxk_zoo
-jd_npc_zoo
 jd_lxk_city
 jd_adolf_superbox
 jd_adolf_newInteraction
@@ -161,6 +160,7 @@ jd_z_city_cash
 jd_jay_freshgoods
 jd_zoon
 jd_adolf_star
+jd_npc_zoo
 "
 
 #awk '{print $NF}' filename
