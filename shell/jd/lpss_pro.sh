@@ -73,7 +73,6 @@ lpss_pro
 jd_clear_shop
 jd_lxk_city
 jd_zoo
-jd_npc_zoo
 jd_xtg
 "
 
@@ -94,6 +93,7 @@ jd_xtg="0 0 * * * jd jd_xtg"
 my_scripts_list_del="
 jd_zoon
 jd_jay_freshgoods
+jd_npc_zoo
 "
 
 #awk '{print $NF}' filename
