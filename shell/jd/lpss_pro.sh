@@ -84,8 +84,8 @@ jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_zoo="1 * * * * jd jd_zoo"
-jd_npc_zoo="34 * * * *  jd jd_npc_zoo"
-jd_xtg="0 0 0 * * * jd jd_xtg"
+jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
+jd_xtg="0 0 * * * jd jd_xtg"
 
 
 
