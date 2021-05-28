@@ -148,7 +148,7 @@ jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
 jd_adolf_jxhb="25 9 * 5,6 * jd jd_adolf_jxhb"
-jd_npc_zoo="34 * * * *  jd jd_npc_zoo"
+jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
 jd_xtg="0 0 0 * * * jd jd_xtg"
 
 
