@@ -94,7 +94,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_xtg_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_cctx.js -O /jd/scripts/jd_cctx.js
 
@@ -122,7 +122,7 @@ jd_adolf_superbox
 jd_adolf_newInteraction
 jd_adolf_jxhb
 jd_xtg
-jd_xtg_help
+jd_help_xtg
 jd_cctx
 jd_gold_creator
 "
@@ -155,7 +155,7 @@ jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
 jd_adolf_jxhb="25 9 * 5,6 * jd jd_adolf_jxhb"
 jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
 jd_xtg="0 0 * * * jd jd_xtg"
-jd_xtg_help="0 0 * * * jd jd_xtg_help"
+jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 
@@ -169,6 +169,7 @@ jd_jay_freshgoods
 jd_zoon
 jd_adolf_star
 jd_npc_zoo
+jd_xtg_help
 "
 
 #awk '{print $NF}' filename
