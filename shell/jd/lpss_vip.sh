@@ -132,7 +132,7 @@ jd_zoon="4 * * * * jd jd_zoon"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_xtg="0 0 * * * jd jd_xtg"
 jd_help_xtg="0 0 * * * jd jd_help_xtg"
-jd_gold_creator="10 18,22 * * * jd jd_gold_creator"
+jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 
 
 
