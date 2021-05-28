@@ -71,6 +71,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoon.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_xtg_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 
 
 #更新lxk scripts
@@ -101,6 +104,9 @@ jd_adolf_urge
 jd_z_carnivalcity
 jd_zoon
 jd_adolf_superbox
+jd_xtg
+jd_xtg_help
+jd_gold_creator
 "
 
 #添加需要添加脚本的 cron
@@ -124,6 +130,9 @@ jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
 jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_zoon="4 * * * * jd jd_zoon"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
+jd_xtg="0 0 * * * jd jd_xtg"
+jd_xtg_help="0 0 * * * jd jd_xtg_help"
+jd_gold_creator="13 1,22 * * * jd jd_gold_creator"
 
 
 
