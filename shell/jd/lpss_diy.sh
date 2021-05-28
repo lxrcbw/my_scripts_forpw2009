@@ -157,7 +157,7 @@ jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
 jd_xtg="0 0 * * * jd jd_xtg"
 jd_xtg_help="0 0 * * * jd jd_xtg_help"
 jd_cctx="*/5 0 * * * jd jd_cctx"
-jd_gold_creator="13 1,22 * * * jd jd_gold_creator"
+jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 
 
 
