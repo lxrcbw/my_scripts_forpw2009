@@ -81,7 +81,6 @@ jd_xtg
 jd_help_xtg
 jd_cctx
 jd_gold_creator
-jd_zdjr
 "
 
 #添加需要添加脚本的 cron
@@ -107,6 +106,7 @@ jd_zoon
 jd_jay_freshgoods
 jd_npc_zoo
 jd_xtg_help
+jd_zdjr
 "
 
 #awk '{print $NF}' filename

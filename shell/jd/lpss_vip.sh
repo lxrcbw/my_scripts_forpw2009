@@ -108,7 +108,6 @@ jd_adolf_superbox
 jd_xtg
 jd_help_xtg
 jd_gold_creator
-jd_zdjr
 "
 
 #添加需要添加脚本的 cron
@@ -147,6 +146,7 @@ jd_z_city_cash
 jd_jay_freshgoods
 jd_syj
 jd_xtg_help
+jd_zdjr
 "
 
 #awk '{print $NF}' filename
