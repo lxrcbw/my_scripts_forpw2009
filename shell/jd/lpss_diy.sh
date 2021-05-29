@@ -160,7 +160,7 @@ jd_xtg="0 0 * * * jd jd_xtg"
 jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
-jd_zdjr="30 18 * * * jd jd_zdjr"
+jd_zdjr="45 18 * * * jd jd_zdjr"
 
 
 
