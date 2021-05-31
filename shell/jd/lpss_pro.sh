@@ -63,11 +63,10 @@ echo -e "更新lxk scripts 完成 \n"
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_npc_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_cctx.js -O /jd/scripts/jd_cctx.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zdjr.js -O /jd/scripts/jd_zdjr.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_party_night.js -O /jd/scripts/jd_party_night.js 
 
@@ -191,22 +190,32 @@ echo -e "关闭脚本：jd_cfd,jd_cash,jd_bean_home,jd_jdzz,jd_superMarket,jx_si
 
 my_tg_token_str=`cat ${my_config_file} | grep "TG_BOT_TOKEN"`
 my_tg_id_str=`cat ${my_config_file} | grep "TG_ID"`
+my_tg_user_id_str=`cat ${my_config_file} | grep "TG_USER_ID"`
+
 my_dd_token_str=`cat ${my_config_file} | grep "DD_BOT_TOKEN"`
 my_dd_sc_str=`cat ${my_config_file} | grep "DD_BOT_SECRET"`
-my_push_key_str=`cat ${my_config_file} | grep "PUSH_KEY"`
+
+my_push_token_str=`cat ${my_config_file} | grep "PUSH_PLUS_TOKEN"`
+my_push_sc_str=`cat ${my_config_file} | grep "PUSH_PLUS_USER"`
+
 
 #TG
-sed -i "s/TG_BOT_TOKEN = '';/${my_tg_token_str}/g" ${my_sendNotify_file}
-sed -i "s/TG_ID = '';/${my_tg_id_str}/g" ${my_sendNotify_file}
+sed -i "s/TG_BOT_TOKEN = ''/${my_tg_token_str}/g" ${my_sendNotify_file}
+sed -i "s/TG_ID = ''/${my_tg_id_str}/g" ${my_sendNotify_file}
+sed -i "s/TG_USER_ID = ''/${my_tg_user_id_str}/g" ${my_sendNotify_file}
 #DD
-sed -i "s/DD_BOT_TOKEN = '';/${my_dd_token_str}/g" ${my_sendNotify_file}
-sed -i "s/DD_BOT_SECRET = '';/${my_dd_sc_str}/g" ${my_sendNotify_file}
-#Push_key
-#sed -i "s/PUSH_KEY = '';/${my_push_key_str}/g" ${my_sendNotify_file}
+sed -i "s/DD_BOT_TOKEN = ''/${my_dd_token_str}/g" ${my_sendNotify_file}
+sed -i "s/DD_BOT_SECRET = ''/${my_dd_sc_str}/g" ${my_sendNotify_file}
+
+#push
+sed -i "s/PUSH_PLUS_TOKEN = ''/${my_push_token_str}/g" ${my_sendNotify_file}
+sed -i "s/PUSH_PLUS_USER = ''/${my_push_sc_str}/g" ${my_sendNotify_file}
 
 sed -i "s/JD-FLC/$my_docker_id/g" $my_notify
+
 cp -rf /jd/sendNotify.js /jd/scripts/
 echo -e "多用户推送脚本更新完成!!!\n"
+
 
 cp -rf  /jd/home.html /jd/panel/public
 echo -e "Home cookies 按钮修复完成!!!\n"
