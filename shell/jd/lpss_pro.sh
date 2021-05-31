@@ -40,7 +40,7 @@ else
 fi
 
 
-if [ $my_download_flag = "trues" ];then
+if [ $my_download_flag = "opens" ];then
 
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
