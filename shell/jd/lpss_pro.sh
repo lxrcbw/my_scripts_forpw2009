@@ -69,6 +69,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/Kyle0816/QuantumultX/main/JS/jd_cctx.js -O /jd/scripts/jd_cctx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zdjr.js -O /jd/scripts/jd_zdjr.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_party_night.js -O /jd/scripts/jd_party_night.js 
 
 
 #添加需要添加的脚本 name
@@ -76,11 +77,11 @@ my_scripts_list_add="
 lpss_pro
 jd_clear_shop
 jd_lxk_city
-jd_zoo
 jd_xtg
 jd_help_xtg
 jd_cctx
 jd_gold_creator
+jd_party_night
 "
 
 #添加需要添加脚本的 cron
@@ -96,6 +97,7 @@ jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
+jd_party_night="16 16 * * * jd jd_party_night"
 
 
 
