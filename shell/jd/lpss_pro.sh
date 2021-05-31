@@ -80,7 +80,6 @@ jd_xtg
 jd_help_xtg
 jd_cctx
 jd_gold_creator
-jd_party_night
 "
 
 #添加需要添加脚本的 cron
