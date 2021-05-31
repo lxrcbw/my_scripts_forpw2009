@@ -14,7 +14,7 @@ my_cron_file="/jd/config/crontab.list"
 my_config_file="/jd/config/config.sh"
 notify="/jd/notify.js"
 my_notify="/jd/sendNotify.js"
-my_sendNotify_file="/jd/scripts/sendNotify.js"
+my_sendNotify_file="/jd/sendNotify.js"
 my_ver_str=`cat ${my_config_file} | grep "Version"`
 my_docker_str=`cat ${my_config_file} | grep "NPCTL"`
 my_download_str=`cat ${my_config_file} | grep "DWCTL"`
@@ -200,9 +200,10 @@ sed -i "s/TG_ID = '';/${my_tg_id_str}/g" ${my_sendNotify_file}
 sed -i "s/DD_BOT_TOKEN = '';/${my_dd_token_str}/g" ${my_sendNotify_file}
 sed -i "s/DD_BOT_SECRET = '';/${my_dd_sc_str}/g" ${my_sendNotify_file}
 #Push_key
-sed -i "s/PUSH_KEY = '';/${my_push_key_str}/g" ${my_sendNotify_file}
+#sed -i "s/PUSH_KEY = '';/${my_push_key_str}/g" ${my_sendNotify_file}
 
 sed -i "s/JD-FLC/$my_docker_id/g" $my_notify
+cp -rf /jd/sendNotify.js /jd/scripts/
 echo -e "多用户推送脚本更新完成!!!\n"
 
 cp -rf  /jd/home.html /jd/panel/public
