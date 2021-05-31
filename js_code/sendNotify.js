@@ -162,7 +162,7 @@ if (process.env.PUSH_PLUS_USER) {
 
 //请在config。sh文件中定义变量 TG_ID ，使用 “&” 进行分隔
 
-tg_arr = TG_ID.split("&");
+tg_arr = TG_ID.split("-");
 tg_arr_len = tg_arr.length;
 
 
