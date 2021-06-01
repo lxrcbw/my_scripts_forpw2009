@@ -102,10 +102,6 @@ jd_party_night="0 15-19/1 * * * jd jd_party_night"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zoon
-jd_jay_freshgoods
-jd_npc_zoo
-jd_xtg_help
 jd_zdjr
 "
 
