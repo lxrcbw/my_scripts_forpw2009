@@ -141,7 +141,7 @@ jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
-jd_long_hby_lottery="0 20 1-18 6 * jd jd_long_hby_lottery"
+jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 
 
 
