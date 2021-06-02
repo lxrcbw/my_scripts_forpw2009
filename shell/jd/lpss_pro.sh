@@ -60,24 +60,18 @@ cp -rf /jd/own/forpw2009_lpss_scripts/lxk/*.js /jd/scripts/
 echo -e "更新lxk scripts 完成 \n"
 
 # 下载需要添加的脚本 link 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
 
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_pro
-jd_clear_shop
-jd_lxk_city
-jd_xtg
-jd_help_xtg
-jd_cctx
 jd_gold_creator
+jd_long_hby_lottery
 "
 
 #添加需要添加脚本的 cron
@@ -87,18 +81,15 @@ jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_zoo="1 * * * * jd jd_zoo"
-jd_npc_zoo="44 * * * *  jd jd_npc_zoo"
-jd_xtg="0 0 * * * jd jd_xtg"
-jd_help_xtg="0 0 * * * jd jd_help_xtg"
-jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
+jd_long_hby_lottery="0 20 1-18 6 * jd jd_long_hby_lottery"
 
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zdjr
+jd_cctx
 "
 
 #awk '{print $NF}' filename
