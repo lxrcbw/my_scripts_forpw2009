@@ -79,7 +79,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zdjr.js -O /jd/scripts/jd_zdjr.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_party_night.js -O /jd/scripts/jd_party_night.js 
-
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/Wenmoux/scripts/master/jd/babelDiy.js -O /jd/scripts/jd_babelDiy.js
 
 #更新lxk scripts
 
@@ -112,6 +112,7 @@ jd_adolf_superbox
 jd_xtg
 jd_help_xtg
 jd_gold_creator
+jd_babelDiy
 "
 
 #添加需要添加脚本的 cron
@@ -139,18 +140,14 @@ jd_xtg="0 0 * * * jd jd_xtg"
 jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
+jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
 
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_city
-jd_z_city_cash
-jd_jay_freshgoods
-jd_syj
-jd_xtg_help
-jd_zdjr
+jd_party_night
 "
 
 #awk '{print $NF}' filename

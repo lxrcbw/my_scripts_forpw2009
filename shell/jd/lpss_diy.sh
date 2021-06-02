@@ -160,16 +160,7 @@ jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_city
-jd_z_city_cash
-jd_jay_freshgoods
-jd_zoon
-jd_adolf_star
-jd_npc_zoo
-jd_zdjr
-jd_adolf_mi
-jd_adolf_urge
-jd_adolf_pk
+jd_party_night
 "
 
 #awk '{print $NF}' filename
