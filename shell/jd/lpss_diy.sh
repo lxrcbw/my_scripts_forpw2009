@@ -92,8 +92,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zdjr.js -O /jd/scripts/jd_zdjr.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/Wenmoux/scripts/master/jd/babelDiy.js -O /jd/scripts/jd_babelDiy.js 
+wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -119,7 +118,7 @@ jd_xtg
 jd_help_xtg
 jd_cctx
 jd_gold_creator
-jd_babelDiy
+jd_long_hby_lottery
 "
 
 #添加需要添加脚本的 cron
@@ -155,12 +154,13 @@ jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
+jd_long_hby_lottery="0 20 1-18 6 * jd jd_long_hby_lottery"
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_party_night
+jd_babelDiy
 "
 
 #awk '{print $NF}' filename
