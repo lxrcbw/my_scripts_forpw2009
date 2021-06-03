@@ -108,7 +108,7 @@ jd_adolf_mi
 jd_jump
 jd_adolf_urge
 jd_z_carnivalcity
-jd_zoon
+jd_lxk_zoo
 jd_adolf_superbox
 jd_xtg
 jd_help_xtg
@@ -136,7 +136,7 @@ jd_adolf_mi="15 9 21-27 5 * jd jd_adolf_mi"
 jd_jump="1 0,11,21 * * * jd jd_jump"
 jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
 jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
-jd_zoon="4 * * * * jd jd_zoon"
+jd_lxk_zoo="4 * * * * jd jd_lxk_zoo"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_xtg="0 0 * * * jd jd_xtg"
 jd_help_xtg="0 0 * * * jd jd_help_xtg"
@@ -151,7 +151,7 @@ jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_babelDiy
+jd_zoon
 "
 
 #awk '{print $NF}' filename
