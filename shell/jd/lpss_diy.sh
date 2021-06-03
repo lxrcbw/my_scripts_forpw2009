@@ -71,28 +71,29 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_friend.js -O /jd/scripts/jd_friend.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/longzhuzhu/jd_super_redrain.js  -O /jd/scripts/jd_npc_redrain.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_daily_lottery.js -O /jd/scripts/jd_daily_lottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_mother_jump.js -O /jd/scripts/jd_z_mother_jump.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_martin.js -O /jd/scripts/jd_adolf_martin.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_mother_jump.js -O /jd/scripts/jd_z_mother_jump.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_martin.js -O /jd/scripts/jd_adolf_martin.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_jump.js -O /jd/scripts/jd_jump.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_lxk_zoo.js -O /jd/scripts/jd_lxk_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -103,22 +104,15 @@ jd_clear_shop
 jd_syj
 jd_npc_redrain
 jd_daily_lottery
-jd_monk_shop_lottery
-jd_z_mother_jump
-jd_adolf_oneplus
-jd_adolf_martin
 jd_jump
-jd_z_carnivalcity
 jd_lxk_zoo
 jd_lxk_city
-jd_adolf_superbox
-jd_adolf_newInteraction
 jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
-jd_cctx
 jd_gold_creator
 jd_long_hby_lottery
+jd_mohe
 "
 
 #添加需要添加脚本的 cron
@@ -155,6 +149,7 @@ jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
+jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 
 
 

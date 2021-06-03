@@ -65,13 +65,14 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_sc
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zoo.js -O /jd/scripts/jd_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_pro
 jd_gold_creator
-jd_long_hby_lottery
+jd_mohe
 "
 
 #添加需要添加脚本的 cron
@@ -83,6 +84,7 @@ jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_zoo="1 * * * * jd jd_zoo"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
+jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 
 
 
