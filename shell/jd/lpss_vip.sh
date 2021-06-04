@@ -83,6 +83,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/long
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 
 #更新lxk scripts
 
@@ -105,20 +106,15 @@ jd_monk_shop_lottery
 jd_adolf_pk
 jd_z_mother_jump
 jd_adolf_oneplus
-jd_adolf_martin
-jd_adolf_mi
 jd_jump
-jd_adolf_urge
-jd_z_carnivalcity
 jd_lxk_zoo
 jd_adolf_superbox
-jd_xtg
-jd_help_xtg
 jd_gold_creator
 jd_long_hby_lottery
 jd_mohe
 jd_mcxhd_brandcity
 jd_brandcarnivalcity
+jd_ppdz
 "
 
 #添加需要添加脚本的 cron
@@ -151,6 +147,7 @@ jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
+jd_ppdz="1 0 * * * jd jd_ppdz"
 
 
 

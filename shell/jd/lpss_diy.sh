@@ -96,6 +96,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/long
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 
 
 #添加需要添加的脚本 name
@@ -107,9 +108,7 @@ jd_clear_shop
 jd_syj
 jd_npc_redrain
 jd_daily_lottery
-jd_jump
 jd_lxk_zoo
-jd_lxk_city
 jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
@@ -118,6 +117,7 @@ jd_long_hby_lottery
 jd_mohe
 jd_mcxhd_brandcity
 jd_brandcarnivalcity
+jd_ppdz
 "
 
 #添加需要添加脚本的 cron
@@ -130,16 +130,10 @@ jd_monk_shop_lottery="1 0,10,23 * * * jd jd_monk_shop_lottery"
 jd_syj="10 0,7,23 * * * jd jd_syj"
 jd_npc_redrain="0 0-23/1 * * * jd jd_npc_redrain"
 jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
-jd_adolf_pk="15 8,13,18 17-31 5 * jd jd_adolf_pk"
 jd_friend="40 16 * * * jd jd_friend"
 jd_z_mother_jump="5 8,14,20 19-25 5 * jd jd_z_mother_jump"
-jd_adolf_flp="15 9 * 5,6 * jd jd_adolf_flp"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
-jd_adolf_martin="19 9 20-31 5 * jd jd_adolf_martin"
-jd_adolf_mi="15 9 21-27 5 * jd jd_adolf_mi"
 jd_jump="1 0,11,21 * * * jd jd_jump"
-jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
-jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_lxk_zoo="4 * * * * jd jd_lxk_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
@@ -157,12 +151,13 @@ jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
+jd_ppdz="1 0 * * * jd jd_ppdz"
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_babelDiy
+jd_adolf_flp
 "
 
 #awk '{print $NF}' filename
