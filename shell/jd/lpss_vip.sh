@@ -79,8 +79,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
-wget -q -nc --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
-wget -q -nc --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
 
 
 #更新lxk scripts
@@ -102,7 +102,6 @@ jd_npc_redrain
 jd_daily_lottery
 jd_monk_shop_lottery
 jd_adolf_oneplus
-jd_jump
 jd_lxk_zoo
 jd_adolf_superbox
 jd_gold_creator
@@ -127,16 +126,8 @@ jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_monk_shop_lottery="1 0,10,23 * * * jd jd_monk_shop_lottery"
 jd_npc_redrain="0 0-23/1 * * * jd jd_npc_redrain"
 jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
-jd_adolf_pk="15 8,13,18 17-31 5 * jd jd_adolf_pk"
 jd_friend="40 16 * * * jd jd_friend"
-jd_z_mother_jump="5 8,14,20 19-25 5 * jd jd_z_mother_jump"
-jd_adolf_flp="15 9 * 5,6 * jd jd_adolf_flp"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
-jd_adolf_martin="19 9 20-31 5 * jd jd_adolf_martin"
-jd_adolf_mi="15 9 21-27 5 * jd jd_adolf_mi"
-jd_jump="1 0,11,21 * * * jd jd_jump"
-jd_adolf_urge="28 9 18-26 5 * jd jd_adolf_urge"
-jd_z_carnivalcity="1 0-18/6 * 5 * jd jd_z_carnivalcity"
 jd_lxk_zoo="4 * * * * jd jd_lxk_zoo"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_xtg="0 0 * * * jd jd_xtg"
@@ -160,7 +151,7 @@ jd_jxlhb="5 10 * * * jd jd_jxlhb"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zoon
+jd_jump
 "
 
 #awk '{print $NF}' filename
