@@ -68,33 +68,35 @@ echo -e "更新lxk scripts 完成 \n"
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js 
 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/longzhuzhu/jd_super_redrain.js  -O /jd/scripts/jd_npc_redrain.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_daily_lottery.js -O /jd/scripts/jd_daily_lottery.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_jump.js -O /jd/scripts/jd_jump.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zoo.js -O /jd/scripts/jd_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
+
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/longzhuzhu/jd_super_redrain.js  -O /jd/scripts/jd_npc_redrain.js 
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_daily_lottery.js -O /jd/scripts/jd_daily_lottery.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_jump.js -O /jd/scripts/jd_jump.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_zoo.js -O /jd/scripts/jd_zoo.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg.js -O /jd/scripts/jd_xtg.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
+wget -q --no-check-certificate https://ghproxy.com/https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
+
 
 
 #添加需要添加的脚本 name
@@ -281,7 +283,7 @@ echo -e "Home cookies 按钮修复完成!!!\n"
 
 #执行完毕后自动更新 lpss_pro.sh 
 echo -e "自动更新lpss_pro中~\n"
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/pro/lpss_pro.sh && chmod +x /jd/pro/lpss_pro.sh
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/pro/lpss_pro.sh && chmod +x /jd/pro/lpss_pro.sh
 echo -e "lpss_pro脚本自动更新完成,感谢使用---下次同步时间为10min后"
 
 
