@@ -98,6 +98,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActio
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
 
 
 #添加需要添加的脚本 name
@@ -120,6 +121,7 @@ jd_mcxhd_brandcity
 jd_brandcarnivalcity
 jd_ppdz
 jd_zooLongzhou
+jd_star_shop
 "
 
 #添加需要添加脚本的 cron
@@ -155,6 +157,7 @@ jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
 jd_ppdz="1 0 * * * jd jd_ppdz"
 jd_zooLongzhou="15 13 1-18 6 * jd jd_zooLongzhou"
+jd_star_shop="0 1,21 * * * jd jd_star_shop"
 
 
 
