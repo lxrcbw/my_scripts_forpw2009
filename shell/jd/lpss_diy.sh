@@ -75,6 +75,9 @@ fi
 #wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/chenzhe/z_carnivalcity.js -O /jd/scripts/jd_z_carnivalcity.js
 #wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lxk_city.js -O /jd/scripts/jd_lxk_city.js 
 
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
+
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/longzhuzhu/jd_super_redrain.js  -O /jd/scripts/jd_npc_redrain.js 
@@ -99,8 +102,10 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
+
+
 
 
 #添加需要添加的脚本 name
@@ -129,6 +134,8 @@ jd_star_shop
 jd_618redpacket
 ddo_pk
 jd_jxlhb
+jd_lotteryMachine
+jd_starStore
 "
 
 #添加需要添加脚本的 cron
@@ -166,6 +173,8 @@ jd_star_shop="0 1,21 * * * jd jd_star_shop"
 jd_618redpacket="1 0-23/1 * 6 * jd jd_618redpacket"
 ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
 jd_jxlhb="5 10 * * * jd jd_jxlhb"
+jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
+jd_starStore="5 9 * * * jd jd_starStore"
 
 
 
