@@ -119,7 +119,7 @@ jd_clear_shop
 jd_syj
 jd_npc_redrain
 jd_daily_lottery
-jd_lxk_zoo
+jd_zoo
 jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
@@ -151,7 +151,7 @@ jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
 jd_friend="40 16 * * * jd jd_friend"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
 jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
-jd_lxk_zoo="5 0,6-23/2 * * * jd jd_lxk_zoo"
+jd_zoo="5 0,6-23/2 * * * jd jd_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
@@ -179,7 +179,7 @@ jd_starStore="5 9 * * * jd jd_starStore"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_jump
+jd_lxk_zoo
 "
 
 #awk '{print $NF}' filename
