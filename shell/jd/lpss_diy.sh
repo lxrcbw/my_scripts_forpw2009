@@ -87,6 +87,7 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_lxk_zoo.js -O /jd/scripts/jd_lxk_zoo.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
@@ -120,6 +121,7 @@ jd_syj
 jd_npc_redrain
 jd_daily_lottery
 jd_zoo
+jd_lxk_zoo
 jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
@@ -150,8 +152,8 @@ jd_npc_redrain="0 0-23/1 * * * jd jd_npc_redrain"
 jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
 jd_friend="40 16 * * * jd jd_friend"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
-jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
 jd_zoo="5 0,6-23 * * * jd jd_zoo"
+jd_lxk_zoo="25 0,6-23 * * * jd jd_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
