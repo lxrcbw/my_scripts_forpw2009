@@ -73,7 +73,9 @@ wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdreso
 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/longzhuzhu/jd_super_redrain.js  -O /jd/scripts/jd_npc_redrain.js 
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
+wget -q --no-check-certificate https://ghproxy/com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_daily_lottery.js -O /jd/scripts/jd_daily_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
@@ -88,7 +90,6 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
@@ -118,7 +119,6 @@ jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
 jd_gold_creator
-jd_long_hby_lottery
 jd_mohe
 jd_mcxhd_brandcity
 jd_brandcarnivalcity
@@ -132,6 +132,9 @@ jd_lotteryMachine
 jd_starStore
 jd_ffl
 zy_618jc
+long_half_redrain
+long_super_redrain
+jd_long_hby_lottery
 "
 
 #添加需要添加脚本的 cron
@@ -173,6 +176,8 @@ jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
 jd_ffl="5,35 * * 6 * jd jd_ffl"
 zy_618jc="23 0 * 6 * jd zy_618jc"
+long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
+long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 
 
 
