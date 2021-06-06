@@ -106,7 +106,7 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
-
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 
 
 
@@ -140,6 +140,7 @@ jd_jxlhb
 jd_lotteryMachine
 jd_starStore
 jd_ffl
+zy_618jc
 "
 
 #添加需要添加脚本的 cron
@@ -179,6 +180,7 @@ jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
 jd_ffl="5,35 * * 6 * jd jd_ffl"
+zy_618jc="23 0 * 6 * jd zy_618jc"
 
 
 
