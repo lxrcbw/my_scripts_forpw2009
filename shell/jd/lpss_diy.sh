@@ -118,7 +118,6 @@ jd_super_redrain
 jd_adolf_superbox
 jd_adolf_newInteraction
 jd_half_redrain
-long_super_redrain
 jd_clear_shop
 jd_syj
 jd_npc_redrain

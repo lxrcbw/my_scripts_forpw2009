@@ -145,7 +145,6 @@ jd_help_xtg="0 0 * * * jd jd_help_xtg"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
-jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
@@ -159,6 +158,7 @@ jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
 long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
+jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 
 
 

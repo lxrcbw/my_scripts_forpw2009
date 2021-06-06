@@ -162,7 +162,6 @@ jd_cctx="*/5 0 * * * jd jd_cctx"
 jd_gold_creator="10 1,22 * * * jd jd_gold_creator"
 jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
-jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
@@ -178,6 +177,7 @@ jd_ffl="5,35 * * 6 * jd jd_ffl"
 zy_618jc="23 0 * 6 * jd zy_618jc"
 long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
+jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 
 
 
