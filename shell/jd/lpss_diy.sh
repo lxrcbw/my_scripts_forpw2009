@@ -52,19 +52,6 @@ else
 fi 
 
 
-#更新lxk scripts 脚本
-
-if [ ! -d "/jd/pro/" ];then
-  mkdir /jd/pro/
-  echo "pro 文件夹创建完成，准备更新 lxk scripts "
-  else
-  echo "pro 文件夹已经存在，准备更新 lxk scripts "
-fi
-
-#rm -rf /jd/pro/lpss_scripts/
-#git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
-#cp -rf /jd/pro/lpss_scripts/lxk/*.js /jd/scripts/
-
 
 # 下载需要添加的脚本 link 
 #wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js

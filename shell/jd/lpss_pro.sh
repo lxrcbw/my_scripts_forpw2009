@@ -53,12 +53,6 @@ else
 fi 
 
 
-
-#更新lxk scripts
-echo -e "准备更新lxk scripts \n"
-cp -rf /jd/own/forpw2009_lpss_scripts/lxk/*.js /jd/scripts/
-echo -e "更新lxk scripts 完成 \n"
-
 # 下载需要添加的脚本 link 
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js

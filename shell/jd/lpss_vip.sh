@@ -89,14 +89,6 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
 
 
-#更新lxk scripts
-
-#echo -e "准备更新lxk scripts \n"
-#rm -rf /jd/pro/
-#mkdir /jd/pro/
-#git clone https://github.com/forpw2009/lpss_scripts.git /jd/pro/
-#cp -rf /jd/pro/lxk/*.js /jd/scripts/
-#echo -e "更新lxk scripts 完成 \n"
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
