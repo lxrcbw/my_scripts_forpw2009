@@ -56,7 +56,7 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_friend.js -O /jd/scripts/jd_friend.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
