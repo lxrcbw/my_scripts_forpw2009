@@ -45,6 +45,7 @@ if [ $my_download_flag = "opens" ];then
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
 	wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify.js -O /jd/sendNotify.js 
+	wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
 	wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/pro/lpss_del_log.sh  && chmod +x /jd/pro/lpss_del_log.sh
     wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
 	echo -e "更新 home.html & sendNotify.js 文件完成\n"
@@ -65,7 +66,6 @@ fi
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
 
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
@@ -140,7 +140,7 @@ jd_zooSupershophf
 
 #添加需要添加脚本的 cron
 lpss_pro="*/10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
-lpss_lxk="37 23 * * * * bash /jd/lpss_lxk.sh >> /jd/log/lpss_lxk.log 2>&1"
+lpss_lxk="37 8,16,23 * * * bash /jd/lpss_lxk.sh >> /jd/log/lpss_lxk.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 jd_super_redrain="0 0-23/1 * * * jd jd_super_redrain"
 jd_half_redrain="30 20-23/1 * * * jd jd_half_redrain"

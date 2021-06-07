@@ -20,4 +20,4 @@ cp -rf /jd/pro/lpss_scripts/lxk/*.js /jd/scripts/
 rm -rf /jd/pro/lpss_scripts/
 
 etime=$(date +"%Y-%m-%d %H:%M:%S")
-echo "$etime : 更新 lxk scripts 完成 "
+echo -e "$etime : 更新 lxk scripts 完成 \n"
