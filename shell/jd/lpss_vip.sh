@@ -85,6 +85,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/m
 wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
 
 
 #更新lxk scripts
@@ -124,6 +126,8 @@ jd_starStore
 long_half_redrain
 long_super_redrain
 jd_long_hby_lottery
+jd_ddo_joy_reward
+jd_zooSupershophf
 "
 
 #添加需要添加脚本的 cron
@@ -159,6 +163,8 @@ jd_starStore="5 9 * * * jd jd_starStore"
 long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
+jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
+jd_zooSupershophf="18 18 * * * jd jd_zooSupershophf"
 
 
 

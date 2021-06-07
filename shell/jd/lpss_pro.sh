@@ -101,6 +101,9 @@ wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
+wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -135,6 +138,8 @@ zy_618jc
 long_half_redrain
 long_super_redrain
 jd_long_hby_lottery
+jd_ddo_joy_reward
+jd_zooSupershophf
 "
 
 #添加需要添加脚本的 cron
@@ -178,6 +183,9 @@ zy_618jc="23 0 * 6 * jd zy_618jc"
 long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
+jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
+jd_zooSupershophf="18 18 * * * jd jd_zooSupershophf"
+
 
 
 
