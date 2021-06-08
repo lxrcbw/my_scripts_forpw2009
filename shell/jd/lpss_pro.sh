@@ -119,7 +119,6 @@ jd_help_xtg
 jd_gold_creator
 jd_mohe
 jd_mcxhd_brandcity
-jd_brandcarnivalcity
 jd_ppdz
 jd_zooLongzhou
 jd_star_shop
