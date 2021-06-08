@@ -44,7 +44,7 @@ if [ $my_download_flag = "trues" ];then
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify.js -O /jd/sendNotify.js 
-	wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
 	echo -e "更新 home.html & sendNotify.js 文件完成\n"
@@ -57,11 +57,16 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_super_redrain.js -O /jd/scripts/jd_super_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_friend.js -O /jd/scripts/jd_friend.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
-wget -q --no-check-certificate https://ghproxy/com/https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
+
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
+wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
+
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/monk/monk_shop_lottery.js -O /jd/scripts/jd_monk_shop_lottery.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_syj.js -O /jd/scripts/jd_syj.js 
+wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_daily_lottery.js -O /jd/scripts/jd_daily_lottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
@@ -75,19 +80,16 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js -O /jd/scripts/jd_mohe.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
-wget -q --no-check-certificate https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
+wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
 
 
 
