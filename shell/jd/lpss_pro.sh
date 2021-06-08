@@ -97,6 +97,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooSupershophf.js -O /jd/scripts/jd_zooSupershophf.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
 
 
 #添加需要添加的脚本 name
@@ -135,6 +136,7 @@ jd_long_hby_lottery
 jd_ddo_joy_reward
 jd_zooSupershophf
 jd_redPacket
+jd_big_winner
 "
 
 #添加需要添加脚本的 cron
@@ -182,6 +184,7 @@ jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_zooSupershophf="18 18 * * * jd jd_zooSupershophf"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
+jd_big_winner="*/20 * * * * jd jd_big_winner"
 
 
 
