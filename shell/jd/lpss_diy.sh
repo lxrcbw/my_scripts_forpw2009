@@ -86,8 +86,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_xtg_help.js -O /jd/scripts/jd_help_xtg.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/Kyle0816/jd_cctx.js -O /jd/scripts/jd_cctx.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_brandcarnivalcity.js -O /jd/scripts/jd_brandcarnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_mcxhd_brandcity.js -O /jd/scripts/jd_mcxhd_brandcity.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi03/MyActions/main/jd_618redpacket.js -O /jd/scripts/jd_618redpacket.js
@@ -122,7 +121,6 @@ jd_help_xtg
 jd_gold_creator
 jd_mohe
 jd_mcxhd_brandcity
-jd_brandcarnivalcity
 jd_ppdz
 jd_zooLongzhou
 jd_star_shop
@@ -138,6 +136,7 @@ long_super_redrain
 jd_long_hby_lottery
 jd_ddo_joy_reward
 jd_zooSupershophf
+jd_redPacket
 "
 
 #添加需要添加脚本的 cron
@@ -183,13 +182,14 @@ long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_zooSupershophf="18 18 * * * jd jd_zooSupershophf"
+jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_jump
+jd_brandcarnivalcity
 "
 
 #awk '{print $NF}' filename
