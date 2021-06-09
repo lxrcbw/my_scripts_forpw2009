@@ -306,7 +306,7 @@ echo -e "Home cookies 按钮修复完成!!!\n"
 
 #执行完毕后自动更新 lpss_pro.sh 
 echo -e "自动更新lpss_pro中~\n"
-wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/pro/lpss_pro.sh && chmod +x /jd/pro/lpss_pro.sh
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_pro.sh -O /jd/pro/lpss_pro.sh && chmod +x /jd/pro/lpss_pro.sh
 echo -e "lpss_pro脚本自动更新完成,感谢使用---下次同步时间为10min后"
 
 
