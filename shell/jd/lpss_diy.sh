@@ -130,7 +130,6 @@ long_half_redrain
 long_super_redrain
 jd_long_hby_lottery
 jd_ddo_joy_reward
-jd_zooSupershophf
 jd_redPacket
 jd_big_winner
 "
