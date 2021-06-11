@@ -70,7 +70,6 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_market_lottery.js -O /jd/scripts/jd_market_lottery.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/master/jd_unsubscribe.js -O /jd/scripts/jd_clear_shop.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_oneplus.js -O /jd/scripts/jd_adolf_oneplus.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_lxk_zoo.js -O /jd/scripts/jd_lxk_zoo.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_superbox.js -O /jd/scripts/jd_adolf_superbox.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_newInteraction.js -O /jd/scripts/jd_adolf_newInteraction.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/adolf/adolf_jxhb.js -O /jd/scripts/jd_adolf_jxhb.js
@@ -87,6 +86,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nian
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/npc/jd_lxk_zoo.js -O /jd/scripts/jd_lxk_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
@@ -117,7 +117,6 @@ jd_gold_creator
 jd_mohe
 jd_mcxhd_brandcity
 jd_ppdz
-jd_zooLongzhou
 jd_star_shop
 jd_618redpacket
 ddo_pk
@@ -147,9 +146,8 @@ jd_npc_redrain="0 0-23/1 * * * jd jd_npc_redrain"
 jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
 jd_friend="40 16 * * * jd jd_friend"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
-jd_lxk_city="0 0-23/1 * * * jd jd_lxk_city"
-jd_zoo="5 0,6-23 * * * jd jd_zoo"
-jd_lxk_zoo="25 0,6-23 * * * jd jd_lxk_zoo"
+jd_zoo="35 0,6-23 * * * jd jd_zoo"
+jd_lxk_zoo="5 0,6-23 * * * jd jd_lxk_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
@@ -164,7 +162,6 @@ jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
 jd_ppdz="1 0 * * * jd jd_ppdz"
-jd_zooLongzhou="15 13 1-18 6 * jd jd_zooLongzhou"
 jd_star_shop="0 1,21 * * * jd jd_star_shop"
 jd_618redpacket="1 0-23/1 * 6 * jd jd_618redpacket"
 ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
@@ -186,6 +183,7 @@ jd_big_winner="*/20 * * * * jd jd_big_winner"
 #添加需要删除的脚本的 name
 my_scripts_list_del="
 jd_zooSupershophf
+jd_zooLongzhou
 "
 
 #awk '{print $NF}' filename
