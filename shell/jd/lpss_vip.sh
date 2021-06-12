@@ -101,7 +101,6 @@ jd_npc_redrain
 jd_daily_lottery
 jd_monk_shop_lottery
 jd_adolf_oneplus
-jd_lpss_zoo
 jd_zoo
 jd_adolf_superbox
 jd_gold_creator
@@ -161,8 +160,7 @@ jd_big_winner="*/20 * * * * jd jd_big_winner"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zooSupershophf
-jd_zooLongzhou
+jd_lpss_zoo
 "
 
 #awk '{print $NF}' filename
