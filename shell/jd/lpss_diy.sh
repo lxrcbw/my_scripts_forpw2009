@@ -96,7 +96,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_zoo.js -O /jd/scripts/jd_star_zoo.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -111,6 +111,7 @@ jd_syj
 jd_npc_redrain
 jd_daily_lottery
 jd_zoo
+jd_star_zoo
 jd_adolf_jxhb
 jd_xtg
 jd_help_xtg
@@ -149,7 +150,7 @@ jd_daily_lottery="13 1,22,23 * * * jd jd_daily_lottery"
 jd_friend="40 16 * * * jd jd_friend"
 jd_adolf_oneplus="25 9 * 5,6 * jd jd_adolf_oneplus"
 jd_zoo="35 0,6-23 * * * jd jd_zoo"
-jd_lpss_zoo="5 0,6-23 * * * jd jd_lpss_zoo"
+jd_star_zoo="5 0,6-23 * * * jd jd_star_zoo"
 jd_jay_freshgoods="22 22 * * * jd jd_jay_freshgoods"
 jd_adolf_superbox="11 9,20 * 5,6 * jd jd_adolf_superbox"
 jd_adolf_newInteraction="15 9,20 * 5,6 * jd jd_adolf_newInteraction"
