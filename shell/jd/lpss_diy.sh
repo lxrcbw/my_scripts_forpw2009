@@ -95,6 +95,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/Qu
 wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
+wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
 
 
 #添加需要添加的脚本 name
@@ -131,6 +132,7 @@ jd_long_hby_lottery
 jd_ddo_joy_reward
 jd_redPacket
 jd_big_winner
+jdmn
 "
 
 #添加需要添加脚本的 cron
@@ -176,7 +178,7 @@ long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 jd_big_winner="*/20 * * * * jd jd_big_winner"
-
+jdmn="7 0,8,11,15 * * * jd jdmn"
 
 
 #添加需要删除的脚本的 name
