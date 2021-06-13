@@ -83,6 +83,7 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/panghu999/jd_ppdz.js -O /jd/scripts/jd_ppdz.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lxk/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
@@ -134,6 +135,7 @@ jd_ddo_joy_reward
 jd_redPacket
 jd_big_winner
 jdmn
+jd_jxmc
 "
 
 #添加需要添加脚本的 cron
@@ -180,6 +182,7 @@ jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 jd_big_winner="*/20 * * * * jd jd_big_winner"
 jdmn="7 0,8,11,15 * * * jd jdmn"
+jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 
 
 #添加需要删除的脚本的 name
