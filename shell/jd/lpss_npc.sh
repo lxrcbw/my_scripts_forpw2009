@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 脚本作者 ：  落魄书生
-# 更新时间 ：  2021/5/25
+# 更新时间 ：  2021/6/13
 
 #以下脚本主要适用 jd docker v4, jd_ql 暂时无法使用
 #下载后请放于  /jd/pro/ 目录下
@@ -32,7 +32,7 @@ echo "你好，你当前使用JD Docker ID： $my_docker_id"
 echo -e "你好，你当前Download Flag是：$my_download_flag \n"
 
 
-if [ $my_download_flag = "opens" ];then
+if [ $my_download_flag = "trues" ];then
 
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
