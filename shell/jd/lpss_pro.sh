@@ -86,7 +86,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nian
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lpss_zoo.js -O /jd/scripts/jd_lpss_zoo.js
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lpss_zoo.js -O /jd/scripts/jd_lpss_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
@@ -94,7 +94,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
 wget -q --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_zoo.js -O /jd/scripts/jd_star_zoo.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_star_zoo.js -O /jd/scripts/jd_star_zoo.js
 
 
 

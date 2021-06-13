@@ -90,7 +90,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/zy_618jc.js -O /jd/scripts/zy_618jc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_zoo.js -O /jd/scripts/jd_star_zoo.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_star_zoo.js -O /jd/scripts/jd_star_zoo.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
