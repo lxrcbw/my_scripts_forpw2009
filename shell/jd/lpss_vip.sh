@@ -81,8 +81,6 @@ fi
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_super_redrain.js  -O /jd/scripts/long_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_half_redrain.js -O /jd/scripts/long_half_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_zoo.js -O /jd/scripts/jd_zoo.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/jd_lpss_zoo.js -O /jd/scripts/jd_lpss_zoo.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/hyzaw/scripts/main/ddo_pk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js -O /jd/scripts/jd_starStore.js
@@ -103,8 +101,6 @@ jd_npc_redrain
 jd_daily_lottery
 jd_monk_shop_lottery
 jd_adolf_oneplus
-jd_zoo
-jd_star_zoo
 jd_adolf_superbox
 jd_gold_creator
 jd_mohe
@@ -165,7 +161,8 @@ jdmn="7 0,8,11,15 * * * jd jdmn"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_lpss_zoo
+jd_zoo
+jd_star_zoo
 "
 
 #awk '{print $NF}' filename
