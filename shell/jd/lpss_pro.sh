@@ -185,7 +185,6 @@ jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 #添加需要删除的脚本的 name
 my_scripts_list_del="
 jd_zoo
-jd_star_zoo
 "
 
 #awk '{print $NF}' filename
