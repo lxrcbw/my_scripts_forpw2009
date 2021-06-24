@@ -88,6 +88,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_necklace.js -O /jd/scripts/jd_necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -117,6 +118,7 @@ jd_long_hby_lottery
 jd_ddo_joy_reward
 jd_big_winner
 jdmn
+jd_wsdlb
 "
 
 #添加需要添加脚本的 cron
@@ -155,12 +157,12 @@ jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_big_winner="*/20 * * * * jd jd_big_winner"
 jdmn="7 0,8,11,15 * * * jd jdmn"
+jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zoo
 jd_star_zoo
 "
 
