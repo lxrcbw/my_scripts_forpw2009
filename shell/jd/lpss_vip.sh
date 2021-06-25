@@ -91,6 +91,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
 wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -121,6 +122,7 @@ jd_ddo_joy_reward
 jd_big_winner
 jdmn
 jd_wsdlb
+jd_hwsx
 "
 
 #添加需要添加脚本的 cron
@@ -160,6 +162,7 @@ jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_big_winner="*/20 * * * * jd jd_big_winner"
 jdmn="7 0,8,11,15 * * * jd jdmn"
 jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
+jd_hwsx="20 12,14 * * * jd jd_hwsx"
 
 
 
