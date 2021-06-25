@@ -96,7 +96,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_
 wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/main/jdmn.js -O /jd/scripts/jdmn.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_necklace.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
-
+wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
