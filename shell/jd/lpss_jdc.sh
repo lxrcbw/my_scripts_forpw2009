@@ -21,16 +21,26 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
 
 
 
-for id in $jd_ck
+# 遍历 v3/4 config.sh ， 查看有没有需要更新的 ck
 
-    do 
+#for jd_id in $jd_v34_config
 
-        jd_ck_id=`awk -F ';' '{print $2 }' "$id" `
-        jd_ck_value=`awk -F ';' '{print $1 }' "$id" `
-        echo "$jd_ck_id"
-        echo "$jd_ck_value"
+#    do 
 
-    done
+        for ql_id in $ql_ck
+
+            do 
+
+            ql_ck_id=`awk -F ';' '{print $2 }' "$ql_id" `
+            ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
+
+            ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
+
+            echo "$ck_id_check_result"
+
+            done
+
+#    done
 
 
 
