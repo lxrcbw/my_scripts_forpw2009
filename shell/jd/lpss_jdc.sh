@@ -37,15 +37,18 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
 
             if [[ "$ck_id_check_result" != "" ]];then
-            echo -e " 老用户存在，检查是否需要更新ck_value "
 
-            echo "$ql_ck_id"
-            echo "$ql_ck_value"
-            echo "$ck_id_check_result"
+                echo -e " 老用户存在，检查是否需要更新ck_value "
 
-            else 
+                line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
 
-            fi 
+                echo "$line_id"
+                echo "$ql_ck_id"
+                echo "$ql_ck_value"
+                echo "$ck_id_check_result"
+ 
+
+            fi
 
             
 
