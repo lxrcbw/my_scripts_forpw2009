@@ -42,11 +42,10 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
 
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
 
-                echo "$line_id"
-
                 ck_num=`awk -F '“' '{print $1 }' "$ck_id_check_result" `
-                new_ck="$ck_num \" $ql_id \" "
+                new_ck="${ck_num}\"${ql_id}\""
 
+                echo "$line_id"
                 echo "$ck_num"
                 echo "$new_ck"
                 echo "$ql_ck_id"
