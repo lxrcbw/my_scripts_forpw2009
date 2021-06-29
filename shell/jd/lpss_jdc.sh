@@ -9,6 +9,7 @@ jd_v34_config="/root/jd/config/config.sh"
 jd_ql_ck_list="/root/ql/db/cookie.db"
 ql_ck="/root/jd/ql_ck.list"
 jd_ck="/root/jd/jd_ck.list"
+tmp_ck_list="/root/jd/temp_update_ck.list"
 
 
 awk -F '"' '{print $4 }' /root/ql/db/cookie.db > /root/jd/ql_ck.list
@@ -35,21 +36,23 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
             ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
+            cat ${jd_v34_config} | grep "${ql_ck_id} > /root/jd/temp_update_ck.list
 
             if [[ "$ck_id_check_result" != "" ]];then
 
                 echo -e "老用户存在，检查是否需要更新ck_value "
 
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
+                old_ck_value=`awk -F '"' '{print $2 }' "${tmp_ck_list}"`
 
-                #ck_num=`awk -F '"' '{print $1 }' "${ck_id_check_result}"`
                 ck_num=${ck_id_check_result%%\"*}
-                new_ck="${ck_num}\"$ql_id\""
+                new_ck="${ck_num}\"$ql_ck_value;$ql_ck_id;\""
 
                 echo "$line_id"
                 echo "$ck_num"
                 echo "$new_ck"
                 echo "$ql_ck_id"
+                echo "$old_ck_value"
                 echo "$ql_ck_value"
                 echo "$ck_id_check_result"
  
