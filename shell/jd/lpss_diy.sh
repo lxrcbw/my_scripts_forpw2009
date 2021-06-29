@@ -99,6 +99,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_zxry.js -O /jd/scripts/jd_zxry.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -137,6 +138,7 @@ jdmn
 jd_jxmc
 jd_wsdlb
 jd_hwsx
+jd_zxry
 "
 
 #添加需要添加脚本的 cron
@@ -186,6 +188,7 @@ jdmn="7 0,8,11,15 * * * jd jdmn"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
 jd_hwsx="20 12,14 * * * jd jd_hwsx"
+jd_zxry="1 16 * * * jd jd_zxry"
 
 
 #添加需要删除的脚本的 name
