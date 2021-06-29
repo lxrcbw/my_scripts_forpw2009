@@ -44,7 +44,7 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
 
                 #ck_num=`awk -F '"' '{print $1 }' "${ck_id_check_result}"`
                 ck_num=${ck_id_check_result%%\"*}
-                new_ck="${ck_num}\"${ql_id}\""
+                new_ck="${ck_num}\"$ql_id\""
 
                 echo "$line_id"
                 echo "$ck_num"
