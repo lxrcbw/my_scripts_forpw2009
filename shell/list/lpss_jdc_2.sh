@@ -36,10 +36,15 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             do 
 
             ql_ck_id=`awk -F ';' '{print $2 }' "$ql_id" `
+            echo "$ql_ck_id"
             ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
+            echo "$ql_ck_value"
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
+            echo "$ck_id_check_result"
+
             cat ${jd_v34_config} | grep ${ql_ck_id} > /jd/sample/temp_update_ck.list
+            cat /jd/sample/temp_update_ck.list
 
             if [[ "$ck_id_check_result" != "" ]];then
 
@@ -57,7 +62,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 				echo "新cookie : $new_ck"
 				echo -e "新旧cookie不同，准备更新 v3/4 cookie \n"
 				
-				sed -i "${line_id}c ${new_ck}" ${jd_v34_config} 
+				#sed -i "${line_id}c ${new_ck}" ${jd_v34_config} 
 
                 echo -e "v3/4 cookie 更新成功！"
 				
