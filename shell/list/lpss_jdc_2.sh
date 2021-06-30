@@ -39,7 +39,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
-            cat ${jd_v34_config} | grep ${ql_ck_id} > ${tmp_ck_list}
+            cat ${jd_v34_config} | grep ${ql_ck_id} > /jd/sample/temp_update_ck.list
 
             if [[ "$ck_id_check_result" != "" ]];then
 
