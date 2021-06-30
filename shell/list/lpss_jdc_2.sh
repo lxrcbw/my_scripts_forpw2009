@@ -15,10 +15,10 @@ jd_ck="/jd/sample/jd_ck.list"
 tmp_ck_list="/jd/sample/temp_update_ck.list"
 
 
-awk -F '"' '{print $4 }' $jd_ql_ck_list > /jd/sample/ql_ck.list
-awk -F ';' '{print $2 }' $jd_ql_ck_list > /jd/sample/ql_id.list
+awk -F '"' '{print $4 }' /jd/sample/cookie.db > /jd/sample/ql_ck.list
+awk -F ';' '{print $2 }' /jd/sample/cookie.db > /jd/sample/ql_id.list
 
-grep "pt_key=AA" $jd_v34_config > /jd/sample/jd_vck.list
+grep "pt_key=AA" /jd/config/config.sh > /jd/sample/jd_vck.list
 
 awk -F '"' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_ck.list
 awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
@@ -39,7 +39,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
-            cat ${jd_v34_config} | grep ${ql_ck_id} > /root/jd/temp_update_ck.list
+            cat ${jd_v34_config} | grep ${ql_ck_id} > ${tmp_ck_list}
 
             if [[ "$ck_id_check_result" != "" ]];then
 
