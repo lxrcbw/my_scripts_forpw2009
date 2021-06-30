@@ -45,18 +45,18 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
                 old_ck_value=`awk -F '"' '{print $2 }' "${tmp_ck_list}"`
 				
-				if [[ "$old_ck_value" != "$ql_ck_value" ]]
+				if [[ "$old_ck_value" != "$ql_ck_value" ]];then
 				
 				ck_num=${ck_id_check_result%%\"*}
                 new_ck="${ck_num}\"$ql_ck_value;$ql_ck_id;\""
 				
 				echo "旧cookie : $ck_id_check_result"
 				echo "新cookie : $new_ck"
-				echo "准备更新 v3/4 cookie"
+				echo -e "新旧cookie不同，准备更新 v3/4 cookie \n"
 				
 				#sed -i "${line_id}c ${new_ck}" ${jd_v34_config} 
 				
-				fi 
+				fi
 
 
 
