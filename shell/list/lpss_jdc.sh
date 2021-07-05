@@ -65,9 +65,9 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 				sed -i "${line_id} d" ${jd_v34_config}
 				sed -i "${line_id} i ${new_ck}" $jd_v34_config
         
-				echo "$ck_num - $ql_ck_id cookie 更新成功！"
+				echo "$ck_num$ql_ck_id CK更新成功！"
 				
-				node $notify  "CK更新通知：" "${ck_num} - ${ql_ck_id} cookie 更新成功！"
+				node $notify  "CK更新通知：" "${ck_num}${ql_ck_id} CK更新成功！"
 				
 				fi
 				
