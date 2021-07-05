@@ -4,9 +4,9 @@
 # 更新时间 ：  2021/6/29
 # 脚本功能：   JD v3 & v4 对接 JDC
 
-echo " 开始下载cookie list "
+echo "开始下载cookie list "
 wget -q --no-check-certificate https://sm.lpssxs.com/cookie.db -O /jd/sample/cookie.db
-echo " cookie list 下载完成"
+echo "Cookie list 下载完成"
 
 notify="/jd/notify.js"
 jd_v34_config="/jd/config/config.sh"
@@ -47,7 +47,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
             if [[ "$ck_id_check_result" != "" ]];then
 
-                echo -e "老用户存在，检查是否需要更新ck_value "
+                echo -e "老用户存在，检查是否需要更新CK "
 
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
                 old_ck_value=`awk -F ';' '{print $1 }' "${tmp_ck_list}"`
