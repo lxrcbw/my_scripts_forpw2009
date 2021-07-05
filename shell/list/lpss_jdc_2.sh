@@ -27,13 +27,12 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
 # 遍历 v3/4 config.sh ， 查看有没有需要更新的 ck
 
-#for jd_id in $jd_v34_config
-
-#    do 
 
         for line in `cat $ql_ck`
 
             do 
+			
+			echo "$line"
 
             ql_ck_id=$(awk -F ';' '{print $2 }' $line)
             echo "$ql_ck_id"
@@ -83,7 +82,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
             done
 
-#    done
+
 
 
 
