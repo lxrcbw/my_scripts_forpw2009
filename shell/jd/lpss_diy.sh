@@ -45,6 +45,7 @@ if [ $my_download_flag = "opens" ];then
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify_FLC.js -O /jd/sendNotify.js 
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/list/lpss_jdc.sh -O /jd/sample/lpss_jdc.sh && chmod +x /jd/sample/lpss_jdc.sh
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
 	echo -e "更新 home.html & sendNotify.js 文件完成\n"
@@ -105,6 +106,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/pangh
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_diy
+lpss_jdc
 lpss_lxk
 jd_super_redrain
 jd_adolf_superbox
@@ -145,6 +147,7 @@ jd_lsj
 #添加需要添加脚本的 cron
 lpss_diy="*/10 * * * * bash /jd/config/lpss_diy.sh >> /jd/log/lpss_diy.log 2>&1"
 lpss_lxk="37 8,16,23 * * * bash /jd/lpss_lxk.sh >> /jd/log/lpss_lxk.log 2>&1"
+lpss_jdc="*/60 * * * * bash /jd/sample/lpss_jdc.sh >> /jd/log/lpss_jdc.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/config/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 jd_super_redrain="0 0-23/1 * * * jd jd_super_redrain"
 jd_half_redrain="30 20-23/1 * * * jd jd_half_redrain"
