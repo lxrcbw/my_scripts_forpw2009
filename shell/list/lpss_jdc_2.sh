@@ -32,14 +32,6 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
             do 
 			
-			echo "$line"
-			
-			tmp_line=${line//;/\/}
-			echo "tmp_line"
-			
-			ql_ck_id2=${tmp_line#*/}
-            echo "$ql_ck_id2"
-            
 			ql_ck_id=${line#*;}
             echo "$ql_ck_id"
             
@@ -62,7 +54,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 				if [[ "$old_ck_value" != "$ql_ck_value" ]];then
 				
 				ck_num=${ck_id_check_result%%\"*}
-                new_ck="${ck_num}\"$ql_ck_value;$ql_ck_id;\""
+                new_ck="${ck_num}\"$ql_ck_value;$ql_ck_id\""
 				
 				echo "旧cookie : $ck_id_check_result"
 				echo "新cookie : $new_ck"
