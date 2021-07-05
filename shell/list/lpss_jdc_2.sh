@@ -42,6 +42,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             echo "$ck_id_check_result"
 
             cat ${jd_v34_config} | grep ${ql_ck_id} > /jd/sample/temp_update_ck.list
+			awk -F '"' '{print $2 }' /jd/sample/temp_update_ck.list >  /jd/sample/temp_update_ck.list
             cat /jd/sample/temp_update_ck.list
 
             if [[ "$ck_id_check_result" != "" ]];then
@@ -49,7 +50,7 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
                 echo -e "老用户存在，检查是否需要更新ck_value "
 
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
-                old_ck_value=`awk -F '"' '{print $2 }' "${tmp_ck_list}"`
+                old_ck_value=`awk -F ';' '{print $1 }' "${tmp_ck_list}"`
 				
 				if [[ "$old_ck_value" != "$ql_ck_value" ]];then
 				
