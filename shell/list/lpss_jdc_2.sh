@@ -35,9 +35,9 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
             do 
 
-            ql_ck_id=`awk -F ';' '{print $2 }' "$ql_id" `
+            ql_ck_id=$(awk -F ';' '{print $2 }' $ql_id)
             echo "$ql_ck_id"
-            ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
+            ql_ck_value=$(awk -F ';' '{print $1 }' $ql_id)
             echo "$ql_ck_value"
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
