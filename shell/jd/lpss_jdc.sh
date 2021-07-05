@@ -32,8 +32,8 @@ awk -F ';' '{print $2 }' /root/jd/jd_ck.list > /root/jd/jd_id.list
 
             do 
 
-            ql_ck_id=`awk -F ';' '{print $2 }' "$ql_id" `
-            ql_ck_value=`awk -F ';' '{print $1 }' "$ql_id" `
+            ql_ck_id= $(awk -F ';' '{print $2 }' "$ql_id")
+            ql_ck_value=$(awk -F ';' '{print $1 }' "$ql_id")
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
             cat ${jd_v34_config} | grep ${ql_ck_id} > /root/jd/temp_update_ck.list
