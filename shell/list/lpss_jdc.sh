@@ -70,6 +70,8 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 				
 				fi
 				
+				echo -e "新旧CK相同，无需更新CK！"
+				
             fi
 
             
