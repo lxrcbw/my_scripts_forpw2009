@@ -89,7 +89,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/xl2101200/-/mai
 wget -q --no-check-certificate https://raw.githubusercontent.com/lxrcbw/scripts_hyzaw/master/backup/ddo_joy_reward.js -O /jd/scripts/jd_ddo_joy_reward.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_necklace.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
-wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate hhttps://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/photonmang/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_zxry.js -O /jd/scripts/jd_zxry.js
