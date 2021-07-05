@@ -33,9 +33,14 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             do 
 			
 			echo "$line"
-
+			
+			tmp_line=${line//;/\/}
+			echo "tmp_line"
+			
+			ql_ck_id2=${tmp_line#*/}
+            echo "$ql_ck_id2"
             
-			ql_ck_id=${line##*;}
+			ql_ck_id=${line#*;}
             echo "$ql_ck_id"
             
 			ql_ck_value=${line%%;*}
