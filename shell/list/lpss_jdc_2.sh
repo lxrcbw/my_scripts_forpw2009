@@ -34,11 +34,11 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 			
 			echo "$line"
 
-            #ql_ck_id=$(awk -F ';' '{print $2 }' $line)
+            
 			ql_ck_id=${line##;*}
             echo "$ql_ck_id"
-            #ql_ck_value=$(awk -F ';' '{print $1 }' $line)
-			ql_ck_id=${line%%;*}
+            
+			ql_ck_value=${line%%;*}
             echo "$ql_ck_value"
 
             ck_id_check_result=`cat ${jd_v34_config} | grep "${ql_ck_id}"`
