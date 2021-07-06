@@ -101,30 +101,18 @@ wget -q --no-check-certificate https://github.com/forpw2009/backup/blob/main/pho
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_zxry.js -O /jd/scripts/jd_zxry.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_lsj.js -O /jd/scripts/jd_lsj.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/tmp/jd_dogsEmploy.js -O /jd/scripts/jd_dogsEmploy.js
 
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_pro
 lpss_jdc
-lpss_lxk
-jd_super_redrain
-jd_adolf_superbox
-jd_adolf_newInteraction
-jd_half_redrain
 jd_clear_shop
 jd_syj
-jd_npc_redrain
 jd_daily_lottery
-jd_adolf_jxhb
-jd_xtg
-jd_help_xtg
-jd_gold_creator
 jd_mohe
-jd_mcxhd_brandcity
-jd_ppdz
 jd_star_shop
-jd_618redpacket
 ddo_pk
 jd_jxlhb
 jd_lotteryMachine
@@ -136,12 +124,12 @@ long_super_redrain
 jd_long_hby_lottery
 jd_ddo_joy_reward
 jd_redPacket
-jd_big_winner
 jdmn
 jd_jxmc
 jd_wsdlb
 jd_hwsx
 jd_lsj
+jd_dogsEmploy
 "
 
 #添加需要添加脚本的 cron
@@ -194,6 +182,7 @@ jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
 jd_hwsx="20 12,14 * * * jd jd_hwsx"
 jd_zxry="1 16 * * * jd jd_zxry"
 jd_lsj="0 11,19 * * * jd jd_lsj"
+jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 
 
 
