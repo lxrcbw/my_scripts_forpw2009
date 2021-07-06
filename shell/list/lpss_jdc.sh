@@ -4,9 +4,12 @@
 # 更新时间 ：  2021/6/29
 # 脚本功能：   JD v3 & v4 对接 JDC
 
-echo "开始下载cookie list "
+tm=$(date +"%Y-%m-%d %H:%M:%S")
+echo "$tm 开始下载cookie-list ！"
 wget -q --no-check-certificate https://sm.lpssxs.com/cookie.db -O /jd/sample/cookie.db
-echo "Cookie list 下载完成"
+
+tm=$(date +"%Y-%m-%d %H:%M:%S")
+echo "$tm 下载Cookie-list 完成 ！"
 
 notify="/jd/notify.js"
 jd_v34_config="/jd/config/config.sh"
@@ -82,8 +85,8 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
             
 
             done
-			
-			echo "扫描 JDC-ck 结束，下次启动时间为1小时后 ！"
+			tm=$(date +"%Y-%m-%d %H:%M:%S")
+			echo "$tm 扫描 JDC-ck 结束，下次启动时间为1小时后 ！"
 
 
 
