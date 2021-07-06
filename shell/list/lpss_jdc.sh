@@ -47,7 +47,8 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 
             if [[ "$ck_id_check_result" != "" ]];then
 
-                echo -e "老用户存在，检查是否需要更新CK "
+				tm=$(date +"%Y-%m-%d %H:%M:%S")
+                echo -e "$tm 老用户存在，检查是否需要更新CK "
 
                 line_id=`sed -n "/${ql_ck_id}/=" ${jd_v34_config}`
                 old_ck_value=`awk -F ';' '{print $1 }' "${tmp_ck_list}"`
@@ -57,21 +58,24 @@ awk -F ';' '{print $2 }' /jd/sample/jd_vck.list > /jd/sample/jd_id.list
 				ck_num=${ck_id_check_result%%\"*}
                 new_ck="${ck_num}\"$ql_ck_value;$ql_ck_id\""
 				
-				echo "旧cookie : $ck_id_check_result"
-				echo "新cookie : $new_ck"
+				tm=$(date +"%Y-%m-%d %H:%M:%S")
+				echo "$tm 旧cookie : $ck_id_check_result"
+				echo "$tm 新cookie : $new_ck"
 				
-				echo -e "新旧cookie不同，准备更新 v3/4 cookie \n"
+				tm=$(date +"%Y-%m-%d %H:%M:%S")
+				echo -e "$tm 新旧cookie不同，准备更新 v3/4 cookie \n"
 				
 				sed -i "${line_id} d" ${jd_v34_config}
 				sed -i "${line_id} i ${new_ck}" $jd_v34_config
-        
-				echo "$ck_num$ql_ck_id CK更新成功！"
-				
+
+				tm=$(date +"%Y-%m-%d %H:%M:%S")
+				echo "$tm $ck_num$ql_ck_id CK更新成功！"
 				node $notify  "CK更新通知：" "${ck_num}${ql_ck_id} CK更新成功！"
 				
 				fi
 				
-				echo -e "新旧CK相同，无需更新CK！"
+				tm=$(date +"%Y-%m-%d %H:%M:%S")
+				echo -e "$tm 新旧CK相同，无需更新CK！"
 				
             fi
 
