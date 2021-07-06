@@ -103,15 +103,12 @@ lpss_lxk
 jd_clear_shop
 jd_daily_lottery
 jd_mohe
-jd_mcxhd_brandcity
 jd_ppdz
 jd_star_shop
 ddo_pk
 jd_jxlhb
 jd_lotteryMachine
 jd_starStore
-jd_long_hby_lottery
-jd_ddo_joy_reward
 jdmn
 jd_wsdlb
 jd_hwsx

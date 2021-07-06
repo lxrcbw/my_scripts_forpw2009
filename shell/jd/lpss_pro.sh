@@ -118,11 +118,6 @@ jd_jxlhb
 jd_lotteryMachine
 jd_starStore
 jd_ffl
-zy_618jc
-long_half_redrain
-long_super_redrain
-jd_long_hby_lottery
-jd_ddo_joy_reward
 jd_redPacket
 jdmn
 jd_jxmc
