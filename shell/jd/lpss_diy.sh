@@ -171,7 +171,6 @@ long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
 long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
-jd_big_winner="*/20 * * * * jd jd_big_winner"
 jdmn="7 0,8,11,15 * * * jd jdmn"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
@@ -182,14 +181,6 @@ jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 #添加需要删除的脚本的 name
 my_scripts_list_del="
 jd_big_winner
-jd_adolf_superbox
-jd_adolf_newInteraction
-jd_gold_creator
-jd_xtg
-jd_help_xtg
-jd_mcxhd_brandcity
-jd_ppdz
-jd_618redpacket
 "
 
 #awk '{print $NF}' filename
