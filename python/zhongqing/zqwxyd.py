@@ -24,9 +24,9 @@ def si():
 
 
 
-url1 = 'https://script.baertt.com/count2/callback?si='+si()+'0cc11b74a5333b117bc00706dc1ba3f3&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DnME6PzmgxDLdbpG4wzbNKGSdL6VKtRexq9w1rjJNqwAQ0OoW9B%2526uid%253D52234038%2526phone_code%253D9f187973b629846a0c387d082e8ad7f2%2526scid%253D38016918%2526time%253D1619658345%2526app_version%253D2.0.2%2526sign%253Db129c8a629b7aee83e7a6297f655781e&_=1619658356399&jsonpcallback=jsonp5'
-
-url2 = 'https://script.baertt.com/count2/callback?si=ec6647e5d202614a83d97f776a549b62&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DdQOvnJNrgR0GzE9azWLb3Qc8GOPkfrPAZm61V6yqY2lXojxeM8%2526uid%253D52943275%2526phone_code%253Dc727c5cabcfb4122ba15b49e36429551%2526scid%253D32466507%2526time%253D1619666060%2526app_version%253D2.0.2%2526sign%253D0b0eea86c1598506db5f1dd182a23b41&_=1619666071484&jsonpcallback=jsonp6'
+#url1 = 'https://script.baertt.com/count2/callback?si='+si()+'0cc11b74a5333b117bc00706dc1ba3f3&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DnME6PzmgxDLdbpG4wzbNKGSdL6VKtRexq9w1rjJNqwAQ0OoW9B%2526uid%253D52234038%2526phone_code%253D9f187973b629846a0c387d082e8ad7f2%2526scid%253D38016918%2526time%253D1619658345%2526app_version%253D2.0.2%2526sign%253Db129c8a629b7aee83e7a6297f655781e&_=1619658356399&jsonpcallback=jsonp5'
+url1 = 'https://script.baertt.com/count2/callback?si='+si()+'6fccaf9e1a275741eb3ebd5b01f0dff0&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_eight%253Fsignature%253D5yNLlPgo6r98RX0bMW7YYyGG6s8N6eR7KEVpwGOxvAqDZzBJdm%2526scene_id%253Dhome_feed%2526share_id%253D52234038392222821625554191%2526time%253D1625554191&_=1625554209007&jsonpcallback=jsonp6'
+url2 = 'https://script.baertt.com/count2/callback?si='+si()+'46b99850e3db7558fabfdc7e4c5c3d8c&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_five%253Fsignature%253DG6vDYbegoP2Owr90x84KkjyZjcNz5mG4jVBXQnmqNLEMRyzZ3l%2526scene_id%253Dhome_feed%2526share_id%253D52943275392435321625554743%2526time%253D1625554743&_=1625554760228&jsonpcallback=jsonp5'
 
 
 #多号码
@@ -36,9 +36,11 @@ headers={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language
 
 
 resp = requests.get(url=url1,headers=headers,timeout=60).text
-
 print(resp)
-    
+
+resp = requests.get(url=url2,headers=headers,timeout=60).text
+print(resp)
+
     
     
     
