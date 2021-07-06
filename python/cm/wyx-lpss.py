@@ -47,7 +47,7 @@ class JegoTrip():
 
 
 def main():
-    _user_id = e18cf88c644b4fe29380088ae0d061ee
+    _user_id = 'aaf654a2c47b4b639bc4074ee56674ba'
     cli = JegoTrip(_user_id)
     for task in cli.task().get('日常任务', []):
         if task.get('name') == '每日签到奖励':
