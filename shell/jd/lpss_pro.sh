@@ -100,7 +100,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/tmp/jd_dogsEmploy.js -O /jd/scripts/jd_dogsEmploy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_small_home.js -O /jd/scripts/jd_small_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_rankingList.js -O /jd/scripts/jd_rankingList.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -123,6 +123,7 @@ jd_wsdlb
 jd_hwsx
 jd_lsj
 jd_dogsEmploy
+jd_joy_park_help
 "
 
 #添加需要添加脚本的 cron
@@ -176,6 +177,7 @@ jd_hwsx="20 12,14 * * * jd jd_hwsx"
 jd_zxry="1 16 * * * jd jd_zxry"
 jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
+jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
 
 
 
