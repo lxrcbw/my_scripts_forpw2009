@@ -163,7 +163,7 @@ jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
-jd_summer_movement="15,25,45 7-23,* * * jd jd_summer_movement"
+jd_summer_movement="15,25,45 7-23* * * jd jd_summer_movement"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
