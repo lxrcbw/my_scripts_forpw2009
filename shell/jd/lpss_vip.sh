@@ -94,6 +94,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_small_home.js -O /jd/scripts/jd_small_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_rankingList.js -O /jd/scripts/jd_rankingList.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement.js -O /jd/scripts/jd_summer_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/MovementFaker.js -O /jd/scripts/MovementFaker.js
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -115,6 +118,7 @@ jd_lsj
 jd_dogsEmploy
 jd_jxmc
 jd_joy_park_help
+jd_summer_movement
 "
 
 #添加需要添加脚本的 cron
@@ -159,6 +163,7 @@ jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
+jd_summer_movement="15 7-23,* * * jd jd_summer_movement"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
