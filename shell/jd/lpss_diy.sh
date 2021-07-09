@@ -192,7 +192,7 @@ jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
 jd_summer_movement="15,45 7-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
-jd_qjd="14 14 * * * jd jd_qjd"
+jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
 
 #添加需要删除的脚本的 name

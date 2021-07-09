@@ -191,7 +191,7 @@ jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
 jd_summer_movement="15,45 7-23 * * * jd jd_summer_movement"
-jd_qjd="14 14 * * * jd jd_qjd"
+jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
 
 
