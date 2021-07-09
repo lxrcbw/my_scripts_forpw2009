@@ -135,7 +135,7 @@ jd_sign_graphics
 
 #添加需要添加脚本的 cron
 lpss_pro="*/10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
-lpss_jdc="*/60 * * * * bash /jd/sample/lpss_jdc.sh >> /jd/log/lpss_jdc.log 2>&1"
+lpss_jdc="*/12 * * * * bash /jd/sample/lpss_jdc.sh >> /jd/log/lpss_jdc.log 2>&1"
 lpss_lxk="37 8,16,23 * * * bash /jd/lpss_lxk.sh >> /jd/log/lpss_lxk.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 jd_super_redrain="0 0-23/1 * * * jd jd_super_redrain"
