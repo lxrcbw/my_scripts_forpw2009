@@ -108,7 +108,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_qjd.js -O /jd/scripts/jd_qjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_goodMorning.js -O /jd/scripts/jd_goodMorning.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_help.js -O /jd/scripts/jd_summer_movement_help.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -133,6 +133,7 @@ jd_lsj
 jd_dogsEmploy
 jd_joy_park_help
 jd_summer_movement
+jd_summer_movement_help
 jd_sign_graphics
 jd_qjd
 jd_goodMorning
@@ -193,6 +194,7 @@ jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
 jd_summer_movement="15,45 7-23 * * * jd jd_summer_movement"
 jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
+jd_summer_movement_help="19 7-23 * * * jd jd_summer_movement_help"
 
 
 #添加需要删除的脚本的 name
