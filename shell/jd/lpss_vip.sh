@@ -124,10 +124,6 @@ jd_dogsEmploy
 jd_jxmc
 jd_joy_park_help
 jd_summer_movement
-jd_summer_movement_help
-jd_sign_graphics
-jd_qjd
-jd_goodMorning
 "
 
 #添加需要添加脚本的 cron
@@ -180,7 +176,7 @@ jd_summer_movement_help="19 7-23 * * * jd jd_summer_movement_help"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_zxry
+jd_summer_movement_help
 "
 
 #awk '{print $NF}' filename
