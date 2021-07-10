@@ -27,8 +27,8 @@ def si():
 #随即字母#
 #════════════════════════════════════════
 def rd(y):
-str=''
-return str.join(random.choice(string.ascii_letters) for x in range(y))
+  str=''
+  return str.join(random.choice(string.ascii_letters) for x in range(y))
 #════════════════════════════════════════
 
 #print(si())
@@ -48,22 +48,22 @@ ra2=str(random.randint(123,345))
 brev1=str(random.randint(11,14))
 srev1=str(random.randint(1,5))
 
-
-header1={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev1+"_"+srev1+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000"+ra1+") NetType/4G Language/zh_CN"}
-
 brev2=str(random.randint(11,14))
 srev2=str(random.randint(1,5))
 
-header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000"+ra1+") NetType/4G Language/zh_CN"}
+
+header1={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev1+"_"+srev1+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000"+ra1+") NetType/4G Language/zh_CN"}
+
+header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000"+ra2+") NetType/4G Language/zh_CN"}
 
 print(header1)
 print(header2)
 
-#resp = requests.get(url=url1,headers=header1,timeout=60).text
-#print(resp)
+resp = requests.get(url=url1,headers=header1,timeout=60).text
+print(resp)
 
-#resp = requests.get(url=url2,headers=header2,timeout=60).text
-#print(resp)
+resp = requests.get(url=url2,headers=header2,timeout=60).text
+print(resp)
 
     
     
