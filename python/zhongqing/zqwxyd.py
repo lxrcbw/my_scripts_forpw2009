@@ -22,15 +22,17 @@ def si():
   return getPwd
 #════════════════════════════════════════
 
-print(si())
+
 
 #随即字母#
 #════════════════════════════════════════
 def rd(y):
-return ''.join(random.choice(string.ascii_letters) for x in range(y))
+str=''
+return str.join(random.choice(string.ascii_letters) for x in range(y))
 #════════════════════════════════════════
 
-print(rd(5))
+#print(si())
+#print(rd(5))
 
 #url1 = 'https://script.baertt.com/count2/callback?si='+si()+'0cc11b74a5333b117bc00706dc1ba3f3&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DnME6PzmgxDLdbpG4wzbNKGSdL6VKtRexq9w1rjJNqwAQ0OoW9B%2526uid%253D52234038%2526phone_code%253D9f187973b629846a0c387d082e8ad7f2%2526scid%253D38016918%2526time%253D1619658345%2526app_version%253D2.0.2%2526sign%253Db129c8a629b7aee83e7a6297f655781e&_=1619658356399&jsonpcallback=jsonp5'
 url1 = 'https://script.baertt.com/count2/callback?si='+si()+'6fccaf9e1a275741eb3ebd5b01f0dff0&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_eight%253Fsignature%253D5yNLlPgo6r98RX0bMW7YYyGG6s8N6eR7KEVpwGOxvAqDZzBJdm%2526scene_id%253Dhome_feed%2526share_id%253D52234038392222821625554191%2526time%253D1625554191&_=1625554209007&jsonpcallback=jsonp6'
@@ -40,35 +42,21 @@ url2 = 'https://script.baertt.com/count2/callback?si='+si()+'46b99850e3db7558fab
 #多号码
 
 
-ra1=str(random.randint(0,9))
-ra2=str(random.randint(0,9))
+ra1=str(random.randint(123,345))
+ra2=str(random.randint(123,345))
 
-print(ra1)
-print(ra2)
-
-brev=str(random.randint(11,14))
-srev=str(random.randint(1,5))
-
-print(brev)
-print(srev)
-
-header1={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/4G Language/zh_CN"}
+brev1=str(random.randint(11,14))
+srev1=str(random.randint(1,5))
 
 
-ra1=str(random.randint(0,9))
-ra2=str(random.randint(0,9))
+header1={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev1+"_"+srev1+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000"+ra1+") NetType/4G Language/zh_CN"}
 
-print(ra1)
-print(ra2)
+brev2=str(random.randint(11,14))
+srev2=str(random.randint(1,5))
 
-brev=str(random.randint(11,14))
-srev=str(random.randint(1,5))
+header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000"+ra1+") NetType/4G Language/zh_CN"}
 
-print(brev)
-print(srev)
-
-header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev+"_"+srev+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000422) NetType/4G Language/zh_CN"}
-
+print(header1)
 print(header2)
 
 #resp = requests.get(url=url1,headers=header1,timeout=60).text
