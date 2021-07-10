@@ -185,7 +185,7 @@ jd_goodMorning="30 6 * * * jd jd_goodMorning"
 jd_summer_movement_help="20 13-23 * * * jd jd_summer_movement_help"
 jd_jxzpk="10 10,11,14,15 * * * jd jd_jxzpk"
 jd_lkyl="13 9,13 * * * jd jd_lkyl"
-jd_tyt="10 9,14 * * * jd jd_tyt"
+jd_tyt="45 9,14,21 * * * jd jd_tyt"
 jd_wish="3 6,12,15 * * * jd jd_wish"
 
 #添加需要删除的脚本的 name
