@@ -124,6 +124,7 @@ jd_dogsEmploy
 jd_jxmc
 jd_joy_park_help
 jd_summer_movement
+jd_summer_movement_help
 "
 
 #添加需要添加脚本的 cron
@@ -151,7 +152,6 @@ jd_mcxhd_brandcity="30 9,10 1-18 6 * jd jd_mcxhd_brandcity"
 jd_brandcarnivalcity="15 9 1-18 6 * jd jd_brandcarnivalcity"
 jd_ppdz="1 0 * * * jd jd_ppdz"
 jd_star_shop="0 1,21 * * * jd jd_star_shop"
-jd_618redpacket="1 0-23/1 * 6 * jd jd_618redpacket"
 ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
 jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
@@ -168,15 +168,15 @@ jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
-jd_summer_movement="15,45 7-23 * * * jd jd_summer_movement"
+jd_summer_movement="15,45 13-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
 jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
-jd_summer_movement_help="19 7-23 * * * jd jd_summer_movement_help"
+jd_summer_movement_help="20 13-23 * * * jd jd_summer_movement_help"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_summer_movement_help
+jd_618redpacket
 "
 
 #awk '{print $NF}' filename
