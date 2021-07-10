@@ -82,8 +82,8 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/zooPanda/zoo/dev/zooLongzhou.js -O /jd/scripts/jd_zooLongzhou.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/list/lpss_jdc.sh -O /jd/sample/lpss_jdc.sh && chmod +x /jd/sample/lpss_jdc.sh
-
+#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/list/lpss_jdc.sh -O /jd/sample/lpss_jdc.sh && chmod +x /jd/sample/lpss_jdc.sh
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/pro/lpss_del_log.sh  && chmod +x /jd/pro/lpss_del_log.sh
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lxk/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
@@ -119,6 +119,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 my_scripts_list_add="
 lpss_pro
 lpss_jdc
+lpss_del_log
 jd_clear_shop
 jd_syj
 jd_daily_lottery
@@ -153,7 +154,7 @@ jd_wish
 lpss_pro="*/10 * * * * bash /jd/pro/lpss_pro.sh >> /jd/log/lpss_pro.log 2>&1"
 lpss_jdc="*/12 * * * * bash /jd/sample/lpss_jdc.sh >> /jd/log/lpss_jdc.log 2>&1"
 lpss_lxk="37 8,16,23 * * * bash /jd/lpss_lxk.sh >> /jd/log/lpss_lxk.log 2>&1"
-lpss_del_log="23 23 * * * bash /jd/pro/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
+lpss_del_log="23 12,23 * * * bash /jd/pro/lpss_del_log.sh > /jd/log/lpss_del_log.log 2>&1"
 jd_super_redrain="0 0-23/1 * * * jd jd_super_redrain"
 jd_half_redrain="30 20-23/1 * * * jd jd_half_redrain"
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
