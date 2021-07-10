@@ -111,6 +111,13 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActio
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_qjd.js -O /jd/scripts/jd_qjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_goodMorning.js -O /jd/scripts/jd_goodMorning.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_help.js -O /jd/scripts/jd_summer_movement_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_pk.js -O /jd/scripts/jd_jxzpk.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_senbeans.js -O /jd/scripts/jd_lkyl.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_syj.js -O /jd/scripts/jd_zjd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
+
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -139,6 +146,11 @@ jd_summer_movement_help
 jd_sign_graphics
 jd_qjd
 jd_goodMorning
+jd_jxzpk
+jd_lkyl
+jd_zjd
+jd_tyt
+jd_wish
 "
 
 #添加需要添加脚本的 cron
@@ -196,6 +208,11 @@ jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
 jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
 jd_summer_movement_help="19 7-23 * * * jd jd_summer_movement_help"
+jd_jxzpk="10 10,11,14,15 * * * jd jd_jxzpk"
+jd_lkyl="13 9,13 * * * jd jd_lkyl"
+jd_zjd="15 10,14 * * * jd jd_zjd"
+jd_tyt="10 9,14 * * * jd jd_tyt"
+jd_wish="3 6,12,15 * * * jd jd_wish"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
