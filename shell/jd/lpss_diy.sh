@@ -94,7 +94,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nian
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_ddopk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_necklace.js -O /jd/scripts/jd_necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_necklace_new.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_lsj.js -O /jd/scripts/jd_lsj.js
