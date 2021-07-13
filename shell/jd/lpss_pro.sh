@@ -101,7 +101,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_small_home.js -O /jd/scripts/jd_small_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_rankingList.js -O /jd/scripts/jd_rankingList.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement.js -O /jd/scripts/jd_summer_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement_2.js -O /jd/scripts/jd_summer_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/MovementFaker.js -O /jd/scripts/MovementFaker.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/sign_graphics_validate.js -O /jd/scripts/sign_graphics_validate.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js -O /jd/scripts/jd_sign_graphics.js
@@ -115,6 +115,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cfd.js -O /jd/scripts/jd_cfd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_smiek_joy_steal.js -O /jd/scripts/jd_smiek_joy_steal.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -150,6 +151,7 @@ jd_zjd
 jd_tyt
 jd_wish
 jd_cfd
+jd_smiek_joy_steal
 "
 
 #添加需要添加脚本的 cron
@@ -211,6 +213,7 @@ jd_zjd="15 10,14 * * * jd jd_zjd"
 jd_tyt="45 9,14,22 * * * jd jd_tyt"
 jd_wish="3 6,12,15 * * * jd jd_wish"
 jd_cfd="5 8,13,19 * * * jd jd_cfd"
+jd_smiek_joy_steal="10 0-21/3 * * * jd jd_smiek_joy_steal"
 
 
 #添加需要删除的脚本的 name
