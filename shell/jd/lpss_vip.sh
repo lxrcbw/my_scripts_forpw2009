@@ -43,7 +43,7 @@ if [ $my_download_flag = "trues" ];then
 
 	echo -e "开始更新 home.html & sendNotify.js 文件\n"
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/html/home.html  -O /jd/home.html
-	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify.js -O /jd/sendNotify.js 
+	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/sendNotify_5.js -O /jd/sendNotify.js 
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_lxk.sh -O /jd/lpss_lxk.sh && chmod +x /jd/lpss_lxk.sh
 	wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
     wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/export_sharecodes.sh -O /jd/export_sharecodes.sh && chmod +x /jd/export_sharecodes.sh
@@ -87,7 +87,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nian
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_ddopk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_necklace.js -O /jd/scripts/jd_necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_necklace_new.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_lsj.js -O /jd/scripts/jd_lsj.js
@@ -185,7 +185,7 @@ jd_goodMorning="30 6 * * * jd jd_goodMorning"
 jd_summer_movement_help="20 13-23 * * * jd jd_summer_movement_help"
 jd_jxzpk="10 10,11,14,15 * * * jd jd_jxzpk"
 jd_lkyl="13 9,13 * * * jd jd_lkyl"
-jd_tyt="10 9,14 * * * jd jd_tyt"
+jd_tyt="45 9,14,21 * * * jd jd_tyt"
 jd_wish="3 6,12,15 * * * jd jd_wish"
 
 #添加需要删除的脚本的 name
