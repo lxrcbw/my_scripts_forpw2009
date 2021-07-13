@@ -116,6 +116,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_syj.js -O /jd/scripts/jd_zjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cfd.js -O /jd/scripts/jd_cfd.js
 
 
 
@@ -152,6 +153,7 @@ jd_lkyl
 jd_zjd
 jd_tyt
 jd_wish
+jd_cfd
 "
 
 #添加需要添加脚本的 cron
@@ -192,9 +194,6 @@ jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
 jd_ffl="5,35 * * 6 * jd jd_ffl"
-zy_618jc="23 0 * 6 * jd zy_618jc"
-long_super_redrain="0 0-23/1 * * * jd long_super_redrain"
-long_half_redrain="30 16-23/1 * * * jd long_half_redrain"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 jdmn="7 0,8,11,15 * * * jd jdmn"
@@ -214,6 +213,7 @@ jd_lkyl="13 9,13 * * * jd jd_lkyl"
 jd_zjd="15 10,14 * * * jd jd_zjd"
 jd_tyt="45 9,14,22 * * * jd jd_tyt"
 jd_wish="3 6,12,15 * * * jd jd_wish"
+jd_cfd="5 8,13,19 * * * jd jd_cfd"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
