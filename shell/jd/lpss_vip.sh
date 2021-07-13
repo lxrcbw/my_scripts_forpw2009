@@ -190,7 +190,7 @@ jd_wish="3 6,12,15 * * * jd jd_wish"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_618redpacket
+jd_qjd
 "
 
 #awk '{print $NF}' filename
