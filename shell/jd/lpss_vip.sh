@@ -109,6 +109,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_syj.js -O /jd/scripts/jd_zjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wealth_island.js -O /jd/scripts/jd_wealth_island.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -136,6 +137,7 @@ jd_jxzpk
 jd_lkyl
 jd_tyt
 jd_wish
+jd_wealth_island
 "
 
 #添加需要添加脚本的 cron
@@ -187,6 +189,7 @@ jd_jxzpk="10 10,11,14,15 * * * jd jd_jxzpk"
 jd_lkyl="13 9,13 * * * jd jd_lkyl"
 jd_tyt="45 9,14,21 * * * jd jd_tyt"
 jd_wish="3 6,12,15 * * * jd jd_wish"
+jd_wealth_island="18 0-23/2 * * * jd jd_wealth_island"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
