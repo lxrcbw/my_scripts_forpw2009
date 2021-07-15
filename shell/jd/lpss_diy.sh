@@ -119,6 +119,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cfd.js -O /jd/scripts/jd_cfd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_smiek_joy_steal.js -O /jd/scripts/jd_smiek_joy_steal.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wealth_island.js -O /jd/scripts/jd_wealth_island.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement.js -O /jd/scripts/jd_star_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
 
 
 #添加需要添加的脚本 name
@@ -157,6 +160,9 @@ jd_wish
 jd_cfd
 jd_smiek_joy_steal
 jd_wealth_island
+jd_star_movement
+jd_star_movement_bet
+jd_star_movement_map
 "
 
 #添加需要添加脚本的 cron
@@ -219,6 +225,9 @@ jd_wish="3 6,12,15 * * * jd jd_wish"
 jd_cfd="5 8,13,19 * * * jd jd_cfd"
 jd_smiek_joy_steal="10 0-21/3 * * * jd jd_smiek_joy_steal"
 jd_wealth_island="18 0-23/2 * * * jd jd_wealth_island"
+jd_star_movement="20 7-23 * * * jd jd_star_movement"
+jd_star_movement_bet="11 12,20 * * * jd jd_star_movement_bet"
+jd_star_movement_map="7 10,20 * * * jd jd_star_movement_map"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
