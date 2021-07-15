@@ -110,7 +110,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wealth_island.js -O /jd/scripts/jd_wealth_island.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement.js -O /jd/scripts/jd_star_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_summer_movement.js -O /jd/scripts/jd_star_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
 
@@ -186,7 +186,7 @@ jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 12 * * * jd jd_dogsEmploy"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
-jd_summer_movement="15,45 13-23 * * * jd jd_summer_movement"
+jd_summer_movement="45 13-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
 jd_qjd="14 7 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
