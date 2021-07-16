@@ -85,16 +85,18 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/list/lpss_jdc.sh -O /jd/sample/lpss_jdc.sh && chmod +x /jd/sample/lpss_jdc.sh
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/pro/lpss_del_log.sh  && chmod +x /jd/pro/lpss_del_log.sh
 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lxk/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_ddopk.js -O /jd/scripts/ddo_pk.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_necklace_new.js -O /jd/scripts/jd_necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_necklace.js -O /jd/scripts/jd_necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/ZooFaker_Necklace.js -O /jd/scripts/ZooFaker_Necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_lsj.js -O /jd/scripts/jd_lsj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/tmp/jd_dogsEmploy.js -O /jd/scripts/jd_dogsEmploy.js
@@ -120,6 +122,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_summer_movement.js -O /jd/scripts/jd_star_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
+
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -160,6 +164,7 @@ jd_wealth_island
 jd_star_movement
 jd_star_movement_bet
 jd_star_movement_map
+jd_joy_steal
 "
 
 #添加需要添加脚本的 cron
@@ -198,7 +203,7 @@ ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
 jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
-jd_ffl="5,35 * * 6 * jd jd_ffl"
+jd_ffl="1 0-23/1 * * * jd jd_ffl"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
@@ -226,6 +231,7 @@ jd_wealth_island="18 0-23/2 * * * jd jd_wealth_island"
 jd_star_movement="20 7-23 * * * jd jd_star_movement"
 jd_star_movement_bet="11 12,20 * * * jd jd_star_movement_bet"
 jd_star_movement_map="7 10,20 * * * jd jd_star_movement_map"
+jd_joy_steal="10 0-21/3 * * * jd jd_joy_steal"
 
 
 #添加需要删除的脚本的 name
