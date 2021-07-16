@@ -113,6 +113,11 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_summer_movement.js -O /jd/scripts/jd_star_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fc.js -O /jd/scripts/jd_fcyqm.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcdyj.js -O /jd/scripts/jd_fcdyj.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kd.js -O /jd/scripts/jd_kd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wxFans.js -O /jd/scripts/jd_wxFans.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_opencard2.js -O /jd/scripts/jd_opencard2.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -144,6 +149,11 @@ jd_wealth_island
 jd_star_movement
 jd_star_movement_bet
 jd_star_movement_map
+jd_joy_steal
+jd_fcyqm
+jd_fcdyj
+jd_wxFans
+jd_opencard2
 "
 
 #添加需要添加脚本的 cron
@@ -199,6 +209,11 @@ jd_wealth_island="18 0-23/2 * * * jd jd_wealth_island"
 jd_star_movement="20 13-23 * * * jd jd_star_movement"
 jd_star_movement_bet="11 12,20 * * * jd jd_star_movement_bet"
 jd_star_movement_map="7 10,20 * * * jd jd_star_movement_map"
+jd_joy_steal="10 0-21/3 * * * jd jd_joy_steal"
+jd_wxFans="1 8 * * * jd jd_wxFans"
+jd_fcyqm="0,2 0 * * * jd jd_fcyqm"
+jd_fcdyj="0,2 0 * * * jd jd_fcdyj"
+jd_opencard2="22 23 * * * jd jd_opencard2"
 
 
 #添加需要删除的脚本的 name
