@@ -146,7 +146,6 @@ jd_Factory_tuan
 jd_fcyqm
 jd_fcdyj
 jd_wxFans
-jd_opencard2
 "
 
 #添加需要添加脚本的 cron
@@ -186,7 +185,7 @@ ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
 jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1 * * * jd jd_lotteryMachine"
 jd_starStore="5 9 * * * jd jd_starStore"
-jd_ffl="5,35 * * 6 * jd jd_ffl"
+jd_ffl="20 * * * * jd jd_ffl"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
 jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 jdmn="7 0,8,11,15 * * * jd jdmn"
@@ -220,7 +219,7 @@ jd_fcdyj="0,2 0 * * * jd jd_fcdyj"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_smiek_joy_steal
+jd_opencard2
 "
 
 #awk '{print $NF}' filename

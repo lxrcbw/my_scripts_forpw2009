@@ -117,7 +117,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcdyj.js -O /jd/scripts/jd_fcdyj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kd.js -O /jd/scripts/jd_kd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wxFans.js -O /jd/scripts/jd_wxFans.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_opencard2.js -O /jd/scripts/jd_opencard2.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -153,6 +153,7 @@ jd_joy_steal
 jd_fcyqm
 jd_fcdyj
 jd_wxFans
+jd_big_winner
 "
 
 #添加需要添加脚本的 cron
