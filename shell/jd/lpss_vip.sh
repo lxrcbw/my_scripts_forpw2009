@@ -153,7 +153,6 @@ jd_joy_steal
 jd_fcyqm
 jd_fcdyj
 jd_wxFans
-jd_opencard2
 "
 
 #添加需要添加脚本的 cron
