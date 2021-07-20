@@ -118,6 +118,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kd.js -O /jd/scripts/jd_kd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wxFans.js -O /jd/scripts/jd_wxFans.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
+
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -154,6 +157,8 @@ jd_fcyqm
 jd_fcdyj
 jd_wxFans
 jd_big_winner
+jd_ddnc_farmpark
+jd_esManager
 "
 
 #添加需要添加脚本的 cron
@@ -201,7 +206,8 @@ jd_joy_steal="10 15-21/3 * * * jd jd_joy_steal"
 jd_wxFans="1 15 * * * jd jd_wxFans"
 jd_fcyqm="0,2 15 * * * jd jd_fcyqm"
 jd_fcdyj="0,2 15 * * * jd jd_fcdyj"
-jd_opencard2="22 23 * * * jd jd_opencard2"
+jd_ddnc_farmpark="31 7 * * * jd jd_ddnc_farmpark"
+jd_esManager="39 7 * * * jd jd_esManager"
 
 
 #添加需要删除的脚本的 name
