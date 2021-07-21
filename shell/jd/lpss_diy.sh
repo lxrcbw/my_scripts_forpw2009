@@ -231,7 +231,7 @@ jd_esManager="39 7 * * * jd jd_esManager"
 jd_earn30="3 1,6 * * * jd jd_earn30"
 jd_cfdtx="59 11,12,23 * * * jd jd_cfdtx"
 jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
-jd_cash_exchange="0 0 * * * jd jd_cash_exchange"
+jd_cash_exchange="0,1 0 * * * jd jd_cash_exchange"
 
 
 #添加需要删除的脚本的 name
