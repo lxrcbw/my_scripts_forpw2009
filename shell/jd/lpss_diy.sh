@@ -100,10 +100,11 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcdyj.js -O /jd/scripts/jd_fcdyj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kd.js -O /jd/scripts/jd_kd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wxFans.js -O /jd/scripts/jd_wxFans.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_opencard2.js -O /jd/scripts/jd_opencard2.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cfdtx.js -O /jd/scripts/jd_cfdtx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_earn30.js -O /jd/scripts/jd_earn30.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -151,6 +152,8 @@ jd_wxFans
 jd_ddnc_farmpark
 jd_esManager
 jd_earn30
+jd_cfdtx
+jd_new_blueCoin
 "
 
 #添加需要添加脚本的 cron
@@ -224,6 +227,8 @@ jd_fcdyj="0,2 0 * * * jd jd_fcdyj"
 jd_ddnc_farmpark="31 7 * * * jd jd_ddnc_farmpark"
 jd_esManager="39 7 * * * jd jd_esManager"
 jd_earn30="3 1,6 * * * jd jd_earn30"
+jd_cfdtx="59 11,12,23 * * * jd jd_cfdtx"
+jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
 
 
 #添加需要删除的脚本的 name
