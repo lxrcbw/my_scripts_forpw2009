@@ -121,6 +121,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_MMdou.js -O /jd/scripts/jd_gua_MMdou.js
+
 
 
 #添加需要添加的脚本 name
@@ -161,6 +163,7 @@ jd_big_winner
 jd_ddnc_farmpark
 jd_esManager
 jd_new_blueCoin
+jd_gua_MMdou
 "
 
 #添加需要添加脚本的 cron
@@ -211,6 +214,7 @@ jd_fcdyj="0,2 15 * * * jd jd_fcdyj"
 jd_ddnc_farmpark="31 7 * * * jd jd_ddnc_farmpark"
 jd_esManager="39 7 * * * jd jd_esManager"
 jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
+jd_gua_MMdou="18 9 * * * jd jd_gua_MMdou"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
