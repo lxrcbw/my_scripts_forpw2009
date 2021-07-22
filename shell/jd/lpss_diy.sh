@@ -136,7 +136,6 @@ jd_joy_park_help
 jd_summer_movement
 jd_summer_movement_help
 jd_sign_graphics
-jd_qjd
 jd_goodMorning
 jd_jxzpk
 jd_lkyl
@@ -242,7 +241,7 @@ jd_mb="5 9,12 * * * jd jd_mb"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_opencard2
+jd_qjd
 "
 
 #awk '{print $NF}' filename
