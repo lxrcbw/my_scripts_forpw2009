@@ -96,21 +96,20 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_small_home.js -O /jd/scripts/jd_small_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_rankingList.js -O /jd/scripts/jd_rankingList.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement.js -O /jd/scripts/jd_summer_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_2.js -O /jd/scripts/jd_summer_movement.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_help_2.js -O /jd/scripts/jd_summer_movement_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/MovementFaker.js -O /jd/scripts/MovementFaker.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/sign_graphics_validate.js -O /jd/scripts/sign_graphics_validate.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js -O /jd/scripts/jd_sign_graphics.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_qjd.js -O /jd/scripts/jd_qjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_goodMorning.js -O /jd/scripts/jd_goodMorning.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_help.js -O /jd/scripts/jd_summer_movement_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_pk.js -O /jd/scripts/jd_jxzpk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_senbeans.js -O /jd/scripts/jd_lkyl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_syj.js -O /jd/scripts/jd_zjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wealth_island.js -O /jd/scripts/jd_wealth_island.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/star261/jd/main/scripts/jd_summer_movement.js -O /jd/scripts/jd_star_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fc.js -O /jd/scripts/jd_fcyqm.js
@@ -152,7 +151,6 @@ jd_lkyl
 jd_tyt
 jd_wish
 jd_wealth_island
-jd_star_movement
 jd_star_movement_bet
 jd_star_movement_map
 jd_joy_steal
