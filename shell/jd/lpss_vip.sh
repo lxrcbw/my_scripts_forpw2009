@@ -89,7 +89,10 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_joy_reward.js -O /jd/scripts/jd_joy_reward.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/jd_necklace_new.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_wsdlb.js -O /jd/scripts/jd_wsdlb.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/JDJRValidator_Pure.js -O /jd/scripts/JDJRValidator_Pure.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_joy_reward.js -O /jd/scripts/jd_new_joy_reward.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/panghu999/panghu/master/jd_lsj.js -O /jd/scripts/jd_lsj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/panghu999/jd_hwsx.js -O /jd/scripts/jd_hwsx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/tmp/jd_dogsEmploy.js -O /jd/scripts/jd_dogsEmploy.js
@@ -121,6 +124,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_MMdou.js -O /jd/scripts/jd_gua_MMdou.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jump.js -O /jd/scripts/jd_jump.js
 
 
 
@@ -162,6 +166,8 @@ jd_ddnc_farmpark
 jd_esManager
 jd_new_blueCoin
 jd_gua_MMdou
+jd_jump
+jd_new_joy_reward
 "
 
 #添加需要添加脚本的 cron
@@ -213,6 +219,8 @@ jd_ddnc_farmpark="31 7 * * * jd jd_ddnc_farmpark"
 jd_esManager="39 7 * * * jd jd_esManager"
 jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
 jd_gua_MMdou="18 9 * * * jd jd_gua_MMdou"
+jd_jump="1 0,11,21 * * * jd jd_jump"
+jd_new_joy_reward="59 7,15,23 * * * jd jd_new_joy_reward"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="

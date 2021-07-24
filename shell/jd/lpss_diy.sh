@@ -84,8 +84,10 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActio
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_necklace.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/ZooFaker_Necklace.js -O /jd/scripts/ZooFaker_Necklace.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/JDJRValidator_Pure.js -O /jd/scripts/JDJRValidator_Pure.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_joy_reward.js -O /jd/scripts/jd_new_joy_reward.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_2.js -O /jd/scripts/jd_summer_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_summer_movement_help_2.js -O /jd/scripts/jd_summer_movement_help.js
@@ -109,6 +111,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cash_exchange.js -O /jd/scripts/jd_cash_exchange.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_MMdou.js -O /jd/scripts/jd_gua_MMdou.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_mb.js -O /jd/scripts/jd_mb.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jump.js -O /jd/scripts/jd_jump.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -159,6 +162,8 @@ jd_new_blueCoin
 jd_cash_exchange
 jd_gua_MMdou
 jd_mb
+jd_jump
+jd_new_joy_reward
 "
 
 #添加需要添加脚本的 cron
@@ -236,7 +241,8 @@ jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
 jd_cash_exchange="0,1 0 * * * jd jd_cash_exchange"
 jd_gua_MMdou="18 9 * * * jd jd_gua_MMdou"
 jd_mb="5 9,12 * * * jd jd_mb"
-
+jd_jump="1 0,11,21 * * * jd jd_jump"
+jd_new_joy_reward="59 7,15,23 * * * jd jd_new_joy_reward"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
