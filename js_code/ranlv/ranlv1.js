@@ -31,9 +31,9 @@ const $ = Env(Ariszy)
 const notify = $.isNode() ?require('./sendNotify') : '';
 let status, videoid,myid,supportvideoid,supportrank,show;
 status = (status = ($.getval("rlstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const rlurl1Arr = [], rlheaderArr = [],rlbodyArr = []
-let rlurl1 = $.getdata('rlurl1')
-let rlheader = $.getdata('rlheader')
+const rlurlArr = [], rlheaderArr = [],rlbodyArr = []
+let rlurl = $.getdata('rlurl1')
+let rlheader = $.getdata('rlheader1')
 let rlbody = $.getdata('rlbody')
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
 let cash = ($.getval('rlcash') || '0')//默认不自动提现
@@ -55,15 +55,15 @@ if (isGetCookie) {
    $.done()
 } 
 if ($.isNode()) {
-   if (process.env.rlurl1 && process.env.rlurl1.indexOf('#') > -1) {
-   rlurl1 = process.env.rlurl1.split('#');
+   if (process.env.RLURL && process.env.RLURL.indexOf('#') > -1) {
+   rlurl = process.env.RLURL.split('#');
    console.log(`您选择的是用"#"隔开\n`)
   }
-  else if (process.env.rlurl1 && process.env.rlurl1.indexOf('\n') > -1) {
-   rlurl1 = process.env.rlurl1.split('\n');
+  else if (process.env.RLURL && process.env.RLURL.indexOf('\n') > -1) {
+   rlurl = process.env.RLURL.split('\n');
    console.log(`您选择的是用换行隔开\n`)
   } else {
-   rlurl1 = process.env.rlurl1.split()
+   rlurl = process.env.RLURL.split()
   };
   if (process.env.RLHEADER && process.env.RLHEADER.indexOf('#') > -1) {
    rlheader = process.env.RLHEADER.split('#');
@@ -88,18 +88,18 @@ if ($.isNode()) {
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
  } else {
-    rlurl1Arr.push($.getdata('rlurl1'))
+    rlurlArr.push($.getdata('rlurl'))
     rlheaderArr.push($.getdata('rlheader'))
     rlbodyArr.push($.getdata('rlbody'))
     let rlcount = ($.getval('rlcount') || '1');
   for (let i = 2; i <= rlcount; i++) {
-    rlurl1Arr.push($.getdata(`rlurl1${i}`))
+    rlurlArr.push($.getdata(`rlurl${i}`))
     rlheaderArr.push($.getdata(`rlheader${i}`))
     rlbodyArr.push($.getdata(`rlbody${i}`))
   }
 }
 !(async () => {
-if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurl1Arr[0]) {
+if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurlArr[0]) {
     $.msg($.name, '【提示】请先获取燃旅视频一cookie')
     return;
   }
@@ -108,7 +108,7 @@ if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurl1Arr[0]) {
     if (rlheaderArr[i]) {
       message = ''
       note =''
-      rlurl1 = rlurl1Arr[i];
+      rlurl = rlurlArr[i];
       rlheader = rlheaderArr[i];
       rlbody = rlbodyArr[i];
       $.index = i + 1;
@@ -129,10 +129,10 @@ if (!rlheaderArr[0] && !rlbodyArr[0] && !rlurl1Arr[0]) {
     
 function GetCookie() {
 if($request&&$request.url.indexOf("Common/pvlog")>=0) {
-   const rlurl1 = $request.url.split('?')[1]
-   if(rlurl1)     $.setdata(rlurl1,`rlurl1${status}`)
-   $.log(`[${Ariszy}] 获取rlurl1请求: 成功,rlurl1: ${rlurl1}`)
-   $.msg(`rlurl1${status}: 成功🎉`, ``)
+   const rlurl = $request.url.split('?')[1]
+   if(rlurl)     $.setdata(rlurl,`rlurl${status}`)
+   $.log(`[${Ariszy}] 获取rlurl请求: 成功,rlurl: ${rlurl}`)
+   $.msg(`rlurl${status}: 成功🎉`, ``)
    const rlheader = JSON.stringify($request.headers)
     if(rlheader)    $.setdata(rlheader,`rlheader${status}`)
     $.log(`[${Ariszy}] 获取rlheader请求: 成功,rlheader: ${rlheader}`)
@@ -141,7 +141,7 @@ if($request&&$request.url.indexOf("Common/pvlog")>=0) {
 }
 //checkVersion
 async function checkVersion(){
-let url = rlurl1.replace(/&video_id=\d+/,'')
+let url = rlurl.replace(/&video_id=\d+/,'')
 let headers = rlheader.replace(/acw_tc=\w+/,'')
  return new Promise((resolve) => {
     let checkVersion_url = {
@@ -167,7 +167,7 @@ let headers = rlheader.replace(/acw_tc=\w+/,'')
   }  
 //index
 async function index(){
-let url = rlurl1.replace(/&video_id=\d+/,'')
+let url = rlurl.replace(/&video_id=\d+/,'')
 let headers = rlheader.replace(/acw_tc=\w+/,'')
  return new Promise((resolve) => {
     let index_url = {
@@ -198,8 +198,8 @@ let headers = rlheader.replace(/acw_tc=\w+/,'')
   }  
 //userinfo
 async function userinfo(){
-let url = rlurl1.replace(/&video_id=\d+/,'')
-let user_id = rlurl1.match(/\d{6}/)
+let url = rlurl.replace(/&video_id=\d+/,'')
+let user_id = rlurl.match(/\d{6}/)
 let headers = rlheader.replace(/acw_tc=\w+/,'')
  return new Promise((resolve) => {
     let userinfo_url = {
@@ -233,7 +233,7 @@ let headers = rlheader.replace(/acw_tc=\w+/,'')
   }
 //task_center
 async function task_center(){
-let url = rlurl1.replace(/&video_id=\d+/,'')
+let url = rlurl.replace(/&video_id=\d+/,'')
 let headers = rlheader.replace(/acw_tc=\w+/,'')
  return new Promise((resolve) => {
     let task_center_url = {
@@ -290,7 +290,7 @@ let headers = rlheader.replace(/acw_tc=\w+/,'')
   }  
 //video_reward
 async function video_reward(){
-let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
+let url = rlurl.replace(/\d{5}$/,`${videoid}`)
  return new Promise((resolve) => {
     let video_reward_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Common/pvlog?${url}`,
@@ -319,7 +319,7 @@ let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
   }  
 //share
 async function share(){
-let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
+let url = rlurl.replace(/\d{5}$/,`${videoid}`)
  return new Promise((resolve) => {
     let share_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Rcharts/shareVideo?${url}`,
@@ -343,7 +343,7 @@ let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
   } 
 //video_info
 async function video_info(){
-let accesstoken = rlurl1.match(/access_token=\w{32}/)
+let accesstoken = rlurl.match(/access_token=\w{32}/)
  return new Promise((resolve) => {
     let video_info_url = {
      url: 'https://ranlv.lvfacn.com/api.php/Ranlv/videoInfo',
@@ -381,7 +381,7 @@ let accesstoken = rlurl1.match(/access_token=\w{32}/)
 
 //wxfx
 async function wxfx(){
-let accesstoken = rlurl1.match(/access_token=\w{32}/)
+let accesstoken = rlurl.match(/access_token=\w{32}/)
  return new Promise((resolve) => {
     let wxfx_url = {
    		url: `https://ranlv.lvfacn.com/api.php/live/wxfx.html`,
@@ -416,7 +416,7 @@ let accesstoken = rlurl1.match(/access_token=\w{32}/)
 }
 //share_rewards
 async function share_rewards(){
-let accesstoken = rlurl1.match(/access_token=\w{32}/)
+let accesstoken = rlurl.match(/access_token=\w{32}/)
  return new Promise((resolve) => {
     let share_rewards_url = {
    	   url: `https://ranlv.lvfacn.com/api.php/Common/pvlog`,
@@ -445,7 +445,7 @@ let accesstoken = rlurl1.match(/access_token=\w{32}/)
 async function wiTask(){
  return new Promise((resolve) => {
     let wiTask_url = {
-   		url: `https://ranlv.lvfacn.com/api.php/Share/wiTask?${rlurl1}`,
+   		url: `https://ranlv.lvfacn.com/api.php/Share/wiTask?${rlurl}`,
         headers: JSON.parse(rlheader),
     	}
    $.post(wiTask_url,async(error, response, data) =>{
@@ -485,7 +485,7 @@ async function wiTask(){
   }
 //checkPraise
 async function checkPraise(){
-let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
+let url = rlurl.replace(/\d{5}$/,`${videoid}`)
  return new Promise((resolve) => {
     let checkPraise_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Ranlv/checkPraise?&like_ran=1&${url}`,
@@ -513,7 +513,7 @@ let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
   } 
 //comment 10个随机
 async function comment(){
-let url = rlurl1.replace(/\d{5}$/,`${videoid}`)
+let url = rlurl.replace(/\d{5}$/,`${videoid}`)
 let newcomment;
 let commentarr = ['%E7%9C%9F%E4%B8%8D%E9%94%99%E5%93%A6','%E7%9C%9F%E5%A5%BD%E5%93%88','%E6%94%AF%E6%8C%81%E4%B8%80%E4%B8%8B','%E8%BF%98%E4%B8%8D%E9%94%99%E5%93%A6','%E6%84%9F%E8%A7%89%E8%BF%98%E5%8F%AF%E4%BB%A5','%E5%8F%AF%E4%BB%A5%E7%9A%84','%E6%84%9F%E8%B0%A2%E5%88%86%E4%BA%AB','%E4%B8%8D%E9%94%99%E5%93%9F','%E6%88%91%E5%96%9C%E6%AC%A2','%E7%9C%9F%E4%BC%98%E7%A7%80','%E6%9C%89%E4%BA%9B%E4%BC%98%E7%A7%80']
 let x = Math.random()
@@ -547,8 +547,8 @@ newcomment = commentarr[no]
 }
 //myVotes
 async function myVotes(){
-let user_token = rlurl1.match(/user.*?(?=&)/)+''
-let access_token = rlurl1.match(/access_token=\w+/)+''
+let user_token = rlurl.match(/user.*?(?=&)/)+''
+let access_token = rlurl.match(/access_token=\w+/)+''
 let new_user_token = user_token.replace(/user_token=/,'')
 let new_access_token = access_token.replace(/access_token=/,'')
  return new Promise((resolve) => {
@@ -605,7 +605,7 @@ let new_access_token = access_token.replace(/access_token=/,'')
 }
 //mySupport
 async function mySupport(){
-let url = rlurl1.replace(/&video_id=\d{5}/,``)
+let url = rlurl.replace(/&video_id=\d{5}/,``)
  return new Promise((resolve) => {
     let mySupport_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Rcharts/speRank?&id=64&list_rows=12&member_id=${myid}&page=1&${url}`,
@@ -637,7 +637,7 @@ let url = rlurl1.replace(/&video_id=\d{5}/,``)
 }
 //goVote
 async function goVote(){
-let url = rlurl1.replace(/\d{5}$/,`${supportvideoid}`)
+let url = rlurl.replace(/\d{5}$/,`${supportvideoid}`)
  return new Promise((resolve) => {
     let goVote_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Rcharts/goVote?&charts_id=62&is_act=1&member_id=${myid}&num=1&${url}`,
@@ -665,7 +665,7 @@ let url = rlurl1.replace(/\d{5}$/,`${supportvideoid}`)
 }
 //vote_rewards
 async function vote_rewards(){
-let url = rlurl1.replace(/\d{5}$/,`${supportvideoid}`)
+let url = rlurl.replace(/\d{5}$/,`${supportvideoid}`)
  return new Promise((resolve) => {
     let vote_rewards_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Common/pvlog?${url}`,
@@ -693,8 +693,8 @@ let url = rlurl1.replace(/\d{5}$/,`${supportvideoid}`)
 }
 //lottery
 async function lottery(){
-let user_token = rlurl1.match(/user_token=\w+.\w+.\w+/)+''
-let access_token = rlurl1.match(/access_token=\w+/)+''
+let user_token = rlurl.match(/user_token=\w+.\w+.\w+/)+''
+let access_token = rlurl.match(/access_token=\w+/)+''
 let new_user_token = user_token.replace(/user_token=/,'')
 let new_access_token = access_token.replace(/access_token=/,'')
  return new Promise((resolve) => {
@@ -736,7 +736,7 @@ let new_access_token = access_token.replace(/access_token=/,'')
 }
 //getRank
 async function getRank(){
-let url = rlurl1.replace(/&video_id=\d{5}/,``)
+let url = rlurl.replace(/&video_id=\d{5}/,``)
  return new Promise((resolve) => {
     let mySupport_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Rcharts/getRank?&basis=1&id=60&list_rows=12&ran=1&member_id=${myid}&page=1&${url}`,
@@ -769,7 +769,7 @@ let url = rlurl1.replace(/&video_id=\d{5}/,``)
 }
 //withdraw
 async function withdraw(){
-let url = rlurl1.replace(/&video_id=\d{5}/,``)
+let url = rlurl.replace(/&video_id=\d{5}/,``)
  return new Promise((resolve) => {
     let withdraw_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Share/withdraw?&amount=${cash}&is_act=1&member_id=${myid}&${url}`,
@@ -795,7 +795,7 @@ let url = rlurl1.replace(/&video_id=\d{5}/,``)
 }
 //wallet
 async function wallet(){
-let url = rlurl1.replace(/&video_id=\d{5}/,``)
+let url = rlurl.replace(/&video_id=\d{5}/,``)
  return new Promise((resolve) => {
     let wallet_url = {
    		url: `https://ranlv.lvfacn.com/api.php/Share/wallet?&&list_rows=1&page=1&type=2&member_id=${myid}&${url}`,

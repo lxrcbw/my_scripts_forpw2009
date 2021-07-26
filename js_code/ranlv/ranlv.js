@@ -32,8 +32,8 @@ const notify = $.isNode() ?require('./sendNotify') : '';
 let status, videoid,myid,supportvideoid,supportrank,show;
 status = (status = ($.getval("rlstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const rlurlArr = [], rlheaderArr = [],rlbodyArr = []
-let rlurl = $.getdata('rlurl2')
-let rlheader = $.getdata('rlheader2')
+let rlurl = $.getdata('rlurl')
+let rlheader = $.getdata('rlheader')
 let rlbody = $.getdata('rlbody')
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
 let cash = ($.getval('rlcash') || '0')//默认不自动提现
