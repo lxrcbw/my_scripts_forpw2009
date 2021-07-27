@@ -80,7 +80,6 @@ fi
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_ddopk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_necklace.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/ZooFaker_Necklace.js -O /jd/scripts/ZooFaker_Necklace.js
@@ -88,12 +87,13 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_joy_reward.js -O /jd/scripts/jd_new_joy_reward.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_joy_park_help.js -O /jd/scripts/jd_joy_park_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement.js -O /jd/scripts/jd_summer_movement.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement_help.js -O /jd/scripts/jd_summer_movement_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/MovementFaker.js -O /jd/scripts/MovementFaker.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/sign_graphics_validate.js -O /jd/scripts/sign_graphics_validate.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js -O /jd/scripts/jd_sign_graphics.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island_help.js -O /jd/scripts/jd_wealth_island_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_qjd.js -O /jd/scripts/jd_qjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_goodMorning.js -O /jd/scripts/jd_goodMorning.js
@@ -105,8 +105,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cfdtx.js -O /jd/scripts/jd_cfdtx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/cdle/jd_study/main/jd_earn30.js -O /jd/scripts/jd_earn30.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cash_exchange.js -O /jd/scripts/jd_cash_exchange.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_MMdou.js -O /jd/scripts/jd_gua_MMdou.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_mb.js -O /jd/scripts/jd_mb.js
@@ -114,9 +113,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_productZ4Brand.js -O /jd/scripts/jd_productZ4Brand.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island_help.js -O /jd/scripts/jd_wealth_island_help.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/DovFork/Wenmoux/master/jd/jd_qqxing.js -O /jd/scripts/jd_qqxing.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jxqd_new.js -O /jd/scripts/jd_new_jxqd.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -168,6 +167,7 @@ jd_gold_creator
 jd_bean_home
 jd_wealth_island_help
 jd_qqxing
+jd_new_jxqd
 "
 
 #添加需要添加脚本的 cron
@@ -191,7 +191,7 @@ jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
 ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
-jd_jxlhb="5 10 * * * jd jd_jxlhb"
+jd_jxlhb="5 2,10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1,15 * * * jd jd_lotteryMachine"
 jd_ffl="20 * * * * jd jd_ffl"
 jd_ddo_joy_reward="0 0-16/8 * * * jd jd_ddo_joy_reward"
@@ -232,13 +232,10 @@ jd_gold_creator="13 1,16,22 * * * jd jd_gold_creator"
 jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
 jd_wealth_island_help="25 0,1,9,14,18 * * * jd jd_wealth_island_help"
 jd_qqxing="5 0-23/2 * * * jd jd_qqxing"
+jd_new_jxqd="10 7-23 * * * jd jd_new_jxqd"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_hwsx
-jd_productZ4Brand
-jd_jxzpk
-jd_starStore
 jd_earn30
 "
 
