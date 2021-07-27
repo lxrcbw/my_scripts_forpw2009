@@ -131,7 +131,6 @@ jd_star_shop
 ddo_pk
 jd_jxlhb
 jd_lotteryMachine
-jd_starStore
 jd_ffl
 jd_redPacket
 jdmn
@@ -144,7 +143,6 @@ jd_summer_movement
 jd_summer_movement_help
 jd_sign_graphics
 jd_goodMorning
-jd_jxzpk
 jd_lkyl
 jd_zjd
 jd_tyt
