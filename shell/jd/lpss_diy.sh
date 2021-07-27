@@ -116,6 +116,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island_help.js -O /jd/scripts/jd_wealth_island_help.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/DovFork/Wenmoux/master/jd/jd_qqxing.js -O /jd/scripts/jd_qqxing.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -169,6 +170,7 @@ jd_new_joy_reward
 jd_gold_creator
 jd_bean_home
 jd_wealth_island_help
+jd_qqxing
 "
 
 #添加需要添加脚本的 cron
@@ -235,6 +237,7 @@ jd_gold_creator="13 1,16,22 * * * jd jd_gold_creator"
 jd_productZ4Brand="45,55 15,16 * * * jd jd_productZ4Brand"
 jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
 jd_wealth_island_help="25 0,1,9,14,18 * * * jd jd_wealth_island_help"
+jd_qqxing="5 0-23/2 * * * jd jd_qqxing"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
