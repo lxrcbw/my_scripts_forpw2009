@@ -97,7 +97,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_qjd.js -O /jd/scripts/jd_qjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_goodMorning.js -O /jd/scripts/jd_goodMorning.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dreamFactory_tuan.js -O /jd/scripts/jd_Factory_tuan.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fc.js -O /jd/scripts/jd_fcyqm.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcdyj.js -O /jd/scripts/jd_fcdyj.js
@@ -115,6 +114,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_productZ4Brand.js -O /jd/scripts/jd_productZ4Brand.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island_help.js -O /jd/scripts/jd_wealth_island_help.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -135,7 +136,6 @@ jd_redPacket
 jdmn
 jd_jxmc
 jd_wsdlb
-jd_hwsx
 jd_lsj
 jd_dogsEmploy
 jd_joy_park_help
@@ -159,7 +159,6 @@ jd_fcdyj
 jd_wxFans
 jd_ddnc_farmpark
 jd_esManager
-jd_earn30
 jd_cfdtx
 jd_new_blueCoin
 jd_cash_exchange
@@ -168,8 +167,8 @@ jd_mb
 jd_jump
 jd_new_joy_reward
 jd_gold_creator
-jd_productZ4Brand
 jd_bean_home
+jd_wealth_island_help
 "
 
 #添加需要添加脚本的 cron
@@ -192,8 +191,6 @@ jd_zdjr="45 18 * * * jd jd_zdjr"
 jd_babelDiy="50 10,11 * * * jd jd_babelDiy"
 jd_long_hby_lottery="1 20 1-18 6 * jd jd_long_hby_lottery"
 jd_mohe="0 0,1-23/3 * * * jd jd_mohe"
-jd_ppdz="1 0 * * * jd jd_ppdz"
-jd_star_shop="0 1,21 * * * jd jd_star_shop"
 ddo_pk="16 0,6,13,19,21 * * * jd ddo_pk"
 jd_jxlhb="5 10 * * * jd jd_jxlhb"
 jd_lotteryMachine="10 1,15 * * * jd jd_lotteryMachine"
@@ -204,7 +201,6 @@ jd_redPacket="11 1,9,17,23 * * * jd jd_redPacket"
 jdmn="7 0,8,11,15 * * * jd jdmn"
 jd_jxmc="20 0-23/3 * * * jd jd_jxmc"
 jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
-jd_hwsx="20 12,15 * * * jd jd_hwsx"
 jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 8,15 * * * jd jd_dogsEmploy"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
@@ -212,7 +208,6 @@ jd_summer_movement="5,45 5-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
 jd_summer_movement_help="19,41 5-23 * * * jd jd_summer_movement_help"
-jd_jxzpk="10 10,11,14,15 * * * jd jd_jxzpk"
 jd_lkyl="13 9,15 * * * jd jd_lkyl"
 jd_zjd="15 10,14 * * * jd jd_zjd"
 jd_tyt="45 9,14,22 * * * jd jd_tyt"
@@ -239,10 +234,15 @@ jd_new_joy_reward="59 7,15,23 * * * jd jd_new_joy_reward"
 jd_gold_creator="13 1,16,22 * * * jd jd_gold_creator"
 jd_productZ4Brand="45,55 15,16 * * * jd jd_productZ4Brand"
 jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
+jd_wealth_island_help="25 0,1,9,14,18 * * * jd jd_wealth_island_help"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_qjd
+jd_hwsx
+jd_productZ4Brand
+jd_jxzpk
+jd_starStore
+jd_earn30
 "
 
 #awk '{print $NF}' filename
