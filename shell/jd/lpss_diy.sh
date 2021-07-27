@@ -127,7 +127,6 @@ jd_clear_shop
 jd_syj
 jd_daily_lottery
 jd_mohe
-jd_star_shop
 ddo_pk
 jd_jxlhb
 jd_lotteryMachine
