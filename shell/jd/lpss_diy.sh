@@ -115,7 +115,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/DovFork/Wenmoux/master/jd/jd_qqxing.js -O /jd/scripts/jd_qqxing.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jxqd_new.js -O /jd/scripts/jd_new_jxqd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jxqd_new.js -O /jd/scripts/jd_new_jxqd.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
