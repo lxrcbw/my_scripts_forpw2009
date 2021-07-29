@@ -180,8 +180,8 @@ jd_angryBean
 #添加需要添加脚本的 cron
 lpss_vip="*/10 * * * * bash /jd/config/lpss_vip.sh >> /jd/log/lpss_vip.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/config/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
-jd_super_redrain="0 0-23/1 * * * jd jd_super_redrain"
-jd_half_redrain="30 20-23/1 * * * jd jd_half_redrain"
+jd_super_redrain="0,1 0-23/1 * * * jd jd_super_redrain"
+jd_half_redrain="30,31 20-23/1 * * * jd jd_half_redrain"
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
 jd_monk_shop_lottery="1 15,23 * * * jd jd_monk_shop_lottery"
 jd_npc_redrain="0 0-23/1 * * * jd jd_npc_redrain"
