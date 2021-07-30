@@ -80,6 +80,7 @@ fi
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_live_redrain.js -O /jd/scripts/jd_live_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcffl.js -O /jd/scripts/jd_ffl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_necklace.js -O /jd/scripts/jd_necklace.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/ZooFaker_Necklace.js -O /jd/scripts/ZooFaker_Necklace.js
@@ -168,6 +169,7 @@ jd_bean_home
 jd_wealth_island_help
 jd_qqxing
 jd_new_jxqd
+jd_live_redrain
 "
 
 #添加需要添加脚本的 cron
@@ -233,6 +235,7 @@ jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
 jd_wealth_island_help="25 0,1,9,14,18 * * * jd jd_wealth_island_help"
 jd_qqxing="5 0-23/2 * * * jd jd_qqxing"
 jd_new_jxqd="10 7-23 * * * jd jd_new_jxqd"
+jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="

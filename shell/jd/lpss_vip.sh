@@ -83,6 +83,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_sc
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lxk/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_live_redrain.js -O /jd/scripts/jd_live_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/long_hby_lottery.js -O /jd/scripts/jd_long_hby_lottery.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/wuzhi04/MyActions/main/jd_ddopk.js -O /jd/scripts/ddo_pk.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_ffl.js -O /jd/scripts/jd_ffl.js
@@ -175,6 +176,7 @@ jd_new_joy_reward
 jd_gold_creator
 jd_bean_home
 jd_angryBean
+jd_live_redrain
 "
 
 #添加需要添加脚本的 cron
@@ -232,6 +234,7 @@ jd_gold_creator="13 1,16,22 * * * jd jd_gold_creator"
 jd_productZ4Brand="45,55 15,16 * * * jd jd_productZ4Brand"
 jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
 jd_angryBean="0 0 * * * jd jd_angryBean"
+jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
