@@ -130,8 +130,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_productZ4Brand.js -O /jd/scripts/jd_productZ4Brand.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_angryBean.js -O /jd/scripts/jd_angryBean.js
-
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dpqd.js -O /jd/scripts/jd_dpqd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_speed_redpocke.js -O /jd/scripts/jd_new_speed_redpocke.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bookshop.js -O /jd/scripts/jd_bookshop.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -153,8 +154,6 @@ jd_lsj
 jd_dogsEmploy
 jd_jxmc
 jd_joy_park_help
-jd_summer_movement
-jd_summer_movement_help
 jd_jxzpk
 jd_lkyl
 jd_tyt
@@ -177,6 +176,8 @@ jd_gold_creator
 jd_bean_home
 jd_angryBean
 jd_live_redrain
+jd_dpqd
+jd_new_speed_redpocke
 "
 
 #添加需要添加脚本的 cron
@@ -231,14 +232,16 @@ jd_gua_MMdou="18 9 * * * jd jd_gua_MMdou"
 jd_jump="1 0,11,21 * * * jd jd_jump"
 jd_new_joy_reward="59 7,15,23 * * * jd jd_new_joy_reward"
 jd_gold_creator="13 1,16,22 * * * jd jd_gold_creator"
-jd_productZ4Brand="45,55 15,16 * * * jd jd_productZ4Brand"
 jd_bean_home="23 1,12,22 * * * jd jd_bean_home"
 jd_angryBean="0 0 * * * jd jd_angryBean"
 jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
+jd_dpqd="12 12 * * * jd jd_dpqd"
+jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_productZ4Brand
+jd_summer_movement
+jd_summer_movement_help
 "
 
 #awk '{print $NF}' filename

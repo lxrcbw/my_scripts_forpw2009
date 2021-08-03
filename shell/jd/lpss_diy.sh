@@ -116,6 +116,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/DovFork/Wenmoux/master/jd/jd_qqxing.js -O /jd/scripts/jd_qqxing.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jxqd_new.js -O /jd/scripts/jd_new_jxqd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dpqd.js -O /jd/scripts/jd_dpqd.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_speed_redpocke.js -O /jd/scripts/jd_new_speed_redpocke.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bookshop.js -O /jd/scripts/jd_bookshop.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -137,8 +140,6 @@ jd_wsdlb
 jd_lsj
 jd_dogsEmploy
 jd_joy_park_help
-jd_summer_movement
-jd_summer_movement_help
 jd_sign_graphics
 jd_goodMorning
 jd_lkyl
@@ -169,6 +170,8 @@ jd_wealth_island_help
 jd_qqxing
 jd_new_jxqd
 jd_live_redrain
+jd_dpqd
+jd_new_speed_redpocke
 "
 
 #添加需要添加脚本的 cron
@@ -235,10 +238,13 @@ jd_wealth_island_help="25 0,1,9,14,18 * * * jd jd_wealth_island_help"
 jd_qqxing="5 0-23/2 * * * jd jd_qqxing"
 jd_new_jxqd="10 7-23 * * * jd jd_new_jxqd"
 jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
+jd_dpqd="12 12 * * * jd jd_dpqd"
+jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_earn30
+jd_summer_movement
+jd_summer_movement_help
 "
 
 #awk '{print $NF}' filename
