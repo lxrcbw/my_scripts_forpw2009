@@ -80,7 +80,6 @@ fi
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lxk/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_live_redrain.js -O /jd/scripts/jd_live_redrain.js
@@ -112,7 +111,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_senbeans.js -O /jd/scripts/jd_lkyl.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_syj.js -O /jd/scripts/jd_zjd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_tyt.js -O /jd/scripts/jd_tyt.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wish.js -O /jd/scripts/jd_wish.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_wealth_island.js -O /jd/scripts/jd_wealth_island.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
@@ -133,6 +131,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dpqd.js -O /jd/scripts/jd_dpqd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_speed_redpocke.js -O /jd/scripts/jd_new_speed_redpocke.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bookshop.js -O /jd/scripts/jd_bookshop.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wish.js -O /jd/scripts/jd_wish.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_health.js -O /jd/scripts/jd_health.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -208,11 +209,9 @@ jd_lsj="0 15,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 15 * * * jd jd_dogsEmploy"
 jd_jxmc="20 15-23/3 * * * jd jd_jxmc"
 jd_joy_park_help="30 15 * * * jd jd_joy_park_help"
-jd_summer_movement="15,45 15-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 15 * * * jd jd_sign_graphics"
 jd_qjd="14 15 * * * jd jd_qjd"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
-jd_summer_movement_help="20,41 15-23 * * * jd jd_summer_movement_help"
 jd_jxzpk="10 14,15,16 * * * jd jd_jxzpk"
 jd_lkyl="13 15,18 * * * jd jd_lkyl"
 jd_tyt="45 15,21 * * * jd jd_tyt"
@@ -240,7 +239,6 @@ jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_summer_movement
 jd_summer_movement_help
 "
 
