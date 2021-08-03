@@ -209,10 +209,8 @@ jd_wsdlb="5 0-23/6 * * * jd jd_wsdlb"
 jd_lsj="0 11,19 * * * jd jd_lsj"
 jd_dogsEmploy="12 8,15 * * * jd jd_dogsEmploy"
 jd_joy_park_help="30 23 * * * jd jd_joy_park_help"
-jd_summer_movement="5,45 5-23 * * * jd jd_summer_movement"
 jd_sign_graphics="10 10 * * * jd jd_sign_graphics"
 jd_goodMorning="30 6 * * * jd jd_goodMorning"
-jd_summer_movement_help="19,41 5-23 * * * jd jd_summer_movement_help"
 jd_lkyl="13 9,15 * * * jd jd_lkyl"
 jd_zjd="15 10,14 * * * jd jd_zjd"
 jd_tyt="45 9,14,22 * * * jd jd_tyt"
@@ -246,7 +244,6 @@ jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_summer_movement
 jd_summer_movement_help
 "
 
