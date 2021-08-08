@@ -124,6 +124,11 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_doge.js -O /jd/scripts/jd_gua_doge.js
 
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard4.js -O /jd/scripts/gua_opencard4.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard5.js -O /jd/scripts/gua_opencard5.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard6.js -O /jd/scripts/gua_opencard6.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard7.js -O /jd/scripts/gua_opencard7.js
+
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_diy
@@ -177,6 +182,10 @@ jd_live_redrain
 jd_dpqd
 jd_new_speed_redpocke
 jd_gua_doge
+gua_opencard4
+gua_opencard5
+gua_opencard6
+gua_opencard7
 "
 
 #添加需要添加脚本的 cron
@@ -244,6 +253,10 @@ jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
 jd_dpqd="12 12 * * * jd jd_dpqd"
 jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 jd_gua_doge="36 0,10,21 4-15 8 * jd jd_gua_doge"
+gua_opencard4="38 0,8 4-12 8 * jd gua_opencard4"
+gua_opencard5="40 0,8 5-12 8 * jd gua_opencard5"
+gua_opencard6="32 0,8 * 8 * jd gua_opencard6"
+gua_opencard7="30 0,22 8-14 8 * jd gua_opencard7"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
