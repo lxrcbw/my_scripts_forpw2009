@@ -136,7 +136,10 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_doge.js -O /jd/scripts/jd_gua_doge.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_carnivalcity.js -O /jd/scripts/jd_gua_carnivalcity.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ldhwj.js -O /jd/scripts/jd_ldhwj.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_mohe.js -O /jd/scripts/jd_mohe.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jx_sign.js -O /jd/scripts/jx_sign.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 
 
 #添加需要添加的脚本 name
@@ -144,47 +147,11 @@ my_scripts_list_add="
 lpss_vip
 lpss_del_log
 jd_clear_shop
-jd_daily_lottery
-jd_mohe
-jd_ppdz
-jd_star_shop
-ddo_pk
-jd_jxlhb
-jd_lotteryMachine
-jd_starStore
-jdmn
-jd_wsdlb
-jd_hwsx
-jd_lsj
-jd_dogsEmploy
-jd_jxmc
-jd_joy_park_help
-jd_jxzpk
-jd_lkyl
-jd_tyt
-jd_wish
-jd_wealth_island
-jd_star_movement_bet
-jd_star_movement_map
-jd_joy_steal
-jd_fcyqm
-jd_fcdyj
-jd_wxFans
-jd_big_winner
-jd_ddnc_farmpark
-jd_esManager
-jd_new_blueCoin
-jd_gua_MMdou
-jd_jump
-jd_new_joy_reward
-jd_gold_creator
-jd_bean_home
-jd_angryBean
-jd_live_redrain
-jd_dpqd
-jd_new_speed_redpocke
-jd_gua_doge
 jd_gua_carnivalcity
+jd_ldhwj
+jx_sign
+jd_nzmh
+
 "
 
 #添加需要添加脚本的 cron
@@ -244,15 +211,16 @@ jd_dpqd="12 12 * * * jd jd_dpqd"
 jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 jd_gua_doge="36 0,10,21 4-15 8 * jd jd_gua_doge"
 jd_gua_carnivalcity="0 0-18/6 * * * jd jd_gua_carnivalcity"
+jd_ldhwj="11 1,9,15,20 * * * jd jd_ldhwj"
+jd_nzmh="35 1,8,15,23 * * * jd jd_nzmh"
+jx_sign="20 1,8,15,22 * * * jd jx_sign"
 
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-gua_opencard4
-gua_opencard5
-gua_opencard6
-gua_opencard7
+jd_star_movement_bet
+jd_star_movement_map
 "
 
 #awk '{print $NF}' filename
