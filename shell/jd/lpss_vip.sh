@@ -136,11 +136,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_doge.js -O /jd/scripts/jd_gua_doge.js
 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard4.js -O /jd/scripts/gua_opencard4.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard5.js -O /jd/scripts/gua_opencard5.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard6.js -O /jd/scripts/gua_opencard6.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard7.js -O /jd/scripts/gua_opencard7.js
-
 
 
 #添加需要添加的脚本 name
@@ -188,10 +183,6 @@ jd_live_redrain
 jd_dpqd
 jd_new_speed_redpocke
 jd_gua_doge
-gua_opencard4
-gua_opencard5
-gua_opencard6
-gua_opencard7
 "
 
 #添加需要添加脚本的 cron
@@ -257,7 +248,10 @@ gua_opencard7="12 0,23 8-14 8 * jd gua_opencard7"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_summer_movement_help
+gua_opencard4
+gua_opencard5
+gua_opencard6
+gua_opencard7
 "
 
 #awk '{print $NF}' filename
