@@ -140,7 +140,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_mohe.js -O /jd/scripts/jd_mohe.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jx_sign.js -O /jd/scripts/jx_sign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ryhxj.js -O /jd/scripts/jd_ryhxj.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -151,7 +151,7 @@ jd_gua_carnivalcity
 jd_ldhwj
 jx_sign
 jd_nzmh
-
+jd_ryhxj
 "
 
 #添加需要添加脚本的 cron
@@ -214,6 +214,7 @@ jd_gua_carnivalcity="0 0-18/6 * * * jd jd_gua_carnivalcity"
 jd_ldhwj="11 1,9,15,20 * * * jd jd_ldhwj"
 jd_nzmh="35 1,8,15,23 * * * jd jd_nzmh"
 jx_sign="20 1,8,15,22 * * * jd jx_sign"
+jd_ryhxj="1 1 * * * jd jd_ryhxj"
 
 
 
