@@ -135,6 +135,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_health.js -O /jd/scripts/jd_health.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxmc.js -O /jd/scripts/jd_jxmc.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_doge.js -O /jd/scripts/jd_gua_doge.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_carnivalcity.js -O /jd/scripts/jd_gua_carnivalcity.js
 
 
 
@@ -183,6 +184,7 @@ jd_live_redrain
 jd_dpqd
 jd_new_speed_redpocke
 jd_gua_doge
+jd_gua_carnivalcity
 "
 
 #添加需要添加脚本的 cron
@@ -241,10 +243,9 @@ jd_live_redrain="0,30 0-23/1 * * * jd jd_live_redrain"
 jd_dpqd="12 12 * * * jd jd_dpqd"
 jd_new_speed_redpocke="22 0,12,15,22 * * * jd jd_new_speed_redpocke"
 jd_gua_doge="36 0,10,21 4-15 8 * jd jd_gua_doge"
-gua_opencard4="3 0,23 4-12 8 * jd gua_opencard4"
-gua_opencard5="6 0,23 5-12 8 * jd gua_opencard5"
-gua_opencard6="9 0,23 * 8 * jd gua_opencard6"
-gua_opencard7="12 0,23 8-14 8 * jd gua_opencard7"
+jd_gua_carnivalcity="0 0-18/6 * * * jd jd_gua_carnivalcity"
+
+
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
