@@ -129,6 +129,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jx_sign.js -O /jd/scripts/jx_sign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_nzmh.js -O /jd/scripts/jd_nzmh.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ryhxj.js -O /jd/scripts/jd_ryhxj.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/smiek2221/gua_opencard8.js -O /jd/scripts/gua_opencard8.js
 
 
 #添加需要添加的脚本 name
@@ -146,6 +147,7 @@ jd_ldhwj
 jx_sign
 jd_nzmh
 jd_ryhxj
+gua_opencard8
 "
 
 #添加需要添加脚本的 cron
@@ -218,6 +220,7 @@ jd_ldhwj="11 1,9,15,20 * * * jd jd_ldhwj"
 jd_nzmh="35 1,8,15,23 * * * jd jd_nzmh"
 jx_sign="20 1,8,15,22 * * * jd jx_sign"
 jd_ryhxj="1 1 * * * jd jd_ryhxj"
+gua_opencard8="3,45 0,23 * * * jd gua_opencard8"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
