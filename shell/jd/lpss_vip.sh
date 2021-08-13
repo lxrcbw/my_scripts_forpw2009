@@ -147,6 +147,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_qcshj.js -O /jd/scripts/jd_qcshj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_xmGame.js -O /jd/scripts/gua_xmGame.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_xiaolong.js -O /jd/scripts/gua_xiaolong.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_appliances.js -O /jd/scripts/jd_appliances.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -162,6 +163,7 @@ jd_ylyn
 jd_qcshj
 gua_xmGame
 gua_xiaolong
+jd_appliances
 "
 
 #添加需要添加脚本的 cron
@@ -231,6 +233,7 @@ jd_ylyn="40 5,18 * * * jd jd_ylyn"
 jd_qcshj="30 9,21 12-20 8 * jd jd_qcshj"
 gua_xmGame="33 8,22 13-31 8 * jd gua_xmGame"
 gua_xiaolong="22 9,19 13-25 8 * jd gua_xiaolong"
+jd_appliances="55 21,22 * * * jd jd_appliances"
 
 
 
