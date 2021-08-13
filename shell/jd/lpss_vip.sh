@@ -149,6 +149,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_xiaolong.js -O /jd/scripts/gua_xiaolong.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_appliances.js -O /jd/scripts/jd_appliances.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_decompression.js -O /jd/scripts/jd_decompression.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
