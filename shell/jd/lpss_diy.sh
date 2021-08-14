@@ -103,6 +103,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fcdyj.js -O /jd/scripts/jd_fcdyj.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kd.js -O /jd/scripts/jd_kd.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_wxFans.js -O /jd/scripts/jd_wxFans.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_fan.js -O /jd/scripts/jd_fan.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cfdtx.js -O /jd/scripts/jd_cfdtx.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
@@ -143,6 +144,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_dreamFactory.js -O /jd/scripts/jd_dreamFactory.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cash.js -O /jd/scripts/jd_new_cash.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_carnivalcity_help.js -O /jd/scripts/jd_help_carnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jdzz.js -O /jd/scripts/jd_jdzz.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -169,6 +171,7 @@ jd_senbeans
 jd_new_cash
 jd_exchange_cash
 jd_help_carnivalcity
+jd_fan
 "
 
 #添加需要添加脚本的 cron
@@ -248,6 +251,7 @@ jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
 jd_senbeans="45 1,12,16,22 * * * jd jd_senbeans"
 jd_new_cash="5 5,12,17,22 * * * jd jd_new_cash"
 jd_help_carnivalcity="10 0,8,13,17,22 * * * jd jd_help_carnivalcity"
+jd_fan="32 6,18 * * * jd jd_fan"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
