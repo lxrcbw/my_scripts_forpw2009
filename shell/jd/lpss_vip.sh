@@ -245,7 +245,7 @@ gua_xiaolong="22 9,19 13-25 8 * jd gua_xiaolong"
 jd_appliances="55 21,22 * * * jd jd_appliances"
 jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
 jd_senbeans="45 16,22 * * * jd jd_senbeans"
-jd_help_carnivalcity="10 0,8,13,17,22 * * * jd jd_help_carnivalcity"
+jd_help_carnivalcity="10 15,17,22 * * * jd jd_help_carnivalcity"
 
 
 #添加需要删除的脚本的 name
