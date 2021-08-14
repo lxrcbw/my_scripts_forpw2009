@@ -142,7 +142,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_pigPet.js -O /jd/scripts/jd_pigPet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_dreamFactory.js -O /jd/scripts/jd_dreamFactory.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cash.js -O /jd/scripts/jd_new_cash.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_carnivalcity_help.js -O /jd/scripts/jd_help_carnivalcity.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -168,6 +168,7 @@ jd_decompression
 jd_senbeans
 jd_new_cash
 jd_exchange_cash
+jd_help_carnivalcity
 "
 
 #添加需要添加脚本的 cron
@@ -246,6 +247,7 @@ jd_appliances="55 21,22 * * * jd jd_appliances"
 jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
 jd_senbeans="45 1,12,16,22 * * * jd jd_senbeans"
 jd_new_cash="5 5,12,17,22 * * * jd jd_new_cash"
+jd_help_carnivalcity="10 0,8,13,17,22 * * * jd jd_help_carnivalcity"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
