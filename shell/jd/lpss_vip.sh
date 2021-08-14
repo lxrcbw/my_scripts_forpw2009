@@ -151,6 +151,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_decompression.js -O /jd/scripts/jd_decompression.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_sendBeans.js -O /jd/scripts/jd_senbeans.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_pigPet.js -O /jd/scripts/jd_pigPet.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
