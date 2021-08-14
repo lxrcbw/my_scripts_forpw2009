@@ -107,7 +107,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ddnc_farmpark.js -O /jd/scripts/jd_ddnc_farmpark.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_esManager.js -O /jd/scripts/jd_esManager.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_blueCoin.js -O /jd/scripts/jd_new_blueCoin.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cash_exchange.js -O /jd/scripts/jd_cash_exchange.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_cash_exchange.js -O /jd/scripts/jd_exchange_cash.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_MMdou.js -O /jd/scripts/jd_gua_MMdou.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_mb.js -O /jd/scripts/jd_mb.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jump.js -O /jd/scripts/jd_jump.js
@@ -140,6 +140,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_sendBeans.js -O /jd/scripts/jd_senbeans.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_pigPet.js -O /jd/scripts/jd_pigPet.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_dreamFactory.js -O /jd/scripts/jd_dreamFactory.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cash.js -O /jd/scripts/jd_new_cash.js
 
 
 #添加需要添加的脚本 name
@@ -164,6 +166,8 @@ gua_xiaolong
 jd_appliances
 jd_decompression
 jd_senbeans
+jd_new_cash
+jd_exchange_cash
 "
 
 #添加需要添加脚本的 cron
@@ -207,8 +211,6 @@ jd_wish="3 6,12,15 * * * jd jd_wish"
 jd_cfd="5 8,13,19 * * * jd jd_cfd"
 jd_joy_steal="10 0-21/3 * * * jd jd_joy_steal"
 jd_wealth_island="18 0-23/2 * * * jd jd_wealth_island"
-jd_star_movement_bet="11 12,20 * * * jd jd_star_movement_bet"
-jd_star_movement_map="7 10,20 * * * jd jd_star_movement_map"
 jd_Factory_tuan="7 8,12,15 jd jd_Factory_tuan"
 jd_wxFans="1 8,15 * * * jd jd_wxFans"
 jd_fcyqm="0,2 0 * * * jd jd_fcyqm"
@@ -217,7 +219,7 @@ jd_ddnc_farmpark="31 7,15 * * * jd jd_ddnc_farmpark"
 jd_esManager="39 7,15 * * * jd jd_esManager"
 jd_cfdtx="59 11,12,23 * * * jd jd_cfdtx"
 jd_new_blueCoin="59 23 * * * jd jd_new_blueCoin"
-jd_cash_exchange="0,1 0 * * * jd jd_cash_exchange"
+jd_exchange_cash="0,1 0 * * * jd jd_exchange_cash"
 jd_gua_MMdou="18 9,15 * * * jd jd_gua_MMdou"
 jd_mb="5 9,12,15 * * * jd jd_mb"
 jd_jump="1 0,11,21 * * * jd jd_jump"
@@ -236,8 +238,6 @@ jd_ldhwj="11 1,9,15,20 * * * jd jd_ldhwj"
 jd_nzmh="35 1,8,15,23 * * * jd jd_nzmh"
 jx_sign="20 1,8,15,22 * * * jd jx_sign"
 jd_ryhxj="1 1 * * * jd jd_ryhxj"
-gua_opencard9="45 11 * * * jd gua_opencard9"
-gua_opencard10="45 11 * * * jd gua_opencard10"
 jd_ylyn="40 5,18 * * * jd jd_ylyn"
 jd_qcshj="30 9,21 12-20 8 * jd jd_qcshj"
 gua_xmGame="33 8,22 13-31 8 * jd gua_xmGame"
@@ -245,11 +245,12 @@ gua_xiaolong="22 9,19 13-25 8 * jd gua_xiaolong"
 jd_appliances="55 21,22 * * * jd jd_appliances"
 jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
 jd_senbeans="45 1,12,16,22 * * * jd jd_senbeans"
+jd_new_cash="5 5,12,17,22 * * * jd jd_new_cash"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-gua_opencard9
-gua_opencard10
+jd_cash_exchange
+jd_cash
 "
 
 #awk '{print $NF}' filename
