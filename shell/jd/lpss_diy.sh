@@ -138,7 +138,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_appliances.js -O /jd/scripts/jd_appliances.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_decompression.js -O /jd/scripts/jd_decompression.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_sendBeans.js -O /jd/scripts/jd_senbeans.js
 
 
 #添加需要添加的脚本 name
@@ -162,6 +162,7 @@ gua_xmGame
 gua_xiaolong
 jd_appliances
 jd_decompression
+jd_senbeans
 "
 
 #添加需要添加脚本的 cron
@@ -242,6 +243,7 @@ gua_xmGame="33 8,22 13-31 8 * jd gua_xmGame"
 gua_xiaolong="22 9,19 13-25 8 * jd gua_xiaolong"
 jd_appliances="55 21,22 * * * jd jd_appliances"
 jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
+jd_senbeans="45 1,12,16,22 * * * jd jd_senbeans"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
