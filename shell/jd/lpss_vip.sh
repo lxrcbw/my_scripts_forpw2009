@@ -154,6 +154,10 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_pigPet.js -O /jd/scripts/jd_pigPet.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_dreamFactory.js -O /jd/scripts/jd_dreamFactory.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_carnivalcity_help.js -O /jd/scripts/jd_help_carnivalcity.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jdzz.js -O /jd/scripts/jd_jdzz.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_golden_machine.js -O /jd/scripts/jd_golden_machine.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/jd_new_sign.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -173,6 +177,9 @@ jd_appliances
 jd_decompression
 jd_senbeans
 jd_help_carnivalcity
+jd_star_shop
+jd_golden_machine
+jd_new_sign
 "
 
 #添加需要添加脚本的 cron
@@ -246,6 +253,9 @@ jd_appliances="55 21,22 * * * jd jd_appliances"
 jd_decompression="18,36 9,19,22 13-25 8 * jd jd_decompression"
 jd_senbeans="45 16,22 * * * jd jd_senbeans"
 jd_help_carnivalcity="10 15,17,22 * * * jd jd_help_carnivalcity"
+jd_golden_machine="10 9,18 9-25 8 * jd jd_golden_machine"
+jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
+jd_new_sign="1 0,9,15,22 jd jd_new_sign"
 
 
 #添加需要删除的脚本的 name
