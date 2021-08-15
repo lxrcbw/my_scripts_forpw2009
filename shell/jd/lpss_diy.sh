@@ -145,6 +145,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jdzz.js -O /jd/scripts/jd_jdzz.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_star_shop.js -O /jd/scripts/jd_star_shop.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_golden_machine.js -O /jd/scripts/jd_golden_machine.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/jd_new_sign.js
 
 #添加需要添加的脚本 name
 my_scripts_list_add="
@@ -174,6 +175,7 @@ jd_help_carnivalcity
 jd_fan
 jd_star_shop
 jd_golden_machine
+jd_new_sign
 "
 
 #添加需要添加脚本的 cron
@@ -256,6 +258,7 @@ jd_help_carnivalcity="10 0,8,13,17,22 * * * jd jd_help_carnivalcity"
 jd_fan="32 6,18 * * * jd jd_fan"
 jd_golden_machine="10 9,18 9-25 8 * jd jd_golden_machine"
 jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
+jd_new_sign="1 0,9,15,22 jd jd_new_sign"
 
 
 #添加需要删除的脚本的 name
