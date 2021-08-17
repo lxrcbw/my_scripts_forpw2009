@@ -79,6 +79,7 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/lpss_scripts/main/lxk/jd_big_winner.js -O /jd/scripts/jd_big_winner.js
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/check_vip.sh -O /jd/sample/lpss_check.sh && chmod +x /jd/sample/lpss_check.sh
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
@@ -165,6 +166,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/m
 #添加需要添加的脚本 name
 my_scripts_list_add="
 lpss_vip
+lpss_check
 lpss_del_log
 jd_clear_shop
 jd_gua_carnivalcity
@@ -185,9 +187,12 @@ jd_golden_machine
 jd_new_sign
 "
 
-#添加需要添加脚本的 cron
+#添加需要添加 lpss 脚本 cron
 lpss_vip="*/10 * * * * bash /jd/config/lpss_vip.sh >> /jd/log/lpss_vip.log 2>&1"
+lpss_check="11 */2 * * * bash /jd/sample/lpss_check.sh >> /jd/log/lpss_check.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/config/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
+
+#添加需要添加 js 脚本 cron
 jd_super_redrain="0,1 0-23/1 * * * jd jd_super_redrain"
 jd_half_redrain="30,31 20-23/1 * * * jd jd_half_redrain"
 jd_clear_shop="45 22 * * * jd jd_clear_shop"
