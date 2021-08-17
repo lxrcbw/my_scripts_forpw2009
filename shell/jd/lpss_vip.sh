@@ -189,7 +189,7 @@ jd_new_sign
 
 #添加需要添加 lpss 脚本 cron
 lpss_vip="*/10 * * * * bash /jd/config/lpss_vip.sh >> /jd/log/lpss_vip.log 2>&1"
-lpss_check="11 */2 * * * bash /jd/sample/lpss_check.sh >> /jd/log/lpss_check.log 2>&1"
+lpss_check="7 */2 * * * bash /jd/sample/lpss_check.sh >> /jd/log/lpss_check.log 2>&1"
 lpss_del_log="23 23 * * * bash /jd/config/lpss_del_log.sh >> /jd/log/lpss_del_log.log 2>&1"
 
 #添加需要添加 js 脚本 cron
