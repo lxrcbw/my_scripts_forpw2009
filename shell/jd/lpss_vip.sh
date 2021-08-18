@@ -160,7 +160,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_golden_machine.js -O /jd/scripts/jd_golden_machine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/jd_new_sign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/JD_DailyBonus.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_opencard12.js -O /jd/scripts/gua_opencard12.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard12.js -O /jd/scripts/gua_opencard12.js
 
 
 #添加需要添加的脚本 name
@@ -265,7 +265,7 @@ jd_help_carnivalcity="10 15,17,22 * * * jd jd_help_carnivalcity"
 jd_golden_machine="10 9,18 9-25 8 * jd jd_golden_machine"
 jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
 jd_new_sign="1 0,9,15,22 jd jd_new_sign"
-gua_opencard12="15,23 10 * * * jd gua_opencard12"
+gua_opencard12="15,23 11 * * * jd gua_opencard12"
 
 
 #添加需要删除的脚本的 name
