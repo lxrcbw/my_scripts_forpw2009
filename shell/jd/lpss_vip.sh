@@ -161,6 +161,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/jd_new_sign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/JD_DailyBonus.js 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard12.js -O /jd/scripts/gua_opencard12.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard13.js -O /jd/scripts/gua_opencard13.js
 
 
 #添加需要添加的脚本 name
@@ -186,6 +187,7 @@ jd_star_shop
 jd_golden_machine
 jd_new_sign
 gua_opencard12
+gua_opencard13
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -266,6 +268,7 @@ jd_golden_machine="10 9,18 9-25 8 * jd jd_golden_machine"
 jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
 jd_new_sign="1 0,9,15,22 jd jd_new_sign"
 gua_opencard12="15,23 11 * * * jd gua_opencard12"
+gua_opencard13="15,23 12 * * * jd gua_opencard13"
 
 
 #添加需要删除的脚本的 name
