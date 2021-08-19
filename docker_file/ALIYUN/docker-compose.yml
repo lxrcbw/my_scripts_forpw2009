@@ -1,0 +1,16 @@
+version: '3'
+services:
+  webdav-aliyundriver:
+    image: zx5253/webdav-aliyundriver
+    container_name: webdav-aliyundriver
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./docker/etc/aliyun-driver/:/etc/aliyun-driver/
+    ports:
+      - "2333:8080"
+    tty: true
+    environment:
+      - TZ=Asia/Shanghai
+      - ALIYUNDRIVE_REFRESH_TOKEN=9f0580e9222f452f92e9bd87b033df04
+      - ALIYUNDRIVE_AUTH_PASSWORD=admin@cpdd
