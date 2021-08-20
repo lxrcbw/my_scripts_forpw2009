@@ -153,6 +153,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backu
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard13.js -O /jd/scripts/gua_opencard13.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard14.js -O /jd/scripts/gua_opencard14.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_industryLottery.js -O /jd/scripts/jd_industryLottery.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kxcdz.js -O /jd/scripts/jd_kxcdz.js
 
 
 #添加需要添加的脚本 name
@@ -189,6 +190,7 @@ gua_opencard12
 gua_opencard13
 gua_opencard14
 jd_industryLottery
+jd_kxcdz
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -279,6 +281,8 @@ gua_opencard12="15,23 11 * * * jd gua_opencard12"
 gua_opencard13="15,23 12 * * * jd gua_opencard13"
 gua_opencard14="15,23 15 * * * jd gua_opencard14"
 jd_industryLottery="9 0,11,17 * * * jd jd_industryLottery"
+jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
+
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
