@@ -186,9 +186,6 @@ jd_fan
 jd_star_shop
 jd_golden_machine
 jd_new_sign
-gua_opencard12
-gua_opencard13
-gua_opencard14
 jd_industryLottery
 jd_kxcdz
 "
@@ -286,8 +283,9 @@ jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-jd_cash_exchange
-jd_cash
+gua_opencard12
+gua_opencard13
+gua_opencard14
 "
 
 #awk '{print $NF}' filename
