@@ -149,9 +149,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_golden_machine.js -O /jd/scripts/jd_golden_machine.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/jd_new_sign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js -O /jd/scripts/JD_DailyBonus.js 
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard12.js -O /jd/scripts/gua_opencard12.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard13.js -O /jd/scripts/gua_opencard13.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/gua_opencard14.js -O /jd/scripts/gua_opencard14.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_opencard15.js -O /jd/scripts/gua_opencard15.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_industryLottery.js -O /jd/scripts/jd_industryLottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kxcdz.js -O /jd/scripts/jd_kxcdz.js
 
@@ -188,6 +186,7 @@ jd_golden_machine
 jd_new_sign
 jd_industryLottery
 jd_kxcdz
+gua_opencard15
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -274,11 +273,9 @@ jd_fan="32 6,18 * * * jd jd_fan"
 jd_golden_machine="10 9,18 9-25 8 * jd jd_golden_machine"
 jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
 jd_new_sign="1 0,9,15,22 jd jd_new_sign"
-gua_opencard12="15,23 11 * * * jd gua_opencard12"
-gua_opencard13="15,23 12 * * * jd gua_opencard13"
-gua_opencard14="15,23 15 * * * jd gua_opencard14"
 jd_industryLottery="9 0,11,17 * * * jd jd_industryLottery"
 jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
+gua_opencard15="15,33 19 * * * jd gua_opencard15"
 
 
 #添加需要删除的脚本的 name
