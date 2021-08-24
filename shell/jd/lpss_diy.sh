@@ -90,9 +90,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_joy_reward.js -O /jd/scripts/jd_new_joy_reward.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement.js -O /jd/scripts/jd_summer_movement.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_summer_movement_help.js -O /jd/scripts/jd_summer_movement_help.js
-wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/MovementFaker.js -O /jd/scripts/MovementFaker.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/sign_graphics_validate.js -O /jd/scripts/sign_graphics_validate.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js -O /jd/scripts/jd_sign_graphics.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/gua_wealth_island.js -O /jd/scripts/jd_wealth_island.js
@@ -152,6 +149,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/NobyDa/Script/m
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_opencard15.js -O /jd/scripts/gua_opencard15.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_industryLottery.js -O /jd/scripts/jd_industryLottery.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kxcdz.js -O /jd/scripts/jd_kxcdz.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dwapp.js -O /jd/scripts/jd_dwapp.js
 
 
 #添加需要添加的脚本 name
@@ -186,7 +184,7 @@ jd_golden_machine
 jd_new_sign
 jd_industryLottery
 jd_kxcdz
-gua_opencard15
+jd_dwapp
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -275,14 +273,12 @@ jd_star_shop="33 4,7 8-20 8 * jd jd_star_shop"
 jd_new_sign="1 0,9,15,22 jd jd_new_sign"
 jd_industryLottery="9 0,11,17 * * * jd jd_industryLottery"
 jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
-gua_opencard15="15,33 19 * * * jd gua_opencard15"
+jd_dwapp="31 7,19 * * * jd jd_dwapp"
 
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
-gua_opencard12
-gua_opencard13
-gua_opencard14
+gua_opencard15
 "
 
 #awk '{print $NF}' filename
