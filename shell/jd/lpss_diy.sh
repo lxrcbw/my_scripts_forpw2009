@@ -152,6 +152,8 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dwapp.js -O /jd/scripts/jd_dwapp.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_superMarket.js -O /jd/scripts/jd_new_superMarket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ccSign.js -O /jd/scripts/jd_ccSign.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
+
 
 
 #添加需要添加的脚本 name
