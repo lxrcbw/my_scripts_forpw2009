@@ -151,6 +151,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_kxcdz.js -O /jd/scripts/jd_kxcdz.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dwapp.js -O /jd/scripts/jd_dwapp.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_superMarket.js -O /jd/scripts/jd_new_superMarket.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ccSign.js -O /jd/scripts/jd_ccSign.js
 
 
 #添加需要添加的脚本 name
@@ -187,6 +188,7 @@ jd_industryLottery
 jd_kxcdz
 jd_dwapp
 jd_new_superMarket
+jd_ccSign
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -277,6 +279,7 @@ jd_industryLottery="9 0,11,17 * * * jd jd_industryLottery"
 jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
 jd_dwapp="31 7,19 * * * jd jd_dwapp"
 jd_new_superMarket="12 0,8,15,22 * * * jd jd_new_superMarket"
+jd_ccSign="15 0,9 * * * jd jd_ccSign"
 
 
 #添加需要删除的脚本的 name
