@@ -78,7 +78,7 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_bet.js -O /jd/scripts/jd_star_movement_bet.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/star261/jd_star_movement_map.js -O /jd/scripts/jd_star_movement_map.js
 
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/server.js -O /jd/panel/server.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/server_v4.js -O /jd/panel/server.js
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
@@ -153,6 +153,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_superMarket.js -O /jd/scripts/jd_new_superMarket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ccSign.js -O /jd/scripts/jd_ccSign.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_opencard17.js -O /jd/scripts/gua_opencard17.js
 
 
 
@@ -191,6 +192,7 @@ jd_kxcdz
 jd_dwapp
 jd_new_superMarket
 jd_ccSign
+gua_opencard17
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -282,6 +284,7 @@ jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
 jd_dwapp="31 7,19 * * * jd jd_dwapp"
 jd_new_superMarket="12 0,8,15,22 * * * jd jd_new_superMarket"
 jd_ccSign="15 0,9 * * * jd jd_ccSign"
+gua_opencard17="15 16 * * * jd gua_opencard17"
 
 
 #添加需要删除的脚本的 name

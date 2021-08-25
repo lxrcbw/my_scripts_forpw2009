@@ -80,7 +80,7 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/check_vip.sh -O /jd/sample/lpss_check.sh && chmod +x /jd/sample/lpss_check.sh
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/shell/jd/lpss_del_log.sh -O /jd/config/lpss_del_log.sh  && chmod +x /jd/config/lpss_del_log.sh
 
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/server.js -O /jd/panel/server.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/my_scripts/main/js_code/jd/server_v4.js -O /jd/panel/server.js
 
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_super_redrain.js  -O /jd/scripts/jd_super_redrain.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_half_redrain.js -O /jd/scripts/jd_half_redrain.js
@@ -166,7 +166,7 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/fake
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dwapp.js -O /jd/scripts/jd_dwapp.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_superMarket.js -O /jd/scripts/jd_new_superMarket.js
 wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ccSign.js -O /jd/scripts/jd_ccSign.js
-
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_opencard17.js -O /jd/scripts/gua_opencard17.js
 
 
 #添加需要添加的脚本 name
@@ -196,6 +196,7 @@ jd_kxcdz
 jd_dwapp
 jd_new_superMarket
 jd_ccSign
+gua_opencard17
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -262,8 +263,6 @@ jd_ldhwj="11 1,9,15,20 * * * jd jd_ldhwj"
 jd_nzmh="35 1,8,15,23 * * * jd jd_nzmh"
 jx_sign="20 1,8,15,22 * * * jd jx_sign"
 jd_ryhxj="1 1 * * * jd jd_ryhxj"
-gua_opencard9="45 11 * * * jd gua_opencard9"
-gua_opencard10="45 11 * * * jd gua_opencard10"
 jd_ylyn="40 5,18 * * * jd jd_ylyn"
 jd_qcshj="30 9,21 12-20 8 * jd jd_qcshj"
 gua_xmGame="33 8,22 13-31 8 * jd gua_xmGame"
@@ -280,6 +279,7 @@ jd_kxcdz="31 1,11,16 * * * jd jd_kxcdz"
 jd_dwapp="31 7,19 * * * jd jd_dwapp"
 jd_new_superMarket="12 0,8,15,22 * * * jd jd_new_superMarket"
 jd_ccSign="15 0,9 * * * jd jd_ccSign"
+gua_opencard17="15 16 * * * jd gua_opencard17"
 
 
 #添加需要删除的脚本的 name
