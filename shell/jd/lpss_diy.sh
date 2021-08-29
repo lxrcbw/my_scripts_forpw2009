@@ -87,8 +87,8 @@ fi
 #wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_necklace.js -O /jd/scripts/jd_necklace.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/ZooFaker_Necklace.js -O /jd/scripts/ZooFaker_Necklace.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/JDJRValidator_Pure.js -O /jd/scripts/JDJRValidator_Pure.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy.js -O /jd/scripts/jd_joy.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_joy_steal.js -O /jd/scripts/jd_joy_steal.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_joy_reward.js -O /jd/scripts/jd_new_joy_reward.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/sign_graphics_validate.js -O /jd/scripts/sign_graphics_validate.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js -O /jd/scripts/jd_sign_graphics.js
