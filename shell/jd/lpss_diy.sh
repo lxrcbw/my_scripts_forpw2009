@@ -114,7 +114,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_gold_creator.js -O /jd/scripts/jd_gold_creator.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_bean_home.js -O /jd/scripts/jd_bean_home.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/DovFork/Wenmoux/master/jd/jd_qqxing.js -O /jd/scripts/jd_qqxing.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jxqd_new.js -O /jd/scripts/jd_new_jxqd.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dpqd.js -O /jd/scripts/jd_dpqd.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_speed_redpocke.js -O /jd/scripts/jd_new_speed_redpocke.js
@@ -136,7 +135,6 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_appliances.js -O /jd/scripts/jd_appliances.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_decompression.js -O /jd/scripts/jd_decompression.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_lotteryMachine.js -O /jd/scripts/jd_lotteryMachine.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_sendBeans.js -O /jd/scripts/jd_senbeans.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_pigPet.js -O /jd/scripts/jd_pigPet.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_dreamFactory.js -O /jd/scripts/jd_dreamFactory.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_cash.js -O /jd/scripts/jd_new_cash.js
@@ -152,8 +150,11 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/smiek2221/scrip
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_dwapp.js -O /jd/scripts/jd_dwapp.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_superMarket.js -O /jd/scripts/jd_new_superMarket.js
 #wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_ccSign.js -O /jd/scripts/jd_ccSign.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
-#wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/gua_opencard17.js -O /jd/scripts/gua_opencard17.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_redPacket.js -O /jd/scripts/jd_redPacket.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_live.js -O /jd/scripts/jd_new_live.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/npc/jd_jxlhb.js -O /jd/scripts/jd_jxlhb.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/forpw2009/backup/main/lpssxs/jd_fruit.js -O /jd/scripts/jd_fruit.js
+wget -q --no-check-certificate https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_sendBeans.js -O /jd/scripts/jd_senbeans.js
 
 
 
@@ -164,35 +165,7 @@ lpss_jdc
 lpss_check
 lpss_del_log
 jd_clear_shop
-jd_live_redrain
-jd_dpqd
-jd_new_speed_redpocke
-jd_gua_doge
-jd_gua_carnivalcity
-jd_ldhwj
-jx_sign
-jd_nzmh
-jd_ryhxj
-jd_ylyn
-jd_qcshj
-gua_xmGame
-gua_xiaolong
-jd_appliances
-jd_decompression
-jd_senbeans
-jd_new_cash
-jd_exchange_cash
-jd_help_carnivalcity
-jd_fan
-jd_star_shop
-jd_golden_machine
-jd_new_sign
-jd_industryLottery
-jd_kxcdz
-jd_dwapp
-jd_new_superMarket
-jd_ccSign
-gua_opencard17
+jd_new_live
 "
 
 #添加需要添加 lpss 脚本 cron
@@ -285,7 +258,7 @@ jd_dwapp="31 7,19 * * * jd jd_dwapp"
 jd_new_superMarket="12 0,8,15,22 * * * jd jd_new_superMarket"
 jd_ccSign="15 0,9 * * * jd jd_ccSign"
 gua_opencard17="15 16 * * * jd gua_opencard17"
-
+jd_new_live="10-20/5 12 * * * jd jd_new_live"
 
 #添加需要删除的脚本的 name
 my_scripts_list_del="
