@@ -30,7 +30,7 @@ let DD = RT(30000,40000)//随机延迟
 let dd = RT(0,20)
 K = '', $.message = '', DATA = '', XH = '0', COOKIES_SPLIT = '',ddtime = '',wzids = '',spids = '',id = '',sy = 0;
 
-let jztturlArr = ["KK4RsFzO5VkOrJjoRXGakizq8P6JHf20","fGopzTuBviv6aiIjTpyMjWjqR6ObWoKi","8n_PsMlCaYlwYYJ44Dghx5jMOfdNmLiF","A3FCLD24bYCmS7u_ZW5Bu1wnFxLnuGJb"];    
+let jztturlArr = ["KK4RsFzO5VkOrJjoRXGakizq8P6JHf20"];    
 let jztturlVal = ``;    
 let middlejzttURL = [];
 
