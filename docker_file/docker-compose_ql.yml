@@ -20,5 +20,3 @@ services:
       - ./scripts:/ql/scripts
       - ./jbot:/ql/jbot
       - ./ninja:/ql/ninja
-    labels:
-      - com.centurylinklabs.watchtower.enable=false
