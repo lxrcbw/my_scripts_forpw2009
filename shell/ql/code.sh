@@ -23,7 +23,7 @@ repo=$repo4                                        #默认调用 shufflewzc_fake
 DEBUG="0"
 
 ## 本脚本限制的最大线程数量
-proc_num="9"
+proc_num="32"
 
 ## 备份配置文件开关，默认是1，表示开启；设置为0，表示关闭。备份路径 /ql/config/bak/
 BACKUP="1"
