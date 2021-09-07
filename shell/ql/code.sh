@@ -16,21 +16,21 @@ repo4='shufflewzc_faker2'                          #预设的 shufflewzc 仓库
 repo5='Wenmoux_scripts_wen_chinnkarahoi'           #预设的 Wenmoux 仓库，用于读取口袋书店互助码。需提前拉取温某人的仓库或口袋书店脚本并完整运行。
 repo6='Aaron-lv_sync_jd_scripts'                   #预设的 Aaron-lv 仓库
 repo7='smiek2221_scripts'                          #预设的 smiek2221 仓库
-repo8='yuannian1112_jd_scripts'                          #预设的 smiek2221 仓库
-repo=$repo8                                        #默认调用 shufflewzc_faker2 仓库脚本日志
+repo8='yuannian1112_jd_scripts'                    #预设的 yuannian1112_jd_scripts 仓库
+repo=$repo4                                        #默认调用 shufflewzc_faker2 仓库脚本日志
 
 ## 调试模式开关，默认是0，表示关闭；设置为1，表示开启
 DEBUG="1"
 
 ## 本脚本限制的最大线程数量
-proc_num="7"
+proc_num="9"
 
 ## 备份配置文件开关，默认是1，表示开启；设置为0，表示关闭。备份路径 /ql/config/bak/
 BACKUP="1"
 ## 是否删除指定天数以前的备份文件开关，默认是1，表示开启；设置为0，表示关闭。删除路径 /ql/config/bak/
 CLEANBAK="1"
 ## 定义删除指定天数以前的备份文件
-CLEANBAK_DAYS="2"
+CLEANBAK_DAYS="1"
 
 ## 定义 jcode 脚本导出的互助码模板样式（选填）
 ## 不填 使用“按编号顺序互助模板”，Cookie编号在前的优先助力
@@ -47,7 +47,7 @@ DiyHelpType="0"
 diy_help_rules(){
     case $1 in
         Fruit)
-            tmp_helptype="0"            # 东东农场使用“全部一致互助模板”，所有账户要助力的码全部一致
+            tmp_helptype="1"            # 东东农场使用“全部一致互助模板”，所有账户要助力的码全部一致
             ;;
         DreamFactory | JdFactory)
             tmp_helptype="1"            # 京喜工厂和东东工厂使用“均等机会互助模板”，所有账户获得助力次数一致
