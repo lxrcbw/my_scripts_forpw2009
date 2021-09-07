@@ -20,7 +20,7 @@ repo8='yuannian1112_jd_scripts'                    #预设的 yuannian1112_jd_sc
 repo=$repo4                                        #默认调用 shufflewzc_faker2 仓库脚本日志
 
 ## 调试模式开关，默认是0，表示关闭；设置为1，表示开启
-DEBUG="1"
+DEBUG="0"
 
 ## 本脚本限制的最大线程数量
 proc_num="9"
