@@ -1,0 +1,204 @@
+## 开始执行... 2021-09-07 22:52:31
+
+
+#【22:52:32】 当前 code.sh 的线程数量：7
+
+#【22:52:32】 预设的 JD_COOKIE 数量：5
+
+#【22:52:32】 预设的 JD_COOKIE 环境变量数量：5
+
+#【22:52:32】 从日志提取互助码，编号和配置文件中Cookie编号完全对应，如果为空就是所有日志中都没有。
+
+#【22:52:32】 即使某个MyXxx变量未赋值，也可以将其变量名填在ForOtherXxx中，jtask脚本会自动过滤空值。
+
+#【22:52:32】 您选择的互助码模板为：所有账号机会均等助力。
+
+#【22:52:32】 默认调用 yuannian1112_jd_scripts 的脚本日志，格式化导出互助码，生成互助规则！
+
+## 账号用户名及 COOKIES 整理如下：
+## 用户名 1：jd_BYMUzMdsEEas 备注：remark=HQH2021 (COOKIE 有效)
+Cookie1="pt_key=AAJhLh83ADBdZSaI-kRCPQjMNZqlWj2V2gTfKkKwEzpTBc22PNNFAWnhKrZPgeR8iVTmoIyw3pM;pt_pin=jd_BYMUzMdsEEas;"
+## 用户名 2：jd_613577a9e2c01 备注：remark=Lxy521031; (COOKIE 有效)
+Cookie2="pt_key=AAJhNXfCADA1dITU23x228GZuJjxfOCbjK8JnWbXlRMTt-Ln39qSBmY-7dpd_iAsSSHfWRyYnJk;pt_pin=jd_613577a9e2c01;"
+## 用户名 3：jd_ARZWtoonOORc 备注：remark=Sasukeo_o; (COOKIE 有效)
+Cookie3="pt_key=AAJhNccrADBzMvRGKyPSUsAmq7IJ8GkpdDfUMfG-fEmJE2gc2HsqTbhCtW45xLiwmehcVeCCK5k;pt_pin=jd_ARZWtoonOORc;"
+## 用户名 4：jd_7a8eccc3b1d80 备注：remark=DecadentYd; (COOKIE 有效)
+Cookie4="pt_key=AAJhLcnLADAnyFeYb1eFYwIRxNSZxdsHOryQ8dJGz6Q4uL9a1F3sJAShJ3FnPgnmrM7Hbc5YStA;pt_pin=jd_7a8eccc3b1d80;"
+## 用户名 5：18200398451_p 备注：remark=礼乐x; (COOKIE 有效)
+Cookie5="pt_key=AAJhNXdgADBnbJZObMVjNV__z6sl6UGna-oskDKVvddhT0wQTHsU-0uKP4JcnrYAzjHul7SBF6M;pt_pin=18200398451_p;"
+
+## 东东农场：
+MyFruit1=''
+MyFruit2='0b5517df9c75493284450c6827203029'
+MyFruit3='909d108fafe5402aacfaf0c556cbdbb1'
+MyFruit4='526cd796383942639e8cffefa300ca0f'
+MyFruit5='c6c164802fbc4eddb490a97ac261f9a1'
+
+## 采用"均等助力"互助模板：
+ForOtherFruit1="${MyFruit2}@${MyFruit3}@${MyFruit4}@${MyFruit5}"
+ForOtherFruit2="${MyFruit3}@${MyFruit4}@${MyFruit5}@${MyFruit1}"
+ForOtherFruit3="${MyFruit4}@${MyFruit5}@${MyFruit1}@${MyFruit2}"
+ForOtherFruit4="${MyFruit5}@${MyFruit1}@${MyFruit2}@${MyFruit3}"
+ForOtherFruit5="${MyFruit1}@${MyFruit2}@${MyFruit3}@${MyFruit4}"
+
+## 东东萌宠：
+MyPet1=''
+MyPet2='MTEyNjkzMjAwMDAwMDAwMDUwNTUzMjIz'
+MyPet3='MTE1NDY3NTIwMDAwMDAwNTAzNzM4Njc='
+MyPet4='MTAxODc2NTE0NzAwMDAwMDAyODcyMDI2Nw=='
+MyPet5='MTE1NDQ5OTIwMDAwMDAwNDI4MzA1MjU='
+
+## 采用"均等助力"互助模板：
+ForOtherPet1="${MyPet2}@${MyPet3}@${MyPet4}@${MyPet5}"
+ForOtherPet2="${MyPet3}@${MyPet4}@${MyPet5}@${MyPet1}"
+ForOtherPet3="${MyPet4}@${MyPet5}@${MyPet1}@${MyPet2}"
+ForOtherPet4="${MyPet5}@${MyPet1}@${MyPet2}@${MyPet3}"
+ForOtherPet5="${MyPet1}@${MyPet2}@${MyPet3}@${MyPet4}"
+
+## 种豆得豆：
+MyBean1=''
+MyBean2='olmijoxgmjutzpepns2pse75xjjovtyyxv6fihq'
+MyBean3='2vgtxj43q3jqyg73actwxiegs3kywmnylytuwmy'
+MyBean4='4npkonnsy7xi3y4buw6tvr3d2a4yzeyhz3qeema'
+MyBean5='zcdulwmdja2wdikhipmffbtye43h7wlwy7o5jii'
+
+## 采用"均等助力"互助模板：
+ForOtherBean1="${MyBean2}@${MyBean3}@${MyBean4}@${MyBean5}"
+ForOtherBean2="${MyBean3}@${MyBean4}@${MyBean5}@${MyBean1}"
+ForOtherBean3="${MyBean4}@${MyBean5}@${MyBean1}@${MyBean2}"
+ForOtherBean4="${MyBean5}@${MyBean1}@${MyBean2}@${MyBean3}"
+ForOtherBean5="${MyBean1}@${MyBean2}@${MyBean3}@${MyBean4}"
+
+## 京喜工厂：
+MyDreamFactory1=''
+MyDreamFactory2='I9zr2CJ5GeUh5p92E2AaYw=='
+MyDreamFactory3='OjG_WE00NxZaPCVbTG__EQ=='
+MyDreamFactory4='M-y-ugagTCz4Xg6RYQ7CvA=='
+MyDreamFactory5='44FcfayfHY_zTPNDGh_WVw=='
+
+## 采用"均等助力"互助模板：
+ForOtherDreamFactory1="${MyDreamFactory2}@${MyDreamFactory3}@${MyDreamFactory4}@${MyDreamFactory5}"
+ForOtherDreamFactory2="${MyDreamFactory3}@${MyDreamFactory4}@${MyDreamFactory5}@${MyDreamFactory1}"
+ForOtherDreamFactory3="${MyDreamFactory4}@${MyDreamFactory5}@${MyDreamFactory1}@${MyDreamFactory2}"
+ForOtherDreamFactory4="${MyDreamFactory5}@${MyDreamFactory1}@${MyDreamFactory2}@${MyDreamFactory3}"
+ForOtherDreamFactory5="${MyDreamFactory1}@${MyDreamFactory2}@${MyDreamFactory3}@${MyDreamFactory4}"
+
+## 东东工厂：
+MyJdFactory1=''
+MyJdFactory2='T0225KkcRh8a8FPQcROhlqQKdQCjVWnYaS5kRrbA'
+MyJdFactory3='T0205KkcMXxzkhCIf0SL65VZCjVWnYaS5kRrbA'
+MyJdFactory4='T0225KkcR08RoAeEcxmmlaMCdACjVWnYaS5kRrbA'
+MyJdFactory5='T018v_VxQB4a_FzTJRub1ACjVWnYaS5kRrbA'
+
+## 采用"均等助力"互助模板：
+ForOtherJdFactory1="${MyJdFactory2}@${MyJdFactory3}@${MyJdFactory4}@${MyJdFactory5}"
+ForOtherJdFactory2="${MyJdFactory3}@${MyJdFactory4}@${MyJdFactory5}@${MyJdFactory1}"
+ForOtherJdFactory3="${MyJdFactory4}@${MyJdFactory5}@${MyJdFactory1}@${MyJdFactory2}"
+ForOtherJdFactory4="${MyJdFactory5}@${MyJdFactory1}@${MyJdFactory2}@${MyJdFactory3}"
+ForOtherJdFactory5="${MyJdFactory1}@${MyJdFactory2}@${MyJdFactory3}@${MyJdFactory4}"
+
+## 疯狂的JOY：
+#【22:52:45】 未运行过 yuannian1112_jd_scripts_jd_crazy_joy.js 脚本，未产生日志
+
+## 京东赚赚：
+## 从日志中未找到任何互助码
+
+## 京喜农场：
+MyJxnc1=''
+MyJxnc2='{"smp":"39018ce01b3433695f2d6dac716914f7","active":"jdnc_1_3yuanyoutao210616_2","joinnum":3}'
+MyJxnc3=''
+MyJxnc4='{"smp":"2b6de44a80c070e24f98d93fa0e91612","active":"jdnc_1_3yuanyoutao210616_2","joinnum":2}'
+MyJxnc5='{"smp":"4496b745360560a8266b6936b4360744","active":"jdnc_1_2yuantudou210616_2","joinnum":1}'
+
+## 采用"均等助力"互助模板：
+ForOtherJxnc1="${MyJxnc2}@${MyJxnc3}@${MyJxnc4}@${MyJxnc5}"
+ForOtherJxnc2="${MyJxnc3}@${MyJxnc4}@${MyJxnc5}@${MyJxnc1}"
+ForOtherJxnc3="${MyJxnc4}@${MyJxnc5}@${MyJxnc1}@${MyJxnc2}"
+ForOtherJxnc4="${MyJxnc5}@${MyJxnc1}@${MyJxnc2}@${MyJxnc3}"
+ForOtherJxnc5="${MyJxnc1}@${MyJxnc2}@${MyJxnc3}@${MyJxnc4}"
+
+## 口袋书店：
+MyBookShop1=''
+MyBookShop2='1aaf252b73df4ae9aea1ca4a8df061e8'
+MyBookShop3=''
+MyBookShop4='0c06c073aa0a4858ae17e29d1c63a298'
+MyBookShop5='1842bb3958cf4c4bbe36873ddfe1224b'
+
+## 采用"均等助力"互助模板：
+ForOtherBookShop1="${MyBookShop2}@${MyBookShop3}@${MyBookShop4}@${MyBookShop5}"
+ForOtherBookShop2="${MyBookShop3}@${MyBookShop4}@${MyBookShop5}@${MyBookShop1}"
+ForOtherBookShop3="${MyBookShop4}@${MyBookShop5}@${MyBookShop1}@${MyBookShop2}"
+ForOtherBookShop4="${MyBookShop5}@${MyBookShop1}@${MyBookShop2}@${MyBookShop3}"
+ForOtherBookShop5="${MyBookShop1}@${MyBookShop2}@${MyBookShop3}@${MyBookShop4}"
+
+## 签到领现金：
+MyCash1='eU9YHoXPA7ZbpS2gviJQ'
+MyCash2='eU9Yau2xY_shoGeAySAT1w'
+MyCash3='eU9YHY7YAbh5rjCqtBFA'
+MyCash4='eU9Ya726M691om2Hyicb1g'
+MyCash5='IhM1bOyxb_Qi9G-6iw'
+
+## 采用"均等助力"互助模板：
+ForOtherCash1="${MyCash2}@${MyCash3}@${MyCash4}@${MyCash5}"
+ForOtherCash2="${MyCash3}@${MyCash4}@${MyCash5}@${MyCash1}"
+ForOtherCash3="${MyCash4}@${MyCash5}@${MyCash1}@${MyCash2}"
+ForOtherCash4="${MyCash5}@${MyCash1}@${MyCash2}@${MyCash3}"
+ForOtherCash5="${MyCash1}@${MyCash2}@${MyCash3}@${MyCash4}"
+
+## 闪购盲盒：
+MySgmh1=''
+MySgmh2='T0225KkcRh8a8FPQcROhlqQKdQCjVQmoaT5kRrbA'
+MySgmh3='T0205KkcMXxzkhCIf0SL65VZCjVQmoaT5kRrbA'
+MySgmh4='T0225KkcR08RoAeEcxmmlaMCdACjVQmoaT5kRrbA'
+MySgmh5='T018v_VxQB4a_FzTJRub1ACjVQmoaT5kRrbA'
+
+## 采用"均等助力"互助模板：
+ForOtherSgmh1="${MySgmh2}@${MySgmh3}@${MySgmh4}@${MySgmh5}"
+ForOtherSgmh2="${MySgmh3}@${MySgmh4}@${MySgmh5}@${MySgmh1}"
+ForOtherSgmh3="${MySgmh4}@${MySgmh5}@${MySgmh1}@${MySgmh2}"
+ForOtherSgmh4="${MySgmh5}@${MySgmh1}@${MySgmh2}@${MySgmh3}"
+ForOtherSgmh5="${MySgmh1}@${MySgmh2}@${MySgmh3}@${MySgmh4}"
+
+## 京喜财富岛：
+MyCfd1=''
+MyCfd2='B8BD4C6ED2A4C4BCCDA89FE85B3D2701F35AA6C2A60466241CFE0693680067D7'
+MyCfd3='1644AE4F66239EE2C561B05D153D6046884016B8212BF42F63BA1E56B4156F19'
+MyCfd4='2B60044F89219B7CDD3FE9E6E26DC0140A1C578D18A2DA005E9EC72085A9A1B3'
+MyCfd5='41169C06E03F34CF9D486ABA8AF9E9E4D0E61670D67862A091BA397EF7072078'
+
+## 采用"均等助力"互助模板：
+ForOtherCfd1="${MyCfd2}@${MyCfd3}@${MyCfd4}@${MyCfd5}"
+ForOtherCfd2="${MyCfd3}@${MyCfd4}@${MyCfd5}@${MyCfd1}"
+ForOtherCfd3="${MyCfd4}@${MyCfd5}@${MyCfd1}@${MyCfd2}"
+ForOtherCfd4="${MyCfd5}@${MyCfd1}@${MyCfd2}@${MyCfd3}"
+ForOtherCfd5="${MyCfd1}@${MyCfd2}@${MyCfd3}@${MyCfd4}"
+
+## 东东健康社区：
+MyHealth1=''
+MyHealth2='T0225KkcRh8a8FPQcROhlqQKdQCjVfnoaW5kRrbA'
+MyHealth3='T0205KkcMXxzkhCIf0SL65VZCjVfnoaW5kRrbA'
+MyHealth4='T0225KkcR08RoAeEcxmmlaMCdACjVfnoaW5kRrbA'
+MyHealth5='T018v_VxQB4a_FzTJRub1ACjVfnoaW5kRrbA'
+
+## 采用"均等助力"互助模板：
+ForOtherHealth1="${MyHealth2}@${MyHealth3}@${MyHealth4}@${MyHealth5}"
+ForOtherHealth2="${MyHealth3}@${MyHealth4}@${MyHealth5}@${MyHealth1}"
+ForOtherHealth3="${MyHealth4}@${MyHealth5}@${MyHealth1}@${MyHealth2}"
+ForOtherHealth4="${MyHealth5}@${MyHealth1}@${MyHealth2}@${MyHealth3}"
+ForOtherHealth5="${MyHealth1}@${MyHealth2}@${MyHealth3}@${MyHealth4}"
+
+## 京东手机狂欢城：
+#【22:52:50】 未运行过 yuannian1112_jd_scripts_jd_carnivalcity.js 脚本，未产生日志
+
+## 城城领现金：
+#【22:52:51】 未运行过 yuannian1112_jd_scripts_jd_city.js 脚本，未产生日志
+
+## 摇钱树：
+#【22:52:51】 未运行过 shufflewzc_faker2_jd_moneyTree_heip.js 脚本，未产生日志
+
+## 京喜token：
+## 从日志中未找到任何互助码
+
+#【22:52:59】 开始更新配置文件的互助码和互助规则
+
+#【22:56:52】 配置文件的互助码和互助规则已完成更新
