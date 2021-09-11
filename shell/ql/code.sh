@@ -4,7 +4,9 @@
 ## Fixed By lpssxs
 
 ## npc_add
+npc_log_dir="/ql/log/code/"
 npc_log="/ql/log/code/npc_help.log"
+
 
 ## 导入通用变量与函数
 dir_shell=/ql/shell
@@ -692,30 +694,36 @@ ps -ef|grep "$1"|grep -Ev "$2"|awk '{print $1}'|xargs kill -9
 kill_proc "code.sh" "grep|$$" >/dev/null 2>&1
 [[ $FixDependType = "1" ]] && [[ "$ps_num" -le $proc_num ]] && install_dependencies_all >/dev/null 2>&1 &
 
-## 如果code 文件夹不存在，则创建
-if [ ! -d "/ql/log/code" ]; then
-    echo -e "\n 创建code 文件夹 & npc_help.log 文件～"
-    mkdir /ql/log/code
-    touch /ql/log/code/npc_help.log
- else if [ ! -f "/ql/log/code/npc_help.log" ]; then
-    echo -e "\n 创建 npc_help.log 文件～"
-    touch /ql/log/code/npc_help.log
-    else 
-    cat /dev/null > /ql/log/code/npc_help.log
+
+
+## 如果code 文件夹不存在，则创建并且生成 npc_help.log 文件
+if [ ! -d "$npc_log_dir" ]; then
+    echo -e "\n#【`date +%X`】 创建code 文件夹 & npc_help.log 文件～"
+    mkdir $npc_log_dir
+    touch $npc_log
+    echo -e "\n#【`date +%X`】 完成code 文件夹 & npc_help.log 创建～"
+ else if [ ! -f "$npc_log" ]; then
+        echo -e "\n#【`date +%X`】 创建 npc_help.log 文件～"
+        touch $npc_log
+        echo -e "\n#【`date +%X`】 完成 npc_help.log 创建～"
+    else
+        echo -e "\n#【`date +%X`】 开始清空旧互助规则～"
+        cat /dev/null > $npc_log
+        echo -e "\n#【`date +%X`】 已清空旧互助规则～"
+    fi
 fi
 
-## code 文件夹下的log文件名字
-#latest_log=$(ls -r $dir_code | head -1)
-#latest_log_path="$dir_code/$latest_log"
-
+## 开始生成规则并输出到 npc_help.log 文件
+echo -e "\n#【`date +%X`】 开始生成规则～ （PS:此过程时间约1-2分钟，请耐心等待）"
 ps_num="$(ps | grep code.sh | grep -v grep | wc -l)"
 export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}" > $npc_log
+echo -e "\n#【`date +%X`】 生成规则完成，感谢等待～"
 
+## 开始适用互助规则到脚本中
+echo -e "\n#【`date +%X`】 开始适用规则～ （PS:此过程时间约3-5分钟，请耐心等待）"
 ## code 文件夹下的log文件名字
 latest_log=$(ls -r $dir_code | head -1)
 latest_log_path="$dir_code/$latest_log"
-
-echo -e "\n#【`date +%X`】 开始更新"
 sleep 5
 update_help
 
