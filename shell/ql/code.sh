@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-## Build 20210830-001
+## Update 20210911-001
+## Fixed By lpssxs
+
+## npc_add
+npc_log="/ql/log/code/npc_help.log"
 
 ## 导入通用变量与函数
 dir_shell=/ql/shell
@@ -43,11 +47,11 @@ HelpType="1"
 ## 设定值为 DiyHelpType="1" 表示启用功能；不填或填其他内容表示不开启功能。
 ## 如果只是想要控制某个活动以执行某种互助规则，可以参考下面 case 这个命令的例子来控制
 ## 活动名称参见 name_config 定义内容；具体可在本脚本中搜索 name_config=( 获悉
-DiyHelpType="0"
+DiyHelpType="1"
 diy_help_rules(){
     case $1 in
         Fruit)
-            tmp_helptype="1"            # 东东农场使用“全部一致互助模板”，所有账户要助力的码全部一致
+            tmp_helptype=""            # 东东农场使用“全部一致互助模板”，所有账户要助力的码全部一致
             ;;
         DreamFactory | JdFactory)
             tmp_helptype="1"            # 京喜工厂和东东工厂使用“均等机会互助模板”，所有账户获得助力次数一致
@@ -687,12 +691,34 @@ ps -ef|grep "$1"|grep -Ev "$2"|awk '{print $1}'|xargs kill -9
 ## 执行并写入日志
 kill_proc "code.sh" "grep|$$" >/dev/null 2>&1
 [[ $FixDependType = "1" ]] && [[ "$ps_num" -le $proc_num ]] && install_dependencies_all >/dev/null 2>&1 &
+
+## 如果code 文件夹不存在，则创建
+if [ ! -d "/ql/log/code" ]; then
+    echo -e "\n 创建code 文件夹 & npc_help.log 文件～"
+    mkdir /ql/log/code
+    touch /ql/log/code/npc_help.log
+ else if [ ! -f "/ql/log/code/npc_help.log" ]; then
+    echo -e "\n 创建 npc_help.log 文件～"
+    touch /ql/log/code/npc_help.log
+    else 
+    cat /dev/null > /ql/log/code/npc_help.log
+fi
+
+## code 文件夹下的log文件名字
+#latest_log=$(ls -r $dir_code | head -1)
+#latest_log_path="$dir_code/$latest_log"
+
+ps_num="$(ps | grep code.sh | grep -v grep | wc -l)"
+export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}" > $npc_log
+
+## code 文件夹下的log文件名字
 latest_log=$(ls -r $dir_code | head -1)
 latest_log_path="$dir_code/$latest_log"
-ps_num="$(ps | grep code.sh | grep -v grep | wc -l)"
-export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}"
+
+echo -e "\n#【`date +%X`】 开始更新"
 sleep 5
 update_help
 
 ## 修改curtinlv入会领豆配置文件的参数
 [[ -f /ql/repo/curtinlv_JD-Script/OpenCard/OpenCardConfig.ini ]] && sed -i "4c JD_COOKIE = '$(echo $JD_COOKIE | sed "s/&/ /g; s/\S*\(pt_key=\S\+;\)\S*\(pt_pin=\S\+;\)\S*/\1\2/g;" | perl -pe "s| |&|g")'" /ql/repo/curtinlv_JD-Script/OpenCard/OpenCardConfig.ini
+
