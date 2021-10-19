@@ -35,9 +35,11 @@ def rd(y):
 #print(rd(5))
 
 #url1 = 'https://script.baertt.com/count2/callback?si='+si()+'0cc11b74a5333b117bc00706dc1ba3f3&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DnME6PzmgxDLdbpG4wzbNKGSdL6VKtRexq9w1rjJNqwAQ0OoW9B%2526uid%253D52234038%2526phone_code%253D9f187973b629846a0c387d082e8ad7f2%2526scid%253D38016918%2526time%253D1619658345%2526app_version%253D2.0.2%2526sign%253Db129c8a629b7aee83e7a6297f655781e&_=1619658356399&jsonpcallback=jsonp5'
-url1 = 'https://script.baertt.com/count2/callback?si='+si()+'6fccaf9e1a275741eb3ebd5b01f0dff0&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_eight%253Fsignature%253D5yNLlPgo6r98RX0bMW7YYyGG6s8N6eR7KEVpwGOxvAqDZzBJdm%2526scene_id%253Dhome_feed%2526share_id%253D52234038392222821625554191%2526time%253D1625554191&_=1625554209007&jsonpcallback=jsonp6'
-url2 = 'https://script.baertt.com/count2/callback?si='+si()+'46b99850e3db7558fabfdc7e4c5c3d8c&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_five%253Fsignature%253DG6vDYbegoP2Owr90x84KkjyZjcNz5mG4jVBXQnmqNLEMRyzZ3l%2526scene_id%253Dhome_feed%2526share_id%253D52943275392435321625554743%2526time%253D1625554743&_=1625554760228&jsonpcallback=jsonp5'
+#url1 = 'https://script.baertt.com/count2/callback?si='+si()+'6fccaf9e1a275741eb3ebd5b01f0dff0&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_eight%253Fsignature%253D5yNLlPgo6r98RX0bMW7YYyGG6s8N6eR7KEVpwGOxvAqDZzBJdm%2526scene_id%253Dhome_feed%2526share_id%253D52234038392222821625554191%2526time%253D1625554191&_=1625554209007&jsonpcallback=jsonp6'
+#url2 = 'https://script.baertt.com/count2/callback?si='+si()+'46b99850e3db7558fabfdc7e4c5c3d8c&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fnewshare_five%253Fsignature%253DG6vDYbegoP2Owr90x84KkjyZjcNz5mG4jVBXQnmqNLEMRyzZ3l%2526scene_id%253Dhome_feed%2526share_id%253D52943275392435321625554743%2526time%253D1625554743&_=1625554760228&jsonpcallback=jsonp5'
 
+url1 = 'https://script.baertt.com/count2/callback?si='+si()+'5f87ee4d553fbcbd90c1b32c6dfeff7e&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fws_eight%253Fsignature%253DbDjmABzyXE32GNxlOY4pvp89BHqZdlnaZ9vnQ58wq06peMdkrP%2526scene_id%253Dhome_feed%2526share_id%253D52234038396555021634610150%2526time%253D1634610150&_=1634610177448&jsonpcallback=jsonp6'
+url2 = 'https://script.baertt.com/count2/callback?si='+si()+'5f87ee4d553fbcbd90c1b32c6dfeff7e&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fws_five%253Fsignature%253DgbJynLeRd3VA29KYqE4gqxKqef5kmDGaDNrGQloPXZzxvOB6jW%2526scene_id%253Dhome_feed%2526share_id%253D52943275404318881634623828%2526time%253D1634623828&_=1634623849828&jsonpcallback=jsonp6'
 
 #多号码
 
@@ -54,7 +56,8 @@ srev2=str(random.randint(1,5))
 
 header1={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev1+"_"+srev1+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000"+ra1+") NetType/4G Language/zh_CN"}
 
-header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000"+ra2+") NetType/4G Language/zh_CN"}
+#header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.4(0x18000"+ra2+") NetType/4G Language/zh_CN"}
+header2={"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Connection": "keep-alive","Host": "script.baertt.com","Referer": "https://focus.youth.cn/","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS "+brev2+"_"+srev2+" like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.12(0x18000"+ra2+") NetType/4G Language/zh_CN"}
 
 print(header1)
 print(header2)
