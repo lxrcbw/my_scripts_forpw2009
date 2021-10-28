@@ -1,6 +1,7 @@
 
 const $ = new Env('youthshare');
-let md5 = require('md5-node');
+//let md5 = require('md5-node');
+let md5 = $.isNode() ? require('md5-node') : '';
 let nowTime;
 let wxck;
 let articles = ["https://focus.youth.cn/article/ws_eight?signature=5NPeoJjl0pEAqLZYQM4q2KkAQuQAbLJ7692Vrk3gBdwXDyWK8b&scene_id=home_feed&share_id=52234038399015691635424391&time=1635424391",
