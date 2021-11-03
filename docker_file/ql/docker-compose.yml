@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   qinglong:
     image: whyour/qinglong:latest
@@ -6,8 +6,8 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - 55999:5700
-      - 5701:5701
+      - 9001:5700
+      - 9011:5701
     environment:
       - ENABLE_HANGUP=true
       - ENABLE_WEB_PANEL=true
