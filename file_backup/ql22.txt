@@ -1,0 +1,108 @@
+#shuye 
+
+
+docker run -dit \
+-v /root/jd2/config:/jd/config \
+-v /root/jd2/log:/jd/log \
+-v /root/jd2/scripts:/jd/scripts \
+-p 5888:5678 \
+-e ENABLE_HANGUP=false \
+-e ENABLE_WEB_PANEL=true \
+--name jd2 \
+--hostname jd2 \
+--restart always \
+shuye72/jd-base:gitee
+
+
+#aliyun
+
+version: '2'
+services:
+  webdav-aliyundriver:
+    image: zx5253/webdav-aliyundriver
+    container_name: webdav-aliyundriver
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./docker/etc/aliyun-driver/:/etc/aliyun-driver/
+    ports:
+      - "2333:8080"
+    tty: true
+    environment:
+      - TZ=Asia/Shanghai
+      - ALIYUNDRIVE_REFRESH_TOKEN=9f0580e9222f452f92e9bd87b033df04
+      - ALIYUNDRIVE_AUTH_PASSWORD=admin@cpdd
+
+
+#tinyproxy
+
+docker run -d --name='tinyproxy' -p 45678:8888 dannydirect/tinyproxy:latest ANY
+
+
+
+#ql - 2.2
+
+docker run -dit \
+   -v $PWD/ql5/config:/ql/config \
+   -v $PWD/ql5/log:/ql/log \
+   -v $PWD/ql5/db:/ql/db \
+   -p 5222:5700 \
+   --name ql5 \
+   --hostname ql \
+   --restart always \
+   limoe/qinglong:arm64
+
+docker run -dit \
+   -v $PWD/ql/config:/ql/config \
+   -v $PWD/ql/log:/ql/log \
+   -v $PWD/ql/db:/ql/db \
+   -p 5800:5700 \
+   --name ql \
+   --hostname ql \
+   --restart always \
+   limoe/qinglong:latest
+   
+ wget   https://github.com/Zy143L/jdc/releases/download/2.0/JDC
+ 
+ 终端输入
+yum install wget unzip -y
+终端输入
+cd /root 
+ls -l 
+
+AMD64 终端输入
+wget https://github.com/Zy143L/jdc/releases/download/2.0/JDC
+
+arm64 终端输入
+wget https://github.com/Zy143L/jdc/releases/download/2.0/JDC_arm64
+
+终端输入
+chmod 777 JDC 
+./JDC 
+
+修改 config.toml 中的 path 项为 ql
+AMD64终端输入
+nohup ./JDC 1>/dev/null 2>&1 & #AMD64
+nohup ./JDC > /dev/null 2>&1 &
+arm64终端输入 
+nohup ./JDC_arm64 1>/dev/null 2>&1 & #ARM64
+
+打开 http://ip:5701/info 看到 “JDC is Already！” 即说明安装成功！
+
+前端安装 终端输入
+cd public 
+wget http://nm66.top/dist.zip && unzip dist.zip
+
+然后直接访问 IP + 5701即可看到面板。
+
+如果要重新安装 先 终端输入
+netstat -lnp|grep 5701
+比如输出了 tcp 0 0 0.0.0.0:5701 0.0.0.0:* LISTEN 28937/java
+
+然后执行kill关闭该应用程序 数字就是后面的28937
+终端输入
+kill -9 28937
+
+JDC修复编译来着网络资源
+宝塔需要在安全组打开5701端口
+具体需要自测
