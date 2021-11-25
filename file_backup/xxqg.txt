@@ -1,1 +1,10 @@
-docker run -e "AccessToken=2bbb7f5bf514b46ac8e5bc42c7617ec4a4d5816e669a17ca23899b21f5cdcbfd" -e "Secret=SEC5e5d38435d8c67b612d658e3ba99178f83bda738529adfb89bb749327fd8ee85" -e "Pushmode=1" -e "Scheme=dtxuexi://appclient/page/study_feeds?url=" -e "zhuanxiang=true" -d --name=xxqg techxuexi/techxuexi-arm64v8:latest
+docker run \
+-d \
+--name=xxqg \
+--shm-size="2g" \
+-e "AccessToken=2bbb7f5bf514b46ac8e5bc42c7617ec4a4d5816e669a17ca23899b21f5cdcbfd"  \
+-e "Secret=SEC5e5d38435d8c67b612d658e3ba99178f83bda738529adfb89bb749327fd8ee85"  \
+-e "Pushmode=1" \
+-e "Scheme=dtxuexi://appclient/page/study_feeds?url=" \
+-e "ZhuanXiang=True" \
+techxuexi/techxuexi-arm64v8:latest
